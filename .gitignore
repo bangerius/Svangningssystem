@@ -27,11 +27,6 @@ $RECYCLE.BIN/
 .DS_Store
 .AppleDouble
 .LSOverride
-*.aux
-*.gz
-*.toc
-*.PDF
-*.pdf
 
 # Thumbnails
 ._*
@@ -47,3 +42,8 @@ Network Trash Folder
 Temporary Items
 .apdisk
 *.pdf
+*.aux
+*.gz
+*.toc
+*.PDF
+*.bak
