@@ -29,7 +29,7 @@ Många är inte förvånade att höra att definitionen av ett linjärt system ä
 \begin{equation}
 x(t) = a*x_1(t) + b*x_2(t)\rightarrow y(t) = a*y_1(t) + b*y_2(t)
 \end{equation}
-stämmer så är systemet linjärt
+
 
 
 \end{document}
