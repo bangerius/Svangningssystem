@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.9)  11 MAR 2015 09:15
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.9)  11 MAR 2015 09:57
 entering extended mode
 **Studsmatta.tex
 (C:\Users\Villiam\Documents\GitHub\Svangningssystem\Studsmatta.tex
@@ -410,22 +410,28 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  [2
 
 ]
-Overfull \hbox (0.94508pt too wide) in paragraph at lines 46--47
+Overfull \hbox (35.08409pt too wide) in paragraph at lines 38--39
+\OT1/cmr/m/n/10 Syftet med rap-por-ten []ar att be-skri-va en studs-mat-ta som 
+ett ide-a-li-se-rat sv[]angningssystem
+ []
+
+
+Overfull \hbox (0.94508pt too wide) in paragraph at lines 49--50
 \OT1/cmr/m/n/10 ide-a-li-se-ring f[]or att kun-na re-pre-sen-te-ras som just en
  linj[]art och sv[]angningssystem. 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--65
+Underfull \hbox (badness 10000) in paragraph at lines 65--68
 
  []
 
 [3
 
-] <Bild.png, id=20, 747.79375pt x 1056.94875pt>
+] <Bild.png, id=21, 747.79375pt x 1056.94875pt>
 File: Bild.png Graphic file (type png)
  <use Bild.png>
-Package pdftex.def Info: Bild.png used on input line 72.
+Package pdftex.def Info: Bild.png used on input line 80.
 (pdftex.def)             Requested size: 299.1122pt x 422.772pt.
  [4 <C:/Users/Villiam/Documents/GitHub/Svangningssystem/Bild.png>] [5
 
@@ -434,7 +440,7 @@ Package pdftex.def Info: Bild.png used on input line 72.
 Here is how much of TeX's memory you used:
  2602 strings out of 493921
  31830 string characters out of 3144871
- 87360 words of memory out of 3000000
+ 88360 words of memory out of 3000000
  5868 multiletter control sequences out of 15000+200000
  11672 words of font info for 46 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -443,16 +449,18 @@ Here is how much of TeX's memory you used:
 m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program 
 Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program File
-s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files (
-x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86
-)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Studsmatta.pdf (5 pages, 169740 bytes).
+s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on Studsmatta.pdf (5 pages, 189099 bytes).
 PDF statistics:
- 61 PDF objects out of 1000 (max. 8388607)
+ 69 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -35,23 +35,22 @@
 \pagenumbering{arabic}
 \setcounter{page}{3}
 
-Syftet med vår rapport är att genom att betrakta en studsmatta som ett idealiserat svängningssystem betrakta dess egenskaper och dra relevanta slutsatser angående dess beteende och egenskaper och vilka faktorer som påverkar dessa.
+Syftet med rapporten är att beskriva en studsmatta som ett idealiserat svängningssystem och betrakta dess egenskaper. Från detta kan vi dra slutsatser om dess beteende, egenskaper och vilka faktorer som påverkar dessa.
 
 \subsection{Mål}
-
+%Ska vi verkligen ha denna subsektion? 
+%Känns som en upprepning av tidigare fast med andra ord.
 Målet med vår rapport är att genom vår ökade förståelse om hur man kan påverka insignalen till vårt system för att få utsignalen att bete sig på önskat sätt. Till exempel hur man bör gå till väga för att få största möjliga utsignal, med andra ord hoppa så högt som möjligt på en studsmatta.
+
+
 
 \section{Bakgrund}
 
 Vi har i denna rapport valt att modellera en person som hoppar på en studsmatta som en LTI (linjärt tidsinvariant) system för att undersöka dess egenskaper. Vi ville välja ett linjärt för att analysera deras egenskaper men samtidigt använda oss av en mycket verklighetstrogen modell som inte kräver så mycket idealisering för att kunna representeras som just en linjärt och svängningssystem.
 
-\subsection{LTI system}
+\subsection{Linjäritet}
 
-Ett linjärt system definieras som ett system som är både homogent och additivt.
-
-\begin{equation}
-x(t) = a*x_1(t) + b*x_2(t)\rightarrow y(t) = a*y_1(t) + b*y_2(t)
-\end{equation}
+Ett linjärt system definieras som ett system som är både homogent och additivt. Notation för in- och utsignal är vanligast $x(t)$ som insignal och $y(t)$ som utsignal.
 
 \begin{equation}
 a*x(t) \rightarrow a*y(t) 
@@ -60,9 +59,18 @@ a*x(t) \rightarrow a*y(t)
 \begin{equation}
 x(t) = x_1(t) + x_2(t) \rightarrow y(t) = y_1(t) + y_2(t)
 \end{equation}
-\linebreak
-Ekvation 1 är en kombination av ekvation 2 och 3. Ekvation 1 är således den ekvation som måste uppfyllas för att ett system ska vara linjärt.
 
+\begin{equation}
+x(t) = a*x_1(t) + b*x_2(t)\rightarrow y(t) = a*y_1(t) + b*y_2(t)
+\end{equation}
+\linebreak
+Ekvation 1 och 2 är kraven för homogenitet respektive additivitet. Ekvation 3 är en vanligt använd sammanslagning av de båda och är således den ekvation som måste uppfyllas för att ett system ska vara linjärt.
+
+\subsection{Tidsinvarians}
+
+[Text om tidsinvarians]
+[ekvation?]
+[Förklaring av ekvation?]
 
 \newpage
 \section{Vårt LTI system}
@@ -79,11 +87,20 @@ Insignalen blir i vårt fall personens vikt och hur mycket denne trycker ifrån 
 
 Krafterna uttryckta med pilar i bilden är gravitationskraften från massan $F_g$, fjäderns motkraft på massan $F_f$ och kraften från personen som trycker emot $F_a$.
 
-Eftersom fjädrarna är placerade symmetriskt runt hela mattan och för att personen står placerad i mitten av mattan kan vi idealisera systemet som en enda fjäder som en hopslagning av alla fjädrar verkande i y-led eftersom de radiella krafterna tar ut varandra i symmetrin.
+Eftersom fjädrarna är placerade symmetriskt och för att personen står placerad i mitten av mattan kan vi idealisera systemet som en enda fjäder som en hopslagning av alla fjädrar verkande i y-led eftersom de radiella krafterna tar ut varandra i symmetrin.
 
-\subsection{Fysik 1}
+\subsection{Gravitationskraften $F_g$}
 
-\subsection{Fysik 2}
+\begin{equation}
+F = m * g * h
+\end{equation}
+
+\subsection{Fjäderkraften $F_f$}
+
+(Hookes Lag, k = fjäderkonstant, x = aktuell pos., $x_0$ referens pos.)
+\begin{equation}
+F = - k * (x - x_0)
+\end{equation}
 
 \subsection{Fysik 3}
 
