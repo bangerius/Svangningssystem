@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.10)  11 MAR 2015 14:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.10)  11 MAR 2015 14:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -475,7 +475,7 @@ Overfull \hbox (44.29492pt too wide) in paragraph at lines 86--87
 [4 <./Bild2.png>] [5
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 121--127
+Underfull \hbox (badness 10000) in paragraph at lines 122--128
 []\OT1/cmr/m/n/10 Sune S[]oderkvist, \OT1/cmr/m/it/10 Tids-kon-ti-nu-er-li-ga S
 ig-na-ler & Sy-stem\OT1/cmr/m/n/10 .
  []
@@ -503,7 +503,7 @@ r7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
 0.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10
 .pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.
 pfb>
-Output written on Studsmatta.pdf (6 pages, 728796 bytes).
+Output written on Studsmatta.pdf (6 pages, 728690 bytes).
 PDF statistics:
  76 PDF objects out of 1000 (max. 8388607)
  53 compressed objects within 1 object stream
