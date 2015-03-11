@@ -43,16 +43,26 @@ Målet med vår rapport är att genom vår ökade förståelse om hur man kan p�
 
 \section{Bakgrund}
 
-Vi har i denna rapport valt att modellera en person som hoppar på en studsmatta som en linjärt system för att undersöka dess egenskaper. Vi ville välja ett linjärt för att analysera deras egenskaper men samtidigt använda oss av en mycket värklighetstrogen modell som inte kräver så mycket idealisering för att kunna representeras som just en linjärt svängningssystem.
+Vi har i denna rapport valt att modellera en person som hoppar på en studsmatta som en LTI (linjärt tidsinvariant) system för att undersöka dess egenskaper. Vi ville välja ett linjärt för att analysera deras egenskaper men samtidigt använda oss av en mycket verklighetstrogen modell som inte kräver så mycket idealisering för att kunna representeras som just en linjärt och svängningssystem.
 
-\subsection{Vad är ett linjärt system?}
+\subsection{LTI system}
 
-Många är inte förvånade att höra att definitionen av ett linjärt system är att systemet ska vara för det första homogent och för det andra additivt. Men hur defineras det inom kontexten av system, vad innebär det och vilka egenskaper medförs av att ett system är linjärt? Det är så att om
+Ett linjärt system definieras som ett system som är både homogent och additivt.
 
 \begin{equation}
 x(t) = a*x_1(t) + b*x_2(t)\rightarrow y(t) = a*y_1(t) + b*y_2(t)
 \end{equation}
-stämmer så är systemet linjärt
+
+\begin{equation}
+a*x(t) \rightarrow a*y(t) 
+\end{equation}
+
+\begin{equation}
+x(t) = x_1(t) + x_2(t) \rightarrow y(t) = y_1(t) + y_2(t)
+\end{equation}
+\linebreak
+Ekvation 1 är en kombination av ekvation 2 och 3. Ekvation 1 är således den ekvation som måste uppfyllas för att ett system ska vara linjärt.
+
 
 \newpage
 \section{Vårt LTI system}
@@ -63,7 +73,13 @@ stämmer så är systemet linjärt
 \end{figure}
 \clearpage
 
-Den enkla bilden ger en överblick av vårt system. Studsmattan är helt cirkulär och har fjädrar som sitter radiellt från kanten in i mitten symmetriskt runt om.
+Figur 1 ger en överblick mycket enkel överblick av vårt system. Studsmattan är helt cirkulär och har fjädrar som sitter radiellt från kanten in i mitten symmetriskt runt om hela cirkeln. Vi tänker oss att personen som hoppar står precis i mattans mitt med fötterna tätt ihop.
+
+Insignalen blir i vårt fall personens vikt och hur mycket denne trycker ifrån med benen. Utsignalen är personens ändring i höjdled med referenspunkt i jämviktsläget på studsmattan.
+
+Krafterna uttryckta med pilar i bilden är gravitationskraften från massan $F_g$, fjäderns motkraft på massan $F_f$ och kraften från personen som trycker emot $F_a$.
+
+Eftersom fjädrarna är placerade symmetriskt runt hela mattan och för att personen står placerad i mitten av mattan kan vi idealisera systemet som en enda fjäder som en hopslagning av alla fjädrar verkande i y-led eftersom de radiella krafterna tar ut varandra i symmetrin.
 
 \subsection{Fysik 1}
 
