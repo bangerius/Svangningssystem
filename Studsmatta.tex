@@ -40,17 +40,18 @@ Syftet med rapporten är att beskriva en studsmatta som ett idealiserat svängni
 \subsection{Mål}
 %Ska vi verkligen ha denna subsektion? 
 %Känns som en upprepning av tidigare fast med andra ord.
-Målet med vår rapport är att genom vår ökade förståelse om hur man kan påverka insignalen till vårt system för att få utsignalen att bete sig på önskat sätt. Till exempel hur man bör gå till väga för att få största möjliga utsignal, med andra ord hoppa så högt som möjligt på en studsmatta.
+%Syfte och mål är samma sak
+Målet med vår rapport är att genom vår ökade förståelse om hur insignalen till vårt system kan påverkas för att få utsignalen att bete sig på önskat sätt. Till exempel hur insignalen kan påverkas för att få största möjliga utsignal, med andra ord att kunna hoppa så högt som möjligt på en studsmatta.
 
 
 
 \section{Bakgrund}
 
-Vi har i denna rapport valt att modellera en person som hoppar på en studsmatta som en LTI (linjärt tidsinvariant) system för att undersöka dess egenskaper. Vi ville välja ett linjärt för att analysera deras egenskaper men samtidigt använda oss av en mycket verklighetstrogen modell som inte kräver så mycket idealisering för att kunna representeras som just en linjärt och svängningssystem.
+Vi har i denna rapport valt att modellera en person som hoppar på en studsmatta som en LTI (linjärt tidsinvariant) system för att undersöka dess egenskaper. Vi valde studsmattan som ett linjärt system för att analysera dess egenskaper, men även för att få en mycket verklighetsanknuten modell som inte kräver så mycket idealisering för att kunna representeras som ett linjärt svängningssystem.
 
 \subsection{Linjäritet}
 
-Ett linjärt system definieras som ett system som är både homogent och additivt. Notation för in- och utsignal är vanligast $x(t)$ som insignal och $y(t)$ som utsignal.
+Ett linjärt system definieras som ett system som är både homogent och additivt. Notation för in- och utsignal är vanligast $x(t)$ som insignal respektive $y(t)$ som utsignal.
 
 \begin{equation}
 a*x(t) \rightarrow a*y(t) 
@@ -64,7 +65,7 @@ x(t) = x_1(t) + x_2(t) \rightarrow y(t) = y_1(t) + y_2(t)
 x(t) = a*x_1(t) + b*x_2(t)\rightarrow y(t) = a*y_1(t) + b*y_2(t)
 \end{equation}
 \linebreak
-Ekvation 1 och 2 är kraven för homogenitet respektive additivitet. Ekvation 3 är en vanligt använd sammanslagning av de båda och är således den ekvation som måste uppfyllas för att ett system ska vara linjärt.
+Ekvation 1 och 2 är kraven för homogenitet respektive additivitet. Ekvation 3 är en vanligt använd sammanslagning av ekvation 1 och 2, och är således den ekvation som måste uppfyllas för att ett system ska vara linjärt.
 
 \subsection{Tidsinvarians}
 
@@ -76,12 +77,13 @@ Ekvation 1 och 2 är kraven för homogenitet respektive additivitet. Ekvation 3 
 \section{Vårt LTI system}
 
 \begin{figure}[ht]
+%Bildtexter ligger vanligtvis under bilden i fråga
 \caption{En enkel bild av vårt system}
 \includegraphics[scale=0.4]{Bild}
 \end{figure}
 \clearpage
 
-Figur 1 ger en överblick mycket enkel överblick av vårt system. Studsmattan är helt cirkulär och har fjädrar som sitter radiellt från kanten in i mitten symmetriskt runt om hela cirkeln. Vi tänker oss att personen som hoppar står precis i mattans mitt med fötterna tätt ihop.
+Figur 1 ger en mycket enkel överblick av vårt system. Studsmattan är helt cirkulär och har fjädrar som sitter radiellt från kanten riktade in mot mitten symmetriskt runt om hela cirkeln. Vi gör antagandet att personen som hoppar står precis i mattans mitt med fötterna tätt ihop.
 
 Insignalen blir i vårt fall personens vikt och hur mycket denne trycker ifrån med benen. Utsignalen är personens ändring i höjdled med referenspunkt i jämviktsläget på studsmattan.
 
