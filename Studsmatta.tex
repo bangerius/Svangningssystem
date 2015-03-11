@@ -67,13 +67,15 @@ x(t) = a*x_1(t) + b*x_2(t)\rightarrow y(t) = a*y_1(t) + b*y_2(t)
 \linebreak
 Ekvation 1 och 2 är kraven för homogenitet respektive additivitet. Ekvation 3 är en vanligt använd sammanslagning av ekvation 1 och 2, och är således den ekvation som måste uppfyllas för att ett system ska vara linjärt.
 
-[Varför är vårt system linjärt? varför är det relevant och vilka konkreta egenskaper hos linjära system använder vi oss av]
+%[Varför är vårt system linjärt? varför är det relevant och vilka konkreta egenskaper hos linjära system använder vi oss av]
 
 \subsection{Tidsinvarians}
 
-[Text om tidsinvarians]
-[ekvation?]
-[Förklaring av ekvation?]
+%[Text om tidsinvarians]
+%[ekvation?]
+%[Förklaring av ekvation?]
+
+Ett system med insignal $x(t)$ och utsignal $y(t)$ sägs vara tidsinvariant om insignalen $x(t - \tau)$ ger upphov till utsignalen $y(t - \tau)$ \cite{sune2000}. Detta betyder alltså att de fysikaliska komponenterna i systemet inte varierar över tid. I vårt fall betyder det t.ex. att våra fjädrar inte slits ut och att personen som gungar inte flyttar på sig. 
 
 \newpage
 \section{Vårt LTI system}
@@ -85,7 +87,7 @@ Ekvation 1 och 2 är kraven för homogenitet respektive additivitet. Ekvation 3 
 \end{figure}
 \clearpage
 
-Figur 1 ger en mycket enkel överblick av systemet. Studsmattan är helt cirkulär och har fjädrar som sitter radiellt från kanten symmetriskt in till mitten. Vi gör antagandet att personen som hoppar står precis i mattans mitt med fötterna tätt ihop.
+Figur 1 ger en mycket enkel överblick av vårt system. Studsmattan är helt cirkulär och har fjädrar som sitter radiellt från kanten riktade in mot mitten symmetriskt runt om hela cirkeln. Vi gör antagandet att personen som hoppar står precis i mattans mitt med fötterna tätt ihop.
 
 
 Insignalen blir i vårt den kraftändring som personen som hoppar utför då denne böjjer eller sträcker på benen. Utsignalen är mattans ändring i höjdled med referenspunkt i jämviktsläget på studsmattan.
@@ -110,5 +112,19 @@ F = - k * (x - x_0)
 \subsection{Fysik 3}
 
 \subsection{Slutgiltig diff.ekv}
+
+\newpage
+
+\begin{thebibliography}{9}
+
+\bibitem{sune2000}
+  Sune Söderkvist,
+  \emph{Tidskontinuerliga Signaler \& System}.
+  \linebreak
+  Erik Larsson AB, Linköping,
+  3e upplagan,
+  2000.
+
+\end{thebibliography}
 
 \end{document}
