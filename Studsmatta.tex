@@ -4,15 +4,26 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
+\usepackage[swedish]{babel}
+\usepackage[utf8]{inputenc}
+
 \graphicspath{}
+
 \begin{document}
+\pagenumbering{gobble}
 
 \title{Studsmatta}
 \maketitle
 
+\cleardoublepage
+
 \tableofcontents
 
+\clearpage
+
 \section{Syfte}
+\pagenumbering{arabic}
+\setcounter{page}{3}
 
 Syftet med vår rapport är att genom att betrakta en studsmatta som ett idealiserat svängningssystem betrakta dess egenskaper och dra relevanta slutsatser angående dess beteende och egenskaper och vilka faktorer som påverkar dessa.
 
@@ -33,10 +44,16 @@ x(t) = a*x_1(t) + b*x_2(t)\rightarrow y(t) = a*y_1(t) + b*y_2(t)
 \end{equation}
 stämmer så är systemet linjärt
 
-
+\newpage
 \section{Vårt LTI system}
 
-\includegraphics[scale=0.2]{Bild}
+\begin{figure}[ht]
+\caption{En enkel bild av vårt system}
+\includegraphics[scale=0.4]{Bild}
+\end{figure}
+\clearpage
+
+Den enkla bilden ger en överblick av vårt system. Studsmattan är helt cirkulär och har fjädrar som sitter radiellt från kanten in i mitten symmetriskt runt om.
 
 
 

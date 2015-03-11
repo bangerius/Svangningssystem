@@ -1,5 +1,6 @@
-\contentsline {section}{\numberline {1}Syfte}{1}
-\contentsline {subsection}{\numberline {1.1}M\IeC {\r a}l}{1}
-\contentsline {section}{\numberline {2}Bakgrund}{1}
-\contentsline {subsection}{\numberline {2.1}Vad \IeC {\"a}r ett linj\IeC {\"a}rt system?}{1}
-\contentsline {section}{\numberline {3}V\IeC {\r a}rt LTI system}{2}
+\select@language {swedish}
+\contentsline {section}{\numberline {1}Syfte}{3}
+\contentsline {subsection}{\numberline {1.1}M\IeC {\r a}l}{3}
+\contentsline {section}{\numberline {2}Bakgrund}{3}
+\contentsline {subsection}{\numberline {2.1}Vad \IeC {\"a}r ett linj\IeC {\"a}rt system?}{3}
+\contentsline {section}{\numberline {3}V\IeC {\r a}rt LTI system}{4}
