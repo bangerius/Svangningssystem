@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.9)  11 MAR 2015 14:48
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.9)  11 MAR 2015 14:52
 entering extended mode
 **Studsmatta.tex
 (C:\Users\Villiam\Documents\GitHub\Svangningssystem\Studsmatta.tex
@@ -435,7 +435,7 @@ Overfull \hbox (44.29492pt too wide) in paragraph at lines 87--88
 [4 <C:/Users/Villiam/Documents/GitHub/Svangningssystem/Bild2.png>] [5
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 123--129
+Underfull \hbox (badness 10000) in paragraph at lines 125--131
 []\OT1/cmr/m/n/10 Sune S[]oderkvist, \OT1/cmr/m/it/10 Tids-kon-ti-nu-er-li-ga S
 ig-na-ler & Sy-stem\OT1/cmr/m/n/10 .
  []
@@ -463,7 +463,7 @@ X 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiKTeX 2.
 9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/
 fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
 nts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Studsmatta.pdf (6 pages, 738325 bytes).
+Output written on Studsmatta.pdf (6 pages, 738579 bytes).
 PDF statistics:
  74 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
