@@ -4,3 +4,7 @@
 \contentsline {section}{\numberline {2}Bakgrund}{3}
 \contentsline {subsection}{\numberline {2.1}Vad \IeC {\"a}r ett linj\IeC {\"a}rt system?}{3}
 \contentsline {section}{\numberline {3}V\IeC {\r a}rt LTI system}{4}
+\contentsline {subsection}{\numberline {3.1}Fysik 1}{5}
+\contentsline {subsection}{\numberline {3.2}Fysik 2}{5}
+\contentsline {subsection}{\numberline {3.3}Fysik 3}{5}
+\contentsline {subsection}{\numberline {3.4}Slutgiltig diff.ekv}{5}
