@@ -51,24 +51,24 @@ Målet med vår rapport är att genom vår ökade förståelse om hur insignalen
 \section{Bakgrund}
 
 Vi har i denna rapport valt att modellera en person som hoppar på en studsmatta som en LTI (linjärt tidsinvariant) system för att undersöka dess egenskaper. Vi valde studsmattan som ett linjärt system för att analysera dess egenskaper, men även för att få en mycket verklighetsanknuten modell som inte kräver så mycket idealisering för att kunna representeras som ett linjärt svängningssystem.
+\newpage
 
-\subsection{Linjäritet}
+\subsection{Linjärt system}
 
-Ett linjärt system definieras som ett system som är både homogent och additivt. Notation för in- och utsignal är vanligast $x(t)$ som insignal respektive $y(t)$ som utsignal.
-
+Om vi antar att vi har ett system har insignal $x(t)$ och utsignal $y(t)$ så är vanlig notation att beteckna systemet med $x(t) \rightarrow y(t)$. Detta system kan ha flera egenskaper, men en vanlig egenskap som vi kännetecknar vårt svängande system är linjäritet. För att ett system ska vara linjärt måste det uppfylla två krav. Systemet måste dels vara additivt, d.v.s. uppfylla ekvationen
 \begin{equation}
 a \cdot x(t) \rightarrow a \cdot y(t) 
 \end{equation}
-
+Systemet måste också vara homogent, d.v.s. uppfylla ekvationen
 \begin{equation}
 x(t) = x_1(t) + x_2(t) \rightarrow y(t) = y_1(t) + y_2(t)
 \end{equation}
-
+Om man slår ihop ekvation 1 och 2 så kan man förkorta kravet till en ekvation
 \begin{equation}
 x(t) = a \cdot x_1(t) + b \cdot x_2(t)\rightarrow y(t) = a \cdot y_1(t) + b \cdot y_2(t)
 \end{equation}
 \linebreak
-Ekvation 1 och 2 är kraven för homogenitet respektive additivitet. Ekvation 3 är en vanligt använd sammanslagning av ekvation 1 och 2, och är således den ekvation som måste uppfyllas för att ett system ska vara linjärt. \cite{sune2000}
+Således måste alla linjära system uppfylla ekvation 3.\cite{sune2000}
 I vårt system betyder detta t.ex. att en speciellt stark kraft inte kommer förstöra fjädrarna.
 
 %[Varför är vårt system linjärt? varför är det relevant och vilka konkreta egenskaper hos linjära system använder vi oss av]
@@ -79,7 +79,7 @@ I vårt system betyder detta t.ex. att en speciellt stark kraft inte kommer för
 %[ekvation?]
 %[Förklaring av ekvation?]
 
-Ett system med insignal $x(t)$ och utsignal $y(t)$ sägs vara tidsinvariant om insignalen $x(t - \tau)$ ger upphov till utsignalen $y(t - \tau)$ \cite{sune2000}. Detta betyder alltså att de fysikaliska komponenterna i systemet inte varierar över tid. I vårt fall betyder det t.ex. att våra fjädrar inte slits ut och att personen som gungar inte flyttar på sig. 
+Ett system med insignal $x(t)$ och utsignal $y(t)$ sägs vara tidsinvariant om insignalen $x(t - \tau)$ ger upphov till utsignalen $y(t - \tau)$ \cite{sune2000}. Detta betyder alltså att de fysikaliska komponenterna i systemet inte varierar över tid. I vårt fall betyder det t.ex. att våra fjädrar inte slits ut och att personen som gungar inte byter plats på mattan. 
 
 \newpage
 \section{Vårt LTI system}
