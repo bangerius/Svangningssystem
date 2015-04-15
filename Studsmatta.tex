@@ -123,16 +123,17 @@ Dämpningskraften $F_d$ är den kraft som motverkar rörelsen i ett svängningss
 
 \subsection{Slutgiltig differentialekvation}
 
-Systemet består av de åvanstående tre krafterna samt insignalen som alla är krafter i y-led. Vi vet att dessa krafter kommer att ta ut varandra eftersom alla krafter har en motsvarande lika står motriktad kraft. Vi får den totala kraften $F_{tot}$
+Systemet består av de åvanstående tre krafterna samt insignalen som alla är krafter i y-led. Summan av dessa krafter skapar den totala kraften $F_{tot}$. Vi kan då beskriva vårt system med följande ekvation.
 
 \begin{equation}
-F_{tot} = 0 = x(t) + F_g - F_f - F_d \leftrightarrow x(t) = F_g - F_f - F_d 
+F_{tot} = x(t) + F_g + F_f + F_d
 \end{equation}
 
-Om vi ersätter krafterna med de ekvationer vi tog fram tidigare får vi
+Om vi ersätter krafterna med de ekvationer vi tog fram tidigare och låter den totala kraften skrivas som accelerationen i y-led multiplicerat med massan får vi
 
 \begin{equation}
-x(t) = F_g - F_f - F_d \leftrightarrow x(t) = m*\frac{d^2y}{dy^2} + c*\frac{dy}{dt} -ky(t)
+ m\frac{d^2y(t)}{dt^2} = mg -ky(t) -cm\frac{dy(t)}{dt} + x(t)
+ \leftrightarrow  m\frac{d^2y(t)}{dt^2} + cm\frac{dy(t)}{dt} + ky(t) - mg = x(t)
 \end{equation}
 
 \newpage
