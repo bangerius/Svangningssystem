@@ -85,21 +85,58 @@ Ett system med insignal $x(t)$ och utsignal $y(t)$ sägs vara tidsinvariant om i
 \section{Vårt LTI system}
 
 \begin{figure}[ht]
-\includegraphics[scale=0.64]{Bild2}
+\begin{center}
+\includegraphics[scale=0.62]{Bild2}
 \caption{En enkel bild av vårt system}
+\end{center}
 \end{figure}
 
-Figur 1 ger en mycket enkel överblick av vårt system. Studsmattan är helt cirkulär och har fjädrar som sitter radiellt från kanten riktade in mot mitten symmetriskt runt om hela cirkeln. Vi gör antagandet att personen som hoppar står precis i mattans mitt med fötterna tätt ihop.
+Figur 1 ger en mycket enkel överblick av vårt system. Studsmattan är helt cirkulär och har fjädrar som sitter radiellt från kanten riktade in mot mitten symmetriskt runt om hela cirkeln. Vi gör antagandet att personen som hoppar står precis i mattans mitt med fötterna tätt ihop. Mattan är fäst vid personens fötter, så i själva verket hoppar hen inte utan "gungar" bara upp och ned.
 
 \subsection{Idealisering}
-För att inte behöva räkna på varje individuell fjäder har vi valt att modellera systemet som en enkel fjäder riktad vinkelrät mot markytan. Varför vi kan göra detta redovisas nedan.
+För att inte behöva räkna på varje individuell fjäder har vi valt att modellera systemet som en enkel fjäder riktad vinkelrät mot markytan. Varför vi kan göra detta redovisas nedan:
 
 \begin{figure}[ht]
-\includegraphics[scale=1]{fransidan}
+\begin{center}
+\includegraphics[scale=0.8]{fransidan}
 \caption{En genomskärning från sidan}
+\end{center}
 \end{figure}
-I figuren ses 
+I figuren ses höjden $h$ samt vinkeln $v$. $h$ representerar höjdskilnaden från läget då mattan är helt platt. $v$ är vinkeln på fjädern med avseende på nyss nämnda läge.
+I och med att det för varje fjäder sitter en annan fjäder på motsatt sida studsmattan (enligt figur 3) kan vi modellera fjäderkrafterna som i figur 4.
+\begin{figure}[ht]
+\begin{center}
+\includegraphics[scale=1]{ovanifran}
+\caption{Vi ser hur det för varje fjäder finns ytterligare en, på motsatt sida}
+\end{center}
+\end{figure}
 
+Vi tar nu en titt på de krafter som orsakas av ett fjäderpar ($F_1,F_2$). Dessa fjäderkrafter kan delas upp i komposanter:
+\begin{figure}[ht]
+\begin{center}
+\includegraphics[scale=1]{krafter}
+\caption{redovisning av krafter}
+\end{center}
+\end{figure}
+
+Förutsatt att dessa fjädrar har samma fjäderkonstant och i sitt grundutförande är lika långa får vi sambanden:
+$$F_1=k\Delta l_1\hat{f_1}, F_2=k\Delta l_2\hat{f_2}$$
+Om nu $|\Delta l_1|=|\Delta l_2|$ kan vi konstatera att
+$$F_{1x}=-F_{2x}, F_{1y}=F_{2y}$$
+$$F_{tot}=F_1+F_2=(F_{1y}+F_{2y})\hat{y}=2k\Delta l\sin(v)\hat{y}$$
+
+\pagebreak
+Vi tar nu en titt på figur 5 som beskriver fjäderns utsträckning. Detta för att kunna uttrycka kraften som en funktion av $h$ och $k$ istället för $l$ och $k$.
+
+\begin{figure}[ht]
+\begin{center}
+\includegraphics[scale=0.5]{utstrackning}
+\caption{Utsträckning för en fjäder}
+\end{center}
+\end{figure}
+
+$$\Delta h = \Delta l \sin(v) \rightarrow F_{tot}=2k\Delta l \sin(v)=2k\Delta h\propto k\Delta h $$
+v.s.v. Vi kan alltså modellera vår studsmatta som en enkel fjäder som står på marken under den "gungande" personens fötter.
 Insignalen i vårt system blir alltså kraften som den hoppande personen utför på systemet då denne böjer eller sträcker på benen. Utsignalen i systemet definieras som mattans ändring i höjdled med referenspunkt i jämviktsläget på studsmattan.
 %Uppdatera till att matcha den slutliga referensbilden
 Krafterna uttryckta med pilar i bilden är gravitationskraften från massan $F_g$, fjäderns motkraft på massan $F_f$ och kraften från personen som trycker emot $F_a$.
