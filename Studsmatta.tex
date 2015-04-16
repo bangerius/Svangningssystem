@@ -183,9 +183,43 @@ F_{tot} = x(t) + F_g + F_f + F_d
 Om vi ersätter krafterna med de ekvationer vi tog fram tidigare och låter den totala kraften skrivas som accelerationen i y-led multiplicerat med massan får vi
 
 \begin{equation}
- m\frac{d^2y(t)}{dt^2} = mg -ky(t) -cm\frac{dy(t)}{dt} + x(t)
- \leftrightarrow  m\frac{d^2y(t)}{dt^2} + cm\frac{dy(t)}{dt} + ky(t) - mg = x(t)
+ m\frac{d^2y(t)}{dt^2} =  -ky(t) -cm\frac{dy(t)}{dt} + x(t)
+ \leftrightarrow  m\frac{d^2y(t)}{dt^2} + cm\frac{dy(t)}{dt} + ky(t) = x(t)
 \end{equation}
+
+
+\subsection{Linjäritetsbevis}
+
+För att visa att vårt system är linjärt måste vi visa att det är både homogent och additivt som nämnt tidigare. Om vi antar att insignalen $x_1(t) \rightarrow y_1(t)$ och $x_2(t) \rightarrow y_2(t)$ så gäller att:
+
+\begin{equation}
+m\frac{d^2y(t)}{dt^2} + cm\frac{dy(t)}{dt} + ky_1(t) = x_1(t)
+\end{equation}
+
+\begin{equation}
+m\frac{d^2y(t)}{dt^2} + cm\frac{dy(t)}{dt} + ky_2(t) = x_2(t)
+\end{equation}
+
+
+Om vi då låter insignalen vara $a_1 x_1(t) + a_2 x_2(t)$ där $a_1$ och $a_2$ är reella konstanter så ger det:
+\begin{equation}
+m\frac{d^2y(t)}{dt^2} + cm\frac{dy(t)}{dt} + ky(t) = a_1 x_1(t) + a_2 x_2(t)
+\end{equation}
+
+Vilket leder till:
+
+\begin{equation}
+m\frac{d^2y(t)}{dt^2} + cm\frac{dy(t)}{dt} + ky(t) = a_1 (m\frac{d^2y_1(t)}{dt^2} + cm\frac{dy_1(t)}{dt} + ky_1(t) ) + a_2 (m\frac{d^2y_2(t)}{dt^2} + cm\frac{dy_2(t)}{dt} + ky_2(t))
+\end{equation}
+
+Alltså:
+
+\begin{equation}
+y(t) = a_1 y_1(t) + a_2 y_2(t)
+\end{equation}
+
+Alltså uppfyller systemet kravet för linjäritet.
+
 
 \newpage
 
