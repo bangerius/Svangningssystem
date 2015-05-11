@@ -6,6 +6,7 @@
 \usepackage{graphicx}
 \usepackage[swedish]{babel}
 \usepackage[utf8]{inputenc}
+\usepackage{amsmath}
 
 \graphicspath{}
 
@@ -191,11 +192,11 @@ Om vi ersätter krafterna med de ekvationer vi tog fram tidigare och låter den 
 För att visa att vårt system är linjärt måste vi visa att det är både homogent och additivt som nämnt tidigare. Om vi antar att insignalen $x_1(t) \rightarrow y_1(t)$ och $x_2(t) \rightarrow y_2(t)$ så gäller att:
 
 \begin{equation}
-m\frac{d^2y(t)}{dt^2} + cm\frac{dy(t)}{dt} + ky_1(t) = x_1(t)
+m\frac{d^2y_1(t)}{dt^2} + cm\frac{dy_1(t)}{dt} + ky_1(t) = x_1(t)
 \end{equation}
 
 \begin{equation}
-m\frac{d^2y(t)}{dt^2} + cm\frac{dy(t)}{dt} + ky_2(t) = x_2(t)
+m\frac{d^2y_2(t)}{dt^2} + cm\frac{dy_2(t)}{dt} + ky_2(t) = x_2(t)
 \end{equation}
 
 
@@ -204,11 +205,22 @@ Om vi då låter insignalen vara $a_1 x_1(t) + a_2 x_2(t)$ där $a_1$ och $a_2$ 
 m\frac{d^2y(t)}{dt^2} + cm\frac{dy(t)}{dt} + ky(t) = a_1 x_1(t) + a_2 x_2(t)
 \end{equation}
 
-Vilket leder till:
+Ekvation 9 och 10 ger:
+
+\begin{multline}
+m\frac{d^2y(t)}{dt^2} + cm\frac{dy(t)}{dt} + ky(t) = \\ a_1(m\frac{d^2y_1(t)}{dt^2} + cm\frac{dy_1(t)}{dt} + ky_1(t)) + a_2(m\frac{d^2y_2(t)}{dt^2} + cm\frac{dy_2(t)}{dt} + ky_2(t))
+\end{multline}
+
+Högerledet i ekvation 12 kan skrivas:
 
 \begin{equation}
-m\frac{d^2y(t)}{dt^2} + cm\frac{dy(t)}{dt} + ky(t) = a_1 (m\frac{d^2y_1(t)}{dt^2} + cm\frac{dy_1(t)}{dt} + ky_1(t) ) + a_2 (m\frac{d^2y_2(t)}{dt^2} + cm\frac{dy_2(t)}{dt} + ky_2(t))
+m\frac{d^2\{a_1y_1(t) + a_2y_2(t)\}}{dt^2} + cm\frac{d\{a_1y_1(t) + a_2y_2(t)\}}{dt} + k\{a_1y_1(t) + a_2y_2(t)\}
 \end{equation}
+
+Vilket ger:
+\begin{multline}
+m\frac{d^2y(t)}{dt^2} + cm\frac{dy(t)}{dt} + ky(t) = \\ m\frac{d^2\{a_1y_1(t) + a_2y_2(t)\}}{dt^2} + cm\frac{d\{a_1y_1(t) + a_2y_2(t)\}}{dt} + k\{a_1y_1(t) + a_2y_2(t)\}
+\end{multline}
 
 Alltså:
 
@@ -216,7 +228,7 @@ Alltså:
 y(t) = a_1 y_1(t) + a_2 y_2(t)
 \end{equation}
 
-Alltså uppfyller systemet kravet för linjäritet.
+Systemet uppfyller således kravet för linjäritet.
 
 
 \newpage
