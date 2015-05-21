@@ -157,10 +157,10 @@ Gravitationskraften $F_g$ är den kraften som påverkar en massa $m$ med en kons
 
 \subsection{Fjäderkraften $F_f$}
 
-Fjäderkraften $F_f$ är den kraft som motverkar en fjäders avskiljning ifrån sitt jämviktsläge. Sambandet har namnet Hookes lag. Vi låter skillnaden från jämviktsläget vara $y$, och fjäderkonstanten $k$. Denna kraft är motriktad den av gravitationen. 
-((Tror detta ska vara rätt, bör kollas över))
+Fjäderkraften $F_f$ är den kraft som motverkar en fjäders avskiljning ifrån sitt jämviktsläge. Sambandet har namnet Hookes lag. Om fjäderns grundjämviktsläge är $L$ och dess jämviktsläge efter att massan läggs på är $l_1$ så kan vi uttrycka avvikelsen från jämviktsläget vid $t=0$ som $l_0 = L - l_1$. Eftersom vi har avvikelsen från jämviktsläget $l_1$ så lägger vi på $y(t)$. Fjäderkonstanten sätts till $k$. Denna kraft är motriktad den av gravitationen och uttrycks på följande vis:
+
 \begin{equation}
-F_f = -k \cdot y
+F_f = -k (l_0 + y(t))
 \end{equation}
 
 \subsection{Dämpningskraften $F_d$}
@@ -177,17 +177,32 @@ Systemet består av de åvanstående tre krafterna samt insignalen som alla är 
 F_{tot} = x(t) + F_g + F_f + F_d
 \end{equation}
 
-\begin{equation}
-F_{tot} = x(t) + mg - ky - cv = ma
-\end{equation}
-((MÅSTE KOLLAS ÖVER!!! TODO: LOTS))
-Om vi ersätter krafterna med de ekvationer vi tog fram tidigare och låter den totala kraften skrivas som accelerationen i y-led multiplicerat med massan får vi
+Vilket enligt våra tidigare definitioner och Newtons lag ger:
 
 \begin{equation}
- m\frac{d^2y(t)}{dt^2} =  -ky(t) -cm\frac{dy(t)}{dt} + x(t)
- \leftrightarrow  m\frac{d^2y(t)}{dt^2} + cm\frac{dy(t)}{dt} + ky(t) = x(t)
+F_{tot} = x(t) + mg - k(l_0+y(t)) - cv = ma
 \end{equation}
 
+Vi uttrycker hastighet och acceleration som funktioner av t.
+\begin{equation}
+a = \frac{d^2y(t)}{dt^2} , v = \frac{y(t)}{dt}
+\end{equation}
+
+Vilket ger:
+
+\begin{equation}
+ m\frac{d^2y(t)}{dt^2} =  -k(l_0 + y(t)) -cm\frac{dy(t)}{dt} + mg +  x(t)
+\end{equation}
+
+Vid $t = 0$ så kommer 
+\begin{equation}
+k \cdot l_0 = mg
+\end{equation}
+
+Vilket ger vår slutgiltiga differentialekvation.
+\begin{equation}
+ m\frac{d^2y(t)}{dt^2} + k \cdot y(t)) + cm\frac{dy(t)}{dt} = x(t)
+\end{equation}
 
 \subsection{Linjäritetsbevis}
 
