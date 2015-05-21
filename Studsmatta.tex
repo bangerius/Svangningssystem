@@ -191,7 +191,7 @@ a = \frac{d^2y(t)}{dt^2} , v = \frac{y(t)}{dt}
 Vilket ger:
 
 \begin{equation}
- m\frac{d^2y(t)}{dt^2} =  -k(l_0 + y(t)) -cm\frac{dy(t)}{dt} + mg +  x(t)
+ m\frac{d^2y(t)}{dt^2} =  -k(l_0 + y(t)) -c\frac{dy(t)}{dt} + mg +  x(t)
 \end{equation}
 
 Vid $t = 0$ så kommer 
@@ -201,7 +201,7 @@ k \cdot l_0 = mg
 
 Vilket ger vår slutgiltiga differentialekvation.
 \begin{equation}
- m\frac{d^2y(t)}{dt^2} + k \cdot y(t)) + cm\frac{dy(t)}{dt} = x(t)
+ m\frac{d^2y(t)}{dt^2} + k \cdot y(t)) + c\frac{dy(t)}{dt} = x(t)
 \end{equation}
 
 \subsection{Linjäritetsbevis}
@@ -209,34 +209,34 @@ Vilket ger vår slutgiltiga differentialekvation.
 För att visa att vårt system är linjärt måste vi visa att det är både homogent och additivt som nämnt tidigare. Om vi antar att insignalen $x_1(t) \rightarrow y_1(t)$ och $x_2(t) \rightarrow y_2(t)$ så gäller att:
 
 \begin{equation}
-m\frac{d^2y_1(t)}{dt^2} + cm\frac{dy_1(t)}{dt} + ky_1(t) = x_1(t)
+m\frac{d^2y_1(t)}{dt^2} + c\frac{dy_1(t)}{dt} + ky_1(t) = x_1(t)
 \end{equation}
 
 \begin{equation}
-m\frac{d^2y_2(t)}{dt^2} + cm\frac{dy_2(t)}{dt} + ky_2(t) = x_2(t)
+m\frac{d^2y_2(t)}{dt^2} + c\frac{dy_2(t)}{dt} + ky_2(t) = x_2(t)
 \end{equation}
 
 
 Om vi då låter insignalen vara $a_1 x_1(t) + a_2 x_2(t)$ där $a_1$ och $a_2$ är reella konstanter så ger det:
 \begin{equation}
-m\frac{d^2y(t)}{dt^2} + cm\frac{dy(t)}{dt} + ky(t) = a_1 x_1(t) + a_2 x_2(t)
+m\frac{d^2y(t)}{dt^2} + c\frac{dy(t)}{dt} + ky(t) = a_1 x_1(t) + a_2 x_2(t)
 \end{equation}
 
 Ekvation 9 och 10 ger:
 
 \begin{multline}
-m\frac{d^2y(t)}{dt^2} + cm\frac{dy(t)}{dt} + ky(t) = \\ a_1(m\frac{d^2y_1(t)}{dt^2} + cm\frac{dy_1(t)}{dt} + ky_1(t)) + a_2(m\frac{d^2y_2(t)}{dt^2} + cm\frac{dy_2(t)}{dt} + ky_2(t))
+m\frac{d^2y(t)}{dt^2} + c\frac{dy(t)}{dt} + ky(t) = \\ a_1(m\frac{d^2y_1(t)}{dt^2} + c\frac{dy_1(t)}{dt} + ky_1(t)) + a_2(m\frac{d^2y_2(t)}{dt^2} + c\frac{dy_2(t)}{dt} + ky_2(t))
 \end{multline}
 
 Högerledet i ekvation 12 kan skrivas:
 
 \begin{equation}
-m\frac{d^2\{a_1y_1(t) + a_2y_2(t)\}}{dt^2} + cm\frac{d\{a_1y_1(t) + a_2y_2(t)\}}{dt} + k\{a_1y_1(t) + a_2y_2(t)\}
+m\frac{d^2\{a_1y_1(t) + a_2y_2(t)\}}{dt^2} + c\frac{d\{a_1y_1(t) + a_2y_2(t)\}}{dt} + k\{a_1y_1(t) + a_2y_2(t)\}
 \end{equation}
 
 Vilket ger:
 \begin{multline}
-m\frac{d^2y(t)}{dt^2} + cm\frac{dy(t)}{dt} + ky(t) = \\ m\frac{d^2\{a_1y_1(t) + a_2y_2(t)\}}{dt^2} + cm\frac{d\{a_1y_1(t) + a_2y_2(t)\}}{dt} + k\{a_1y_1(t) + a_2y_2(t)\}
+m\frac{d^2y(t)}{dt^2} + cm\frac{dy(t)}{dt} + ky(t) = \\ m\frac{d^2\{a_1y_1(t) + a_2y_2(t)\}}{dt^2} + c\frac{d\{a_1y_1(t) + a_2y_2(t)\}}{dt} + k\{a_1y_1(t) + a_2y_2(t)\}
 \end{multline}
 
 Alltså:
@@ -246,6 +246,53 @@ y(t) = a_1 y_1(t) + a_2 y_2(t)
 \end{equation}
 
 Systemet uppfyller således kravet för linjäritet.
+
+\subsection{Systemfunktionen}
+
+Från differentialekvationen kan vi genom laplacetransformering ta fram systemfunktionen $H(s)$.
+
+\begin{multline}
+ m\frac{d^2y(t)}{dt^2} + k \cdot y(t) + c\frac{dy(t)}{dt} = x(t) \\ \leftrightarrow m \cdot s^2 \cdot Y(s) + c \cdot s \cdot Y(s) + k \cdot Y(s) = X(s)
+\end{multline}
+
+Bryter vi ut $Y(s)$ i vänsterledet får vi:
+
+\begin{equation}
+Y(s)(m \cdot s^2 + c \cdot s + k) = X(s)
+\end{equation}
+
+Eftersom $H(s) = \frac{Y(s)}{X(s)}$ så flyttar vi om och får:
+
+\begin{equation}
+H(s) = \frac{Y(s)}{X(s)} = \frac{1}{m\cdot s^2 + c \cdot s + k}
+\end{equation}
+
+Med kvadratkomplettering får vi:
+
+\begin{multline}
+H(s) = \frac{1}{(s+ \frac{c}{2m} + \sqrt{(\frac{c}{2m})^2 - \frac{k}{m}})((s+ \frac{c}{2m} - \sqrt{(\frac{c}{2m})^2 - \frac{k}{m}})}
+\end{multline}
+
+
+\subsection{Impulssvar}
+
+Genom några omskrivningar kan vi uttrycka $H(s)$ som:
+
+\begin{equation}
+H(s) = \frac{1}{m} \cdot \frac{1}{(s+(\frac{c}{2 \cdot m})^2)-(\frac{c^2}{4 \cdot m})+k} 
+\end{equation}
+
+Om vi sätter $\alpha = \frac{c}{2m}$ och $\omega_0^2 = {-\frac{c^2 + 4\cdot k \cdot m}{4 \cdot m}}$ och multiplicerar med $\frac{\omega_0}{\omega_0}$ får vi:
+
+\begin{equation}
+H(s) = \frac{1}{\omega_0 \cdot m} \cdot \frac{\omega_0}{(s + \alpha)^2 +\omega_0^2}
+\end{equation}
+
+Genom att inverslaplacetransformera $H(s)$ får vi impulssvaret $h(t)$. Vi använder tabell 19.23 i Sune Söderkvist formelsamling:
+
+\begin{equation}
+h(t) = \frac{1}{\omega_0 \cdot m} \cdot e^{-\frac{c}{2m}t} \cdot sin(\sqrt{-\frac{c}{2m}t}) \cdot u(t)
+\end{equation}
 
 
 \newpage
