@@ -267,23 +267,23 @@ Eftersom $H(s) = \frac{Y(s)}{X(s)}$ så flyttar vi om och får:
 H(s) = \frac{Y(s)}{X(s)} = \frac{1}{m\cdot s^2 + c \cdot s + k}
 \end{equation}
 
-Med kvadratkomplettering får vi:
+Om vi tar fram rötterna till nämnaren får vi:
 
 \begin{equation}
-H(s)=\frac{1}{(s+ \frac{c}{2m} + \sqrt{(\frac{c}{2m})^2 - \frac{k}{m}})(s+ \frac{c}{2m} - \sqrt{(\frac{c}{2m})^2 - \frac{k}{m}})}
+H(s)= \frac{1}{(s + \frac{c}{2 \cdot m} + \sqrt{ (\frac{c}{2 \cdot m})^2 - \frac{k}{m}}) (s + \frac{c}{2 \cdot m} - \sqrt{ (\frac{c}{2 \cdot m})^2 - \frac{k}{m}})}
 \end{equation}
 
 
 
 \subsection{Impulssvar}
 
-Genom några omskrivningar kan vi uttrycka $H(s)$ som:
+Genom att kvadratkomplettera $H(s)$ får vi:
 
 \begin{equation}
 H(s) = \frac{1}{m} \cdot \frac{1}{(s+(\frac{c}{2 \cdot m}))^2-(\frac{c}{2 \cdot m})^2+k} 
 \end{equation}
 
-Om vi sätter $\alpha = \frac{c}{2m}$ och $\omega_0^2 = {-\frac{c^2 + 4\cdot k \cdot m}{4 \cdot m}}$ och multiplicerar med $\frac{\omega_0}{\omega_0}$ får vi:
+Om vi sätter $\alpha = \frac{c}{2m}$ och $\omega_0^2 = {-\frac{c + 4\cdot k \cdot m^2}{4 \cdot m^2}}$ och multiplicerar med $\frac{\omega_0}{\omega_0}$ får vi:
 
 \begin{equation}
 H(s) = \frac{1}{\omega_0 \cdot m} \cdot \frac{\omega_0}{(s + \alpha)^2 +\omega_0^2}
@@ -292,7 +292,7 @@ H(s) = \frac{1}{\omega_0 \cdot m} \cdot \frac{\omega_0}{(s + \alpha)^2 +\omega_0
 Genom att inverslaplacetransformera $H(s)$ får vi impulssvaret $h(t)$. Vi använder tabell 19.23 i Sune Söderkvist formelsamling:
 
 \begin{multline}
-h(t) = \frac{1}{\omega_0 \cdot m} \cdot e^{-\alpha \cdot t} \cdot sin(\omega_0 \cdot t) \cdot u(t) = \\ \frac{1}{\sqrt{-\frac{c^2 + 4\cdot k \cdot m}{4 \cdot m}} \cdot m} \cdot e^{-\frac{c}{2m} \cdot t} \cdot sin(\sqrt{-\frac{c^2 + 4\cdot k \cdot m}{4 \cdot m}} \cdot t) \cdot u(t)
+h(t) = \frac{1}{\omega_0 \cdot m} \cdot e^{-\alpha \cdot t} \cdot sin(\omega_0 \cdot t) \cdot u(t) = \\ \frac{1}{\sqrt{\frac{4 \cdot m \cdot k - c^2}{4}} }  \cdot e^{-\frac{c}{2m} \cdot t} \cdot sin(\sqrt{\frac{4 \cdot m \cdot k - c^2}{4 \cdot m^2}} \cdot t) \cdot u(t)
 \end{multline}
 
 
