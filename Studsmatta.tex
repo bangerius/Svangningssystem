@@ -269,9 +269,10 @@ H(s) = \frac{Y(s)}{X(s)} = \frac{1}{m\cdot s^2 + c \cdot s + k}
 
 Med kvadratkomplettering får vi:
 
-\begin{multline}
-H(s) = \frac{1}{(s+ \frac{c}{2m} + \sqrt{(\frac{c}{2m})^2 - \frac{k}{m}})((s+ \frac{c}{2m} - \sqrt{(\frac{c}{2m})^2 - \frac{k}{m}})}
-\end{multline}
+\begin{equation}
+H(s)=\frac{1}{(s+ \frac{c}{2m} + \sqrt{(\frac{c}{2m})^2 - \frac{k}{m}})(s+ \frac{c}{2m} - \sqrt{(\frac{c}{2m})^2 - \frac{k}{m}})}
+\end{equation}
+
 
 
 \subsection{Impulssvar}
@@ -290,9 +291,9 @@ H(s) = \frac{1}{\omega_0 \cdot m} \cdot \frac{\omega_0}{(s + \alpha)^2 +\omega_0
 
 Genom att inverslaplacetransformera $H(s)$ får vi impulssvaret $h(t)$. Vi använder tabell 19.23 i Sune Söderkvist formelsamling:
 
-\begin{equation}
-h(t) = \frac{1}{\omega_0 \cdot m} \cdot e^{-\frac{c}{2m}t} \cdot sin(\sqrt{-\frac{c}{2m}t}) \cdot u(t)
-\end{equation}
+\begin{multline}
+h(t) = \frac{1}{\omega_0 \cdot m} \cdot e^{-\alpha \cdot t} \cdot sin(\omega_0 \cdot t) \cdot u(t) = \\ \frac{1}{\sqrt{-\frac{c^2 + 4\cdot k \cdot m}{4 \cdot m}} \cdot m} \cdot e^{-\frac{c}{2m} \cdot t} \cdot sin(\sqrt{-\frac{c^2 + 4\cdot k \cdot m}{4 \cdot m}} \cdot t) \cdot u(t)
+\end{multline}
 
 
 \newpage
