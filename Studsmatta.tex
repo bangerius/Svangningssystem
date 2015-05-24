@@ -273,14 +273,45 @@ Om vi tar fram rötterna till nämnaren får vi:
 H(s)= \frac{1}{(s + \frac{c}{2 \cdot m} + \sqrt{ (\frac{c}{2 \cdot m})^2 - \frac{k}{m}}) (s + \frac{c}{2 \cdot m} - \sqrt{ (\frac{c}{2 \cdot m})^2 - \frac{k}{m}})}
 \end{equation}
 
-Poler produceras där nämnarpolynomet har sina rötter. Vi har tre distinkt olika sätt som våra poler kan placera sig på enligt följande:
+Poler produceras där nämnarpolynomet har sina rötter.
 
 \begin{equation}
-S_{rötter}=-\frac{c}{2m} \pm \sqrt{(\frac{c}{2m})^2-\frac{k}{m}}
+S_{rot}=-\frac{c}{2m} \pm \sqrt{(\frac{c}{2m})^2-\frac{k}{m}}
 \end{equation}
 
-Vi ser att vi antingen kan få två komplexa rötter, en reell dubbelrot, eller två reella rötter.
-S är en dubbelpol om $\sqrt{(\frac{c}{2m})^2-\frac{k}{m}}=0$
+Vi ser att vi antingen kan få två komplexa rötter, en reell dubbelrot, eller två reella rötter. Vi har alltså tre distinkt olika sätt som våra poler kan placera sig på enligt följande:
+\begin{itemize}
+
+\item $H(s)$ har en dubbelrot om $\sqrt{(\frac{c}{2m})^2-\frac{k}{m}}=0$ (Då är $S_{rot}=-\frac{c}{2m}$)
+
+
+\item $H(s)$ har två rella rötter om $0\neq\sqrt{(\frac{c}{2m})^2-\frac{k}{m}}\in \mathbb{R}$ \newline d.v.s. om $(\frac{c}{2m})^2-\frac{k}{m}>0$
+
+
+\item $H(s)$ har två komplexa rötter om $\sqrt{(\frac{c}{2m})^2-\frac{k}{m}}\notin \mathbb{R}$ \newline d.v.s. om $(\frac{c}{2m})^2-\frac{k}{m}<0$
+
+
+
+\end{itemize}
+
+Detta kan förenklas till
+
+\begin{itemize}
+\item Dubbelpol $S_{rot}=-\frac{c}{2m}$ om $k=\frac{c^2}{4m}$
+\begin{center}
+\includegraphics[scale=0.3]{1reell}
+\end{center}
+\item Två reella poler om $k<\frac{c^2}{4m}$
+\begin{center}
+\includegraphics[scale=0.3]{2reella}
+\end{center}
+\item Två komplexa poler om $k>\frac{c^2}{4m}$
+\begin{center}
+\includegraphics[scale=0.3]{2komplexa}
+\end{center}
+\end{itemize}
+
+I vårt fall (studsmatta) vill vi gärna skapa så hög amplitud ut som möjligt. Mycket svängning och lite dämpning. Detta återfinns i det tredje fallet (två komplexa rötter) och brukar kallas för ett underdämpat system. Detta visualiseras grafiskt i form av ett amplitudspektrum i figur XXX. Nedan ses ett pol/nollställe-diagram över vårt system med följande konstanter insatta $k=1000\frac{N}{m}$ , $m=70kg$ , $c=100\frac{kg}{s}$.
 
 \includegraphics[scale=0.5]{nolpol-diagram}
 
