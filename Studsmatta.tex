@@ -204,6 +204,9 @@ Vilket ger vår slutgiltiga differentialekvation.
  m\frac{d^2y(t)}{dt^2} + k \cdot y(t)) + c\frac{dy(t)}{dt} = x(t)
 \end{equation}
 
+
+\section{Systemegenskaper}
+
 \subsection{Linjäritetsbevis}
 
 För att visa att vårt system är linjärt måste vi visa att det är både homogent och additivt som nämnt tidigare. Om vi antar att insignalen $x_1(t) \rightarrow y_1(t)$ och $x_2(t) \rightarrow y_2(t)$ så gäller att:
@@ -246,6 +249,10 @@ y(t) = a_1 y_1(t) + a_2 y_2(t)
 \end{equation}
 
 Systemet uppfyller således kravet för linjäritet.
+
+
+
+
 
 \subsection{Systemfunktionen}
 
@@ -311,9 +318,17 @@ Detta kan förenklas till
 \end{center}
 \end{itemize}
 
-I vårt fall (studsmatta) vill vi gärna skapa så hög amplitud ut som möjligt. Mycket svängning och lite dämpning. Detta återfinns i det tredje fallet (två komplexa rötter) och brukar kallas för ett underdämpat system. Detta visualiseras grafiskt i form av ett amplitudspektrum i figur XXX. Nedan ses ett pol/nollställe-diagram över vårt system med följande konstanter insatta $k=1000\frac{N}{m}$ , $m=70kg$ , $c=100\frac{kg}{s}$.
+I vårt fall (studsmatta) vill vi gärna skapa så hög amplitud ut som möjligt. Mycket svängning och lite dämpning. Detta återfinns i det tredje fallet (två komplexa rötter) och brukar kallas för ett underdämpat system. Detta visualiseras grafiskt i form av ett amplitudkaraktäristik i figur XXX. Nedan ses ett pol/nollställe-diagram över vårt system med följande konstanter insatta $k=1000\frac{N}{m}$ , $m=70kg$ , $c=100\frac{kg}{s}$.
 
 \includegraphics[scale=0.5]{nolpol-diagram}
+
+\subsection{Amplitud- och fas-karaktäristik}
+
+\includegraphics[scale=0.5]{FasAmpKar}
+
+\includegraphics[scale=0.5]{BodePlot(FasAmpKar)}
+
+
 
 \subsection{Impulssvar}
 
@@ -334,6 +349,9 @@ Genom att inverslaplacetransformera $H(s)$ får vi impulssvaret $h(t)$. Vi anvä
 \begin{multline}
 h(t) = \frac{1}{\omega_0 \cdot m} \cdot e^{-\alpha \cdot t} \cdot sin(\omega_0 \cdot t) \cdot u(t) = \\ \frac{1}{\sqrt{\frac{4 \cdot m \cdot k - c^2}{4}} }  \cdot e^{-\frac{c}{2m} \cdot t} \cdot sin(\sqrt{\frac{4 \cdot m \cdot k - c^2}{4 \cdot m^2}} \cdot t) \cdot u(t)
 \end{multline}
+
+\includegraphics[scale=0.5]{Impulssvar}
+
 
 \subsection{Stegsvar}
 
@@ -367,6 +385,7 @@ Vi stoppar ni in de konstanter vi bröt ut ur integralen innan för att få steg
 g(\tau)= \frac{1}{\omega_ \cdot m} \cdot I = \frac{1-cos(\omega_o \cdot \tau) \cdot e^{\alpha \cdot \tau} - \frac{\alpha}{\omega_0^2} \cdot sin(\omega_o \cdot \tau) \cdot e^{\alpha \cdot \tau}}{m\cdot (\omega_0^2 + \alpha^2)}
 \end{equation}
 
+\includegraphics[scale=0.5]{Stegsvar}
 
 \subsection{Stabilitetsbevis}
 För att vår idealisering skall vara representativ för vår studsmatta måste systemet vara stabilt. I grund och botten betyder detta att vårt system måste läcka energi. Detta stämmer om vårt 
