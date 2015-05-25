@@ -335,6 +335,39 @@ Genom att inverslaplacetransformera $H(s)$ får vi impulssvaret $h(t)$. Vi anvä
 h(t) = \frac{1}{\omega_0 \cdot m} \cdot e^{-\alpha \cdot t} \cdot sin(\omega_0 \cdot t) \cdot u(t) = \\ \frac{1}{\sqrt{\frac{4 \cdot m \cdot k - c^2}{4}} }  \cdot e^{-\frac{c}{2m} \cdot t} \cdot sin(\sqrt{\frac{4 \cdot m \cdot k - c^2}{4 \cdot m^2}} \cdot t) \cdot u(t)
 \end{multline}
 
+\subsection{Stegsvar}
+
+Vi vill ta fram stegsvaret $g(t)$ för vårt system. Vi gör detta genom att integrera vårt impulssvar upp till tiden tau $\int_{-\infty}^\tau h(t)$. Vi börjar med att bryta ut våra konstanter utanför integralen. Vi räknar sedan ut integralen och till sist stoppar vi in konstanterna igen.
+
+\begin{equation}
+\int_{-\infty}^\tau \frac{1} {\omega_0 \cdot m} \cdot e^{-\alpha \cdot t} \cdot sin(\omega_0 \cdot t) \cdot u(t) dt = \frac{1}{\omega_0 \cdot m} \int_{-\infty}^\tau sin(\omega_0 \cdot t)\cdot e^{-\alpha \cdot t} u(t) dt
+\end{equation}
+Vi kan dela upp inegralen i två integraler. Den ena för negativa t den andra för positiva t.
+$$ \int_{-\infty}^\tau sin(\omega_0 \cdot t)\cdot e^{-\alpha \cdot t} u(t) dt
+= \int_{-\infty}^0 sin(\omega_0 \cdot t)\cdot e^{-\alpha \cdot t} u(t) dt + \int_0^\tau sin(\omega_0 \cdot t)\cdot e^{-\alpha \cdot t} u(t) dt $$
+Eftersom u(t) är 0 för negativa t och 1 för positiva t så kan vi skriva om integralen enligt nedan
+\begin{equation}
+\int_{-\infty}^\tau sin(\omega_0 \cdot t)\cdot e^{-\alpha \cdot t} u(t) dt
+= \int_0^\tau sin(\omega_0 \cdot t)\cdot e^{-\alpha \cdot t} dt
+\end{equation}
+
+Vi låter integralen heta $I$ och räknar ut den.
+
+\begin{multline} I = \int_0^\tau sin(\omega_0 \cdot t)\cdot e^{-\alpha \cdot t} dt 
+= [-\frac{1}{\omega_0} cos(\omega_0 \cdot t) \cdot e^{-\alpha \cdot t}]_0^\tau - \int_0^\tau \frac{\alpha}{\omega_0} \cdot cos(\omega_0 \cdot t) \cdot e^{-\alpha \cdot t} dt \\
+ = [-\frac{1}{\omega_0} cos(\omega_0 \cdot t) \cdot e^{-\alpha \cdot t}]_0^\tau - \frac{\alpha}{\omega_0} \cdot ([\frac{1}{\omega_0} sin(\omega_0 \cdot t) \cdot e^{-\alpha \cdot t}]_0^\tau - \int_0^\tau -\frac{\alpha}{\omega_0} \cdot sin(\omega_0 \cdot t)\cdot e^{-\alpha \cdot t} dt \\
+\leftrightarrow
+I = [-\frac{1}{\omega_0} cos(\omega_0 \cdot t) \cdot e^{-\alpha \cdot t}]_0^\tau - \frac{\alpha}{\omega_0} \cdot ([\frac{1}{\omega_0} sin(\omega_0 \cdot t) \cdot e^{-\alpha \cdot t}]_0^\tau - (\frac{\alpha}{\omega_0})^2 \cdot I \\
+\leftrightarrow I = \frac{1-cos(\omega_o \cdot \tau) \cdot e^{\alpha \cdot \tau} - \frac{\alpha}{\omega_0^2} \cdot sin(\omega_o \cdot \tau) \cdot e^{\alpha \cdot \tau}}{\omega_0 + \frac{\alpha^2}{\omega_0}}
+\end{multline}
+
+Vi stoppar ni in de konstanter vi bröt ut ur integralen innan för att få stegsvaret
+
+\begin{equation}
+g(\tau)= \frac{1}{\omega_ \cdot m} \cdot I = \frac{1-cos(\omega_o \cdot \tau) \cdot e^{\alpha \cdot \tau} - \frac{\alpha}{\omega_0^2} \cdot sin(\omega_o \cdot \tau) \cdot e^{\alpha \cdot \tau}}{m\cdot (\omega_0^2 + \alpha^2)}
+\end{equation}
+
+
 \subsection{Stabilitetsbevis}
 För att vår idealisering skall vara representativ för vår studsmatta måste systemet vara stabilt. I grund och botten betyder detta att vårt system måste läcka energi. Detta stämmer om vårt 
 
