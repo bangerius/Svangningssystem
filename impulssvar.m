@@ -1,5 +1,5 @@
 function impulssvar()
-c=100;
+c=50;
 k=1000;
 m=70;
 
