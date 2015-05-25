@@ -51,11 +51,11 @@ Vi har i denna rapport valt att modellera en person som hoppar på en studsmatta
 
 \subsection{Linjärt system}
 
-Om vi antar att vi har ett system har insignal $x(t)$ och utsignal $y(t)$ så är vanlig notation att beteckna systemet med $x(t) \rightarrow y(t)$. Detta system kan ha flera egenskaper, men en vanlig egenskap som vi kännetecknar vårt svängande system är linjäritet. För att ett system ska vara linjärt måste det uppfylla två krav. Systemet måste dels vara additivt, d.v.s. uppfylla ekvationen
+Om vi antar att vi har ett system har insignal $x(t)$ och utsignal $y(t)$ så är vanlig notation att beteckna systemet med $x(t) \rightarrow y(t)$. Detta system kan ha flera egenskaper, men en vanlig egenskap som kännetecknar vårt svängande system är linjäritet. För att ett system ska vara linjärt måste det uppfylla två krav. Systemet måste dels vara homogent, d.v.s. uppfylla ekvationen
 \begin{equation}
 a \cdot x(t) \rightarrow a \cdot y(t) 
 \end{equation}
-Systemet måste också vara homogent, d.v.s. uppfylla ekvationen
+Systemet måste också vara additivt, d.v.s. uppfylla ekvationen
 \begin{equation}
 x(t) = x_1(t) + x_2(t) \rightarrow y(t) = y_1(t) + y_2(t)
 \end{equation}
@@ -382,7 +382,12 @@ Det finns en stor mängd mindre relevanta skillnader mellan en värklig studsmat
 En studsmatta är konstruerad så att den släpper igenom så mycket luft som möjligt när den rör på sig. Men att man måste flytta på luft och att det skapar luftmotstånd kommer man inte ifrån. Detta är en relevant skillnad mellan det mer komplexa fallet av en riktig studsmatta och vår modell. Man kan dock mycket smidigt säga att luftmotståndet bidrar till dämpningen eftersom att det decelererar mattan. I värkligheten kommer den inte att göra detta linjärt men det kan vi se som en mindre avvikelse och säga att luftmotståndet till det stora tas hansyn av med vår dämpningskonstant.
 
 Den förmodligen mest relevanta skillnaden mellan vår modell och en riktig studsmatta är att när man hoppar på en riktig studsmatta så lämnar man mattan med sin kropp och flyger upp i luften för att sedan landa på mattan igen. Detta betyder att fjäderkraften inte drar tillbaka massan mot marken utan bara drar den uppåt medan gravitationskraften är den enda externa kraften som drar ner massan till studsmattan igen. I vår modell därimot så modellerar vi det som att en person står med fötterna fastspända på mattan, det betyder att fjäderkraften kommer att dra med en kraft neråt på massan då vi är åvanför vårt jämnviktsläge.
-Vidare så med en riktig studsmatta hinner i princip vid höga hopp en studsmatta gå tillbaka till sitt jämnviktsläge utan någon massa på mattan medans hopparen är i luften, för att sedan påverkar av en mycket stor kraft när denna landar. Så funkar inte våran modell
+
+Vidare så med en riktig studsmatta hinner i princip vid höga hopp en studsmatta gå tillbaka till sitt jämnviktsläge utan någon massa på mattan medans hopparen är i luften, för att sedan påverkar av en mycket stor kraft när denna landar. Så funkar inte våran modell.
+
+Detta har flertalet efterverkningar på vårt system, en av de större effekterna är att vi får en annan resonansfrekvens än vad som skulle vara fallet när man hoppar på en riktig studsmatta. Vi kan se att resonansfrekvensen vi får fram för vårt system är högre än frekvensen hos en person som hoppar på en studsmatta vilket då är rimligt pga att vi har den extra fjäderkraften som drar ner studsmattan mot marken igen och som ökar frekvensen.
+
+
 
 \newpage
 
