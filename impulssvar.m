@@ -1,6 +1,6 @@
 function impulssvar()
-c=50;
-k=1000;
+c=100;
+k=2000;
 m=70;
 
 t = linspace(0,10,1000);
