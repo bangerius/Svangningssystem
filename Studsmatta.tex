@@ -382,7 +382,20 @@ I = [-\frac{1}{\omega_0} cos(\omega_0 \cdot t) \cdot e^{-\alpha \cdot t}]_0^\tau
 Vi stoppar ni in de konstanter vi bröt ut ur integralen innan för att få stegsvaret
 
 \begin{equation}
-g(\tau)= \frac{1}{\omega_ \cdot m} \cdot I = \frac{1-cos(\omega_o \cdot \tau) \cdot e^{\alpha \cdot \tau} - \frac{\alpha}{\omega_0^2} \cdot sin(\omega_o \cdot \tau) \cdot e^{\alpha \cdot \tau}}{m\cdot (\omega_0^2 + \alpha^2)}
+g(\tau)= \frac{1}{\omega_ \cdot m} \cdot I = \frac{1-cos(\omega_o \cdot \tau) \cdot e^{-\alpha \cdot \tau} - \frac{\alpha}{\omega_0^2} \cdot sin(\omega_o \cdot \tau) \cdot e^{-\alpha \cdot \tau}}{m\cdot (\omega_0^2 + \alpha^2)}
+\end{equation}
+
+Om vi låter tau vara $\infty$ får vi
+
+\begin{equation}
+g(\infty) = \frac{1 - cos(\omega_0 \cdot \infty) \cdot e^{-\alpha \cdot \infty}
+- \frac{\alpha}{\omega_0^2} \cdot sin(\omega_0 \cdot \infty) \cdot e^{-\alpha \cdot \infty}}{m \cdot (\omega_o^2 +\alpha^2)}
+\end{equation}
+
+Vi kan se att $e^{-\alpha \cdot \infty} = 0$ vilket ger
+
+\begin{equation}
+g(\infty) = \frac{1}{m \cdot (\omega_o^2 +\alpha^2)}
 \end{equation}
 
 \includegraphics[scale=0.5]{Stegsvar}
