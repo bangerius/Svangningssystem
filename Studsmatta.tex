@@ -401,7 +401,24 @@ g(\infty) = \frac{1}{m \cdot (\omega_o^2 +\alpha^2)}
 \includegraphics[scale=0.5]{Stegsvar}
 
 \subsection{Stabilitetsbevis}
-För att vår idealisering skall vara representativ för vår studsmatta måste systemet vara stabilt. I grund och botten betyder detta att vårt system måste läcka energi. Detta stämmer om vårt 
+För att vår idealisering skall vara representativ för vår studsmatta måste systemet vara stabilt. I grund och botten betyder detta att vårt system ej får tillföra mer energi än vad som läcker ut. Detta stämmer om den tillryggalagda sträckan är begränsad efter en impuls. Sträckan fås genom att absolutintegrera impulssvaret i tidsdomänen (stabilitet om $\int_{-\infty}^{\infty}|h(t)|dt\in \mathbb{R}$ ). Nedan följer stabilitetsbevis för tre olika fall:
+\begin{multline}
+I_{impuls}=\int_{-\infty}^{\infty}| \frac{1}{\sqrt{\frac{4 \cdot m \cdot k - c^2}{4}} }  \cdot e^{-\frac{c}{2m} \cdot t} \cdot sin(\sqrt{\frac{4 \cdot m \cdot k - c^2}{4 \cdot m^2}} \cdot t) \cdot u(t)|=\\ \frac{1}{\sqrt{\frac{4 \cdot m \cdot k - c^2}{4}} }  \cdot \int_{0}^{\infty}|e^{-\frac{c}{2m} \cdot t}| \cdot |sin(\sqrt{\frac{4 \cdot m \cdot k - c^2}{4 \cdot m^2}} \cdot t)|
+\end{multline}
+Förenklingar för att göra beviset mer lättläsligt:
+\begin{itemize}
+\item $\omega_0=\sqrt{\frac{4 \cdot m \cdot k - c^2}{4 \cdot m^2}}$
+\item $\alpha=\frac{c}{2\cdot m}$
+\item $\omega_1=-i\cdot \omega_0$
+\end{itemize}
+\begin{multline}
+I_{impuls}=\frac{1}{\omega_0 \cdot m}
+\end{multline}
+
+\begin{itemize}
+\item fallet $k>\frac{c^2}{4m}$ (underdämpat system)
+
+\end{itemize}
 
 
 \section{Diskussion}
@@ -415,7 +432,7 @@ En studsmatta är konstruerad så att den släpper igenom så mycket luft som m�
 
 Den förmodligen mest relevanta skillnaden mellan vår modell och en riktig studsmatta är att när man hoppar på en riktig studsmatta så lämnar man mattan med sin kropp och flyger upp i luften för att sedan landa på mattan igen. Detta betyder att fjäderkraften inte drar tillbaka massan mot marken utan bara drar den uppåt medan gravitationskraften är den enda externa kraften som drar ner massan till studsmattan igen. I vår modell därimot så modellerar vi det som att en person står med fötterna fastspända på mattan, det betyder att fjäderkraften kommer att dra med en kraft neråt på massan då vi är åvanför vårt jämnviktsläge.
 
-Vidare så med en riktig studsmatta hinner i princip vid höga hopp en studsmatta gå tillbaka till sitt jämnviktsläge utan någon massa på mattan medans hopparen är i luften, för att sedan påverkar av en mycket stor kraft när denna landar. Så funkar inte våran modell.
+Vidare så med en riktig studsmatta hinner i princip vid höga hopp en studsmatta gå tillbaka till sitt jämnviktsläge utan någon massa på mattan medans hopparen är i luften, för att sedan påverkar av en mycket stor kraft när denna landar. Så funkar inte vår modell.
 
 Detta har flertalet efterverkningar på vårt system, en av de större effekterna är att vi får en annan resonansfrekvens än vad som skulle vara fallet när man hoppar på en riktig studsmatta. Vi kan se att resonansfrekvensen vi får fram för vårt system är högre än frekvensen hos en person som hoppar på en studsmatta vilket då är rimligt pga att vi har den extra fjäderkraften som drar ner studsmattan mot marken igen och som ökar frekvensen.
 
