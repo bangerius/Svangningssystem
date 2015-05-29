@@ -36,10 +36,10 @@
 \pagenumbering{arabic}
 \setcounter{page}{3}
 
-I den här rapporten kommer vi beskriva när en person sätter en studsmatta i rörelse som ett linjärt svängningssystem av andra ordningen. Inom det här systemet är det kraften som personen trycker med när hen sträcker ut eller böjer på benen som är insignalen, vilket resulterar i utsignalen som är studsmattans lägesändring ifrån sitt jämviktsläge. Genom att beskriva systemet med en differentialekvation av andra graden kan vi få information om systemets egenskaper och dess beteende för olika insignaler. Med andra ord hur olika faktorer påvärkar utsignalen.
+I den här rapporten kommer vi beskriva när en person sätter en studsmatta i rörelse som ett linjärt svängningssystem av andra ordningen. Inom det här systemet är det kraften som personen trycker med när den sträcker ut eller böjer på benen som är insignalen, vilket resulterar i utsignalen som är studsmattans lägesändring ifrån sitt jämviktsläge. Genom att beskriva systemet med en differentialekvation av andra graden kan vi få information om systemets egenskaper och dess beteende för olika insignaler. Med andra ord hur olika faktorer påverkar utsignalen.
 
 \subsection{Syfte}
-Syftet med den här rapporten är att utöka vår förståelse för hur linjära system fungerar och att få en uppfattning om hur den teorin vi lärt oss kan tillämpas i praktiken. Det är vår förhoppning att vi kan upnå denna förståelse genom att modellera en studsmatta som ett linjärt system och analysera systemet.
+Syftet med den här rapporten är att utöka vår förståelse för hur linjära system fungerar och att få en uppfattning om hur den teorin vi lärt oss kan tillämpas i praktiken. Det är vår förhoppning att vi kan uppnå denna förståelse genom att modellera en studsmatta som ett linjärt system och analysera systemet.
 
 \subsection{Mål}
 Målet med vår rapport är att förstå hur ett linjärt system kan fungera och påverkas, alltså hur insignalen till systemet kan ändras för att få utsignalen att bete sig på ett visst sätt. Ett exempel är hur insignalen kan påverkas för att få största möjliga utsignal, med andra ord att kunna hoppa så högt som möjligt på en studsmatta.
@@ -87,10 +87,10 @@ Ett system med insignal $x(t)$ och utsignal $y(t)$ sägs vara tidsinvariant om i
 \end{center}
 \end{figure}
 
-Figur 1 ger en mycket enkel överblick av vårt system. Studsmattan är helt cirkulär och har fjädrar som sitter radiellt från kanten riktade in mot mitten symmetriskt runt om hela cirkeln. Vi gör antagandet att personen som hoppar står precis i mattans mitt med fötterna tätt ihop. Mattan är fäst vid personens fötter, så i själva verket hoppar hen inte utan gungar bara upp och ned genom att böja på benen.
+Figur 1 ger en mycket enkel överblick av vårt system. Studsmattan är helt cirkulär och har fjädrar som sitter radiellt från kanten riktade in mot mitten symmetriskt runt om hela cirkeln. Vi gör antagandet att personen som hoppar står precis i mattans mitt med fötterna tätt ihop. Mattan är fäst vid personens fötter, så i själva verket hoppar personen inte utan gungar bara upp och ned genom att böja på benen.
 
 \subsection{Idealisering}
-För att inte behöva räkna på varje individuell fjäder har vi valt att modellera systemet som en enkel fjäder riktad vinkelrät mot markytan. Varför vi kan göra detta redovisas nedan:
+För att inte behöva räkna på varje individuell fjäder har vi valt att modellera systemet som \textit{en} enkel fjäder riktad vinkelrät mot markytan. Varför detta kan göras redovisas nedan:
 
 \begin{figure}[ht]
 \begin{center}
@@ -98,7 +98,7 @@ För att inte behöva räkna på varje individuell fjäder har vi valt att model
 \caption{En genomskärning från sidan}
 \end{center}
 \end{figure}
-I figuren ses höjden $h$ samt vinkeln $v$. $h$ representerar höjdskilnaden från läget då mattan är helt platt. $v$ är vinkeln på fjädern med avseende på nyss nämnda läge.
+I figuren ses höjden $h$ samt vinkeln $v$. $h$ representerar höjdskilnaden från jämviktsläget då mattan är helt platt. $v$ är vinkeln på fjädern med avseende på nyss nämnda läge.
 I och med att det för varje fjäder sitter en annan fjäder på motsatt sida studsmattan (enligt figur 3) kan vi modellera fjäderkrafterna som i figur 4.
 \begin{figure}[ht]
 \begin{center}
@@ -140,7 +140,7 @@ $$\Delta h = \Delta l \sin(v) \rightarrow F_{tot}=2k\Delta l \sin(v)=2k\Delta h\
 \end{center}
 \end{figure}
 
-Vi kan alltså modellera vår studsmatta som en enkel fjäder som står på marken under den "gungande" personens fötter.
+Vi kan alltså modellera vår studsmatta som en enkel fjäder som står på marken under den \emph{gungande} personens fötter.
 Insignalen i vårt system blir alltså kraften som den gungande personen utför på systemet då denne böjer eller sträcker på benen. Utsignalen i systemet definieras som mattans ändring i höjdled med referenspunkt i jämviktsläget på studsmattan. 
 %Jämviktsläget varierar i höjd beroende på massan som står på mattan.
 %Uppdatera till att matcha den slutliga referensbilden
@@ -227,9 +227,11 @@ m\frac{d^2y(t)}{dt^2} + c\frac{dy(t)}{dt} + ky(t) = a_1 x_1(t) + a_2 x_2(t)
 
 Ekvation 9 och 10 ger:
 
-\begin{multline}
-m\frac{d^2y(t)}{dt^2} + c\frac{dy(t)}{dt} + ky(t) = \\ a_1(m\frac{d^2y_1(t)}{dt^2} + c\frac{dy_1(t)}{dt} + ky_1(t)) + a_2(m\frac{d^2y_2(t)}{dt^2} + c\frac{dy_2(t)}{dt} + ky_2(t))
-\end{multline}
+\begin{equation}
+\begin{split}
+m\frac{d^2y(t)}{dt^2} + & c\frac{dy(t)}{dt} + ky(t) = \\ = a_1(m\frac{d^2y_1(t)}{dt^2} + c\frac{dy_1(t)}{dt} +  ky_1(t)) & + a_2(m\frac{d^2y_2(t)}{dt^2} + c\frac{dy_2(t)}{dt} + ky_2(t))
+\end{split}
+\end{equation}
 
 Högerledet i ekvation 12 kan skrivas:
 
@@ -238,9 +240,11 @@ m\frac{d^2\{a_1y_1(t) + a_2y_2(t)\}}{dt^2} + c\frac{d\{a_1y_1(t) + a_2y_2(t)\}}{
 \end{equation}
 
 Vilket ger:
-\begin{multline}
-m\frac{d^2y(t)}{dt^2} + cm\frac{dy(t)}{dt} + ky(t) = \\ m\frac{d^2\{a_1y_1(t) + a_2y_2(t)\}}{dt^2} + c\frac{d\{a_1y_1(t) + a_2y_2(t)\}}{dt} + k\{a_1y_1(t) + a_2y_2(t)\}
-\end{multline}
+\begin{equation}
+\begin{split}
+m\frac{d^2y(t)}{dt^2} +  cm\frac{dy(t)}{dt} + ky(t) = & \\ = m\frac{d^2\{a_1y_1(t) + a_2y_2(t)\}}{dt^2} + c\frac{d\{a_1y_1(t) + a_2y_2(t)\}}{dt} + & k\{a_1y_1(t) + a_2y_2(t)\}
+\end{split}
+\end{equation}
 
 Alltså:
 
@@ -258,9 +262,11 @@ Systemet uppfyller således kravet för linjäritet.
 
 Från differentialekvationen kan vi genom laplacetransformering ta fram systemfunktionen $H(s)$.
 
-\begin{multline}
- m\frac{d^2y(t)}{dt^2} + k \cdot y(t) + c\frac{dy(t)}{dt} = x(t) \\ \leftrightarrow m \cdot s^2 \cdot Y(s) + c \cdot s \cdot Y(s) + k \cdot Y(s) = X(s)
-\end{multline}
+\begin{equation}
+\begin{split}
+ m\frac{d^2y(t)}{dt^2} + k \cdot y(t) + c\frac{dy(t)}{dt} & = x(t) \\ \leftrightarrow m \cdot s^2 \cdot Y(s) + c \cdot s \cdot Y(s) + k \cdot Y(s) & = X(s)
+\end{split}
+\end{equation}
 
 Bryter vi ut $Y(s)$ i vänsterledet får vi:
 
@@ -323,7 +329,11 @@ Detta kan förenklas till (figur 7-9):
 \end{figure}
 \newpage
 
-I vårt fall (studsmatta) vill vi gärna skapa så hög amplitud ut som möjligt. Mycket svängning och lite dämpning. Detta återfinns i det tredje fallet (två komplexa rötter) och brukar kallas för ett underdämpat system. Detta visualiseras grafiskt i form av ett amplitudkaraktäristik i figur XXX. Nedan ses ett pol/nollställe-diagram över vårt system med följande konstanter insatta $k=1000\frac{N}{m}$ , $m=70kg$ , $c=100\frac{kg}{s}$.
+<<<<<<< HEAD
+I vårt fall med studsmattan vill vi skapa en så hög amplitud ut som möjligt, med mycket svängning och lite dämpning. Detta scenario återfinns i det tredje fallet med två komplexa rötter och brukar kallas för ett underdämpat system. Detta visualiseras grafiskt i form av ett amplitudkaraktäristik i figur 12. Nedan ses ett pol/nollställe-diagram över vårt system med följande konstanter insatta $k=1000\frac{N}{m}$ , $m=70kg$ , $c=100\frac{kg}{s}$.
+=======
+I vårt fall (studsmatta) vill vi gärna skapa så hög amplitud ut som möjligt. Mycket svängning och lite dämpning. Detta återfinns i det tredje fallet (två komplexa rötter) och brukar kallas för ett underdämpat system. Detta visualiseras grafiskt i form av ett amplitudkaraktäristik i figur XXX. Nedan ses ett pol/nollställe-diagram över vårt system med följande konstanter insatta $k=2000\frac{N}{m}$ , $m=70kg$ , $c=100\frac{kg}{s}$.
+>>>>>>> origin/master
 
 
 \begin{figure}[h]
@@ -337,8 +347,9 @@ I vårt fall (studsmatta) vill vi gärna skapa så hög amplitud ut som möjligt
 
 \subsection{Amplitud- och fas-karaktäristik}
 
+Amplitudkaraktäristik och faskaraktäristik beskriver hur impulssvarets amplitud och fasförskjutning påverkas av insignalens frekvens.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis mauris eget ex eleifend tempor. Cras varius blandit tellus, vel accumsan mauris laoreet ac. Donec vel tortor eget velit sodales aliquam. Etiam pharetra efficitur libero euismod condimentum. Cras id aliquet urna. Integer blandit lacus lectus, id viverra augue suscipit non. Phasellus feugiat lorem vitae varius congue. Ut placerat enim turpis, nec dictum lectus elementum sed. Integer vehicula suscipit nulla, ut tincidunt neque. Integer sagittis fermentum ex, a porttitor sem congue et. Ut arcu risus, placerat at molestie dictum, elementum suscipit tellus. Pellentesque nec justo lacus. Suspendisse sagittis, neque et placerat scelerisque, eros diam gravida nulla, sed placerat purus leo sed mi. Nulla vestibulum metus at quam scelerisque tincidunt. Nunc convallis aliquam lacus, nec ornare tortor accumsan eu. Aenean non enim felis.
+För att ta fram amplitudkaraktäristiken tar man absolutbeloppet av systemets frekvenssvar, d.v.s. $|H(\omega)|$. Faskaraktäristiken får man genom att ta argumentet av frekvesnsvaret, $arg(H(\omega))$. 
 
 \begin{figure}[h]
 \begin{center}
@@ -376,9 +387,13 @@ H(s) = \frac{1}{\omega_0 \cdot m} \cdot \frac{\omega_0}{(s + \alpha)^2 +\omega_0
 
 Genom att inverslaplacetransformera $H(s)$ får vi impulssvaret $h(t)$. Vi använder tabell 19.23 i Sune Söderkvist formelsamling:
 
-\begin{multline}
-h(t) = \frac{1}{\omega_0 \cdot m} \cdot e^{-\alpha \cdot t} \cdot sin(\omega_0 \cdot t) \cdot u(t) = \\ \frac{1}{\sqrt{\frac{4 \cdot m \cdot k - c^2}{4}} }  \cdot e^{-\frac{c}{2m} \cdot t} \cdot sin(\sqrt{\frac{4 \cdot m \cdot k - c^2}{4 \cdot m^2}} \cdot t) \cdot u(t)
-\end{multline}
+\begin{equation}
+\begin{split}
+h(t) = \frac{1}{\omega_0 \cdot m} \cdot e^{-\alpha \cdot t} & \cdot sin(\omega_0 \cdot t) \cdot u(t) = \\ = \frac{1}{\sqrt{\frac{4 \cdot m \cdot k - c^2}{4}} }  \cdot e^{-\frac{c}{2m} \cdot t} \cdot & sin(\sqrt{\frac{4 \cdot m \cdot k - c^2}{4 \cdot m^2}} \cdot t) \cdot u(t)
+\end{split}
+\end{equation}
+
+
 
 \begin{figure}[h]
 \begin{center}
@@ -399,26 +414,29 @@ Vi vill ta fram stegsvaret $g(t)$ för vårt system. Vi gör detta genom att int
 \begin{equation}
 \int_{-\infty}^\tau \frac{1} {\omega_0 \cdot m} \cdot e^{-\alpha \cdot t} \cdot sin(\omega_0 \cdot t) \cdot u(t) dt = \frac{1}{\omega_0 \cdot m} \int_{-\infty}^\tau sin(\omega_0 \cdot t)\cdot e^{-\alpha \cdot t} u(t) dt
 \end{equation}
-Vi kan dela upp inegralen i två integraler. Den ena för negativa t den andra för positiva t.
+Vi kan dela upp integralen i två integraler. Den ena för negativa $t$ den andra för positiva $t$.
 $$ \int_{-\infty}^\tau sin(\omega_0 \cdot t)\cdot e^{-\alpha \cdot t} u(t) dt
 = \int_{-\infty}^0 sin(\omega_0 \cdot t)\cdot e^{-\alpha \cdot t} u(t) dt + \int_0^\tau sin(\omega_0 \cdot t)\cdot e^{-\alpha \cdot t} u(t) dt $$
-Eftersom u(t) är 0 för negativa t och 1 för positiva t så kan vi skriva om integralen enligt nedan
+Eftersom $u(t)$ är 0 för negativa $t$ och 1 för positiva $t$ så kan vi skriva om integralen enligt nedan.
 \begin{equation}
 \int_{-\infty}^\tau sin(\omega_0 \cdot t)\cdot e^{-\alpha \cdot t} u(t) dt
 = \int_0^\tau sin(\omega_0 \cdot t)\cdot e^{-\alpha \cdot t} dt
 \end{equation}
-
 Vi låter integralen heta $I$ och räknar ut den.
 
-\begin{multline} I = \int_0^\tau sin(\omega_0 \cdot t)\cdot e^{-\alpha \cdot t} dt 
-= [-\frac{1}{\omega_0} cos(\omega_0 \cdot t) \cdot e^{-\alpha \cdot t}]_0^\tau - \int_0^\tau \frac{\alpha}{\omega_0} \cdot cos(\omega_0 \cdot t) \cdot e^{-\alpha \cdot t} dt \\
- = [-\frac{1}{\omega_0} cos(\omega_0 \cdot t) \cdot e^{-\alpha \cdot t}]_0^\tau - \frac{\alpha}{\omega_0} \cdot ([\frac{1}{\omega_0} sin(\omega_0 \cdot t) \cdot e^{-\alpha \cdot t}]_0^\tau - \int_0^\tau -\frac{\alpha}{\omega_0} \cdot sin(\omega_0 \cdot t)\cdot e^{-\alpha \cdot t} dt \\
+\begin{equation}
+\begin{split} 
+I & = \int_0^\tau sin(\omega_0 \cdot t)\cdot e^{-\alpha \cdot t} dt  \\
+& = [-\frac{1}{\omega_0} cos(\omega_0 \cdot t) \cdot e^{-\alpha \cdot t}]_0^\tau - \int_0^\tau \frac{\alpha}{\omega_0} \cdot cos(\omega_0 \cdot t) \cdot e^{-\alpha \cdot t} dt \\
+& = [-\frac{1}{\omega_0} cos(\omega_0 \cdot t) \cdot e^{-\alpha \cdot t}]_0^\tau - \\
+& \frac{\alpha}{\omega_0} \cdot ([\frac{1}{\omega_0} sin(\omega_0 \cdot t) \cdot e^{-\alpha \cdot t}]_0^\tau - \int_0^\tau -\frac{\alpha}{\omega_0} \cdot sin(\omega_0 \cdot t)\cdot e^{-\alpha \cdot t} dt \\
 \leftrightarrow
-I = [-\frac{1}{\omega_0} cos(\omega_0 \cdot t) \cdot e^{-\alpha \cdot t}]_0^\tau - \frac{\alpha}{\omega_0} \cdot ([\frac{1}{\omega_0} sin(\omega_0 \cdot t) \cdot e^{-\alpha \cdot t}]_0^\tau - (\frac{\alpha}{\omega_0})^2 \cdot I \\
-\leftrightarrow I = \frac{1-cos(\omega_o \cdot \tau) \cdot e^{\alpha \cdot \tau} - \frac{\alpha}{\omega_0^2} \cdot sin(\omega_o \cdot \tau) \cdot e^{\alpha \cdot \tau}}{\omega_0 + \frac{\alpha^2}{\omega_0}}
-\end{multline}
+I & = [-\frac{1}{\omega_0} cos(\omega_0 \cdot t) \cdot e^{-\alpha \cdot t}]_0^\tau - \frac{\alpha}{\omega_0} \cdot ([\frac{1}{\omega_0} sin(\omega_0 \cdot t) \cdot e^{-\alpha \cdot t}]_0^\tau - (\frac{\alpha}{\omega_0})^2 \cdot I \\
+\leftrightarrow I & = \frac{1-cos(\omega_o \cdot \tau) \cdot e^{\alpha \cdot \tau} - \frac{\alpha}{\omega_0^2} \cdot sin(\omega_o \cdot \tau) \cdot e^{\alpha \cdot \tau}}{\omega_0 + \frac{\alpha^2}{\omega_0}}
+\end{split}
+\end{equation}
 
-Vi stoppar ni in de konstanter vi bröt ut ur integralen innan för att få stegsvaret
+Vi stoppar ni in de konstanter vi bröt ut ur integralen tidigare för att få stegsvaret
 
 \begin{equation}
 g(\tau)= \frac{1}{\omega_ \cdot m} \cdot I = \frac{1-cos(\omega_o \cdot \tau) \cdot e^{-\alpha \cdot \tau} - \frac{\alpha}{\omega_0^2} \cdot sin(\omega_o \cdot \tau) \cdot e^{-\alpha \cdot \tau}}{m\cdot (\omega_0^2 + \alpha^2)}
@@ -446,9 +464,11 @@ g(\infty) = \frac{1}{m \cdot (\omega_o^2 +\alpha^2)}
 
 \subsection{Stabilitetsbevis}
 För att vår idealisering skall vara representativ för vår studsmatta måste systemet vara stabilt. I grund och botten betyder detta att vårt system ej får tillföra mer energi än vad som läcker ut. Detta stämmer om den tillryggalagda sträckan är begränsad efter en impuls. Sträckan fås genom att absolutintegrera impulssvaret i tidsdomänen (stabilitet om $\int_{-\infty}^{\infty}|h(t)|dt\in \mathbb{R}$ ). Nedan följer en förenkling av integralen.
-\begin{multline}
-I_{impuls}=\int_{-\infty}^{\infty}| \frac{1}{\sqrt{\frac{4 \cdot m \cdot k - c^2}{4}} }  \cdot e^{-\frac{c}{2m} \cdot t} \cdot sin(\sqrt{\frac{4 \cdot m \cdot k - c^2}{4 \cdot m^2}} \cdot t) \cdot u(t)|dt=\\ \frac{1}{\sqrt{\frac{4 \cdot m \cdot k - c^2}{4}} }  \cdot \int_{0}^{\infty}|e^{-\frac{c}{2m} \cdot t}| \cdot |sin(\sqrt{\frac{4 \cdot m \cdot k - c^2}{4 \cdot m^2}} \cdot t)|dt
-\end{multline}
+\begin{equation}
+\begin{split}
+I_{impuls}=\int_{-\infty}^{\infty}| \frac{1}{\sqrt{\frac{4 \cdot m \cdot k - c^2}{4}} }  \cdot e^{-\frac{c}{2m} \cdot t} \cdot & sin(\sqrt{\frac{4 \cdot m \cdot k - c^2}{4 \cdot m^2}} \cdot t) \cdot u(t)|dt=\\ \frac{1}{\sqrt{\frac{4 \cdot m \cdot k - c^2}{4}} }  \cdot \int_{0}^{\infty}|e^{-\frac{c}{2m} \cdot t}| \cdot & |sin(\sqrt{\frac{4 \cdot m \cdot k - c^2}{4 \cdot m^2}} \cdot t)|dt
+\end{split}
+\end{equation}
 Förenklingar för att göra beviset mer lättläsligt:
 \begin{itemize}
 \item $\omega_0=\sqrt{\frac{4 \cdot m \cdot k - c^2}{4 \cdot m^2}}$
@@ -466,21 +486,28 @@ Vi bevisar att integralen är begränsad för tre olika fall: då $0\neq\omega_0
 
 \begin{itemize}
 \item fallet $k>\frac{c^2}{4m}$ ($0\neq\omega_0 \in \mathbb{R}$, underdämpat system)
-\begin{multline}
-I_{impuls}=\frac{1}{\omega_0 \cdot m}\int_{0}^{\infty}e^{-\alpha\cdot t}\cdot | sin(\omega_0\cdot t)|<\frac{1}{\omega_0 \cdot m}\int_{0}^{\infty}e^{-\alpha\cdot t}=\\\frac{1}{\omega_0 \cdot m} \left[\frac{-e^{-\alpha\cdot t}}{\alpha}\right]_0^\infty=\frac{1}{\omega_0 \cdot m}\cdot \frac{1}{\alpha}=\frac{1}{\sqrt{\frac{4\cdot m\cdot k- c^2}{4}}\cdot\frac{c}{2m}}\in \mathbb{R}^+
-\end{multline}
+\begin{equation}
+\begin{split}
+I_{impuls}=\frac{1}{\omega_0 \cdot m}\int_{0}^{\infty}e^{-\alpha\cdot t}\cdot & | sin(\omega_0\cdot t)|<\frac{1}{\omega_0 \cdot m}\int_{0}^{\infty}e^{-\alpha\cdot t}=\\\frac{1}{\omega_0 \cdot m} \left[\frac{-e^{-\alpha\cdot t}}{\alpha}\right]_0^\infty= \frac{1}{\omega_0 \cdot m} & \cdot \frac{1}{\alpha}=\frac{1}{\sqrt{\frac{4\cdot m\cdot k- c^2}{4}}\cdot\frac{c}{2m}}\in \mathbb{R}^+
+\end{split}
+\end{equation}
 \item fallet $k=\frac{c^2}{4m}$ ($\omega_0=0$, kritiskt dämpat system)
-\newline Här får vi problem med att faktorn framför integralen blir odefinierad samtidigt som sinusen blir 0. Låt oss kasta lite gränsvärdesanalys på det problemet!
-\begin{multline}
-I_{impuls}=\lim_{\omega_0\to0}\left(\frac{1}{m}\int_{0}^{\infty}e^{-\alpha\cdot t}\cdot |\frac{sin(\omega_0\cdot t)}{\omega_0}|dt\right)=\frac{1}{m}\cdot\int_{0}^{\infty}e^{-\alpha\cdot t}\cdot t  dt=\\...=\frac{4m}{c^2}\in \mathbb{R}^+
-\end{multline}
+\newline 
+Här får vi problem med att faktorn framför integralen blir odefinierad samtidigt som sinusen blir 0. Låt oss kasta lite gränsvärdesanalys på det problemet!
+\begin{equation}
+\begin{split}
+I_{impuls}= & \lim_{\omega_0\to0}\left(\frac{1}{m} \int_{0}^{\infty}e^{-\alpha\cdot t}\cdot |\frac{sin(\omega_0\cdot t)}{\omega_0}|dt\right) = \\ \frac{1}{m} &\cdot\int_{0}^{\infty}e^{-\alpha\cdot t} \cdot t  dt=...=\frac{4m}{c^2}\in \mathbb{R}^+
+\end{split}
+\end{equation}
 Vi ser att vi intressant nog inte bara kan stänga in denna integral, utan faktiskt räkna ut ett värde för den.
 \item fallet $k<\frac{c^2}{4m}$ ($\omega_0 \notin \mathbb{R}$, överdämpat system)
 \newline Här råkar vi på ett annat problem: $\omega_0$ blir komplex. Således blir det svårt att integrera uttrycket. Vi tar nu hjälp av $\omega_1$.
 
-\begin{multline}
-I_{impuls}=\int_{0}^{\infty}\left|\frac{e^{-\alpha\cdot t}}{\omega_0 \cdot m}\cdot sin(\omega_0\cdot t)\right|dt=\\ \int_{0}^{\infty}\left|\frac{e^{-\alpha\cdot t}}{i\cdot\omega_1 \cdot m}\cdot i\cdot sinh(\omega_1\cdot t)\right|dt=\\ \frac{1}{\omega_1 \cdot m}\int_{0}^{\infty}\left|e^{-\alpha\cdot t}\cdot sinh(\omega_1\cdot t)\right|dt=\\ \frac{1}{2 \cdot\omega_1 \cdot m}\int_{0}^{\infty}e^{-\alpha\cdot t}\cdot \left( e^{\omega_1\cdot t}-e^{-\omega_1\cdot t} \right) dt< \\ \frac{1}{2\cdot\omega_1 \cdot m}\int_{0}^{\infty}e^{(\omega_1-\alpha)\cdot t} dt=\frac{1}{2\cdot\omega_1 \cdot m}\left[\frac{e^{(\omega_1-\alpha)\cdot t}}{\omega_1-\alpha} \right]_{0}^{\infty}=\\ \frac{1}{2\cdot\omega_1 \cdot m}\left(\frac{-1}{\omega_1-\alpha} \right)=\frac{1}{2\cdot\omega_1 \cdot m}\left(\frac{1}{\alpha-\omega_1} \right)=\\ \frac{1}{2\cdot   \sqrt{\left(\frac{c}{2\cdot m}\right)^2-\frac{k}{m}}   \cdot m}\left(\frac{1}{\sqrt{\left(\frac{c}{2\cdot m}\right)^2}-\sqrt{\left(\frac{c}{2\cdot m}\right)^2-\frac{k}{m}}} \right)\in \mathbb{R}^+
-\end{multline}
+\begin{equation}
+\begin{split}
+I_{impuls}= & \int_{0}^{\infty}\left|\frac{e^{-\alpha\cdot t}}{\omega_0 \cdot m}\cdot sin(\omega_0\cdot t)\right|dt=\\ & \int_{0}^{\infty}\left|\frac{e^{-\alpha\cdot t}}{i\cdot\omega_1 \cdot m}\cdot i\cdot sinh(\omega_1\cdot t)\right|dt=\\ & \frac{1}{\omega_1 \cdot m}\int_{0}^{\infty}\left|e^{-\alpha\cdot t}\cdot sinh(\omega_1\cdot t)\right|dt=\\ & \frac{1}{2 \cdot\omega_1 \cdot m}\int_{0}^{\infty}e^{-\alpha\cdot t}\cdot \left( e^{\omega_1\cdot t}-e^{-\omega_1\cdot t} \right) dt< \\ & \frac{1}{2\cdot\omega_1 \cdot m}\int_{0}^{\infty}e^{(\omega_1-\alpha)\cdot t} dt=\frac{1}{2\cdot\omega_1 \cdot m}\left[\frac{e^{(\omega_1-\alpha)\cdot t}}{\omega_1-\alpha} \right]_{0}^{\infty}=\\ & \frac{1}{2\cdot\omega_1 \cdot m}\left(\frac{-1}{\omega_1-\alpha} \right)=\frac{1}{2\cdot\omega_1 \cdot m}\left(\frac{1}{\alpha-\omega_1} \right)=\\ & \frac{1}{2\cdot   \sqrt{\left(\frac{c}{2\cdot m}\right)^2-\frac{k}{m}}   \cdot m}\left(\frac{1}{\sqrt{\left(\frac{c}{2\cdot m}\right)^2}-\sqrt{\left(\frac{c}{2\cdot m}\right)^2-\frac{k}{m}}} \right)\in \mathbb{R}^+
+\end{split}
+\end{equation}
 \end{itemize}
 
 \subsection{Sinussvar}
@@ -521,9 +548,9 @@ Vi ser att vi får en mycket mycket liten amplitud vilket är realistiskt för e
 \subsection{Idealisering}
 Systemet som vi modellerar är en studsmatta som vi har idealiserat på olika sätt för att ta fram vår specifika model och för att kunna betrakta det som ett stabilt-LTI system. Dessa idealiseringar betyder självklart att modellen vi har räknat på inte är lika komplext som en studsmatta faktiskt är. 
 
-Det finns en stor mängd mindre relevanta skillnader mellan en värklig studsmatta och vår modell som t ex att en person inte hoppar helt centralt i mittpunkten på studsmattan. Vi tänker inte diskutera dessa här utan fokusera på de större avikelserna.
+Det finns en stor mängd mindre relevanta skillnader mellan en verklig studsmatta och vår modell som t ex att en person inte hoppar helt centralt i mittpunkten på studsmattan. Vi tänker inte diskutera dessa här utan fokusera på de större avikelserna.
 
-En studsmatta är konstruerad så att den släpper igenom så mycket luft som möjligt när den rör på sig. Men att man måste flytta på luft och att det skapar luftmotstånd kommer man inte ifrån. Detta är en relevant skillnad mellan det mer komplexa fallet av en riktig studsmatta och vår modell. Man kan dock mycket smidigt säga att luftmotståndet bidrar till dämpningen eftersom att det decelererar mattan. I värkligheten kommer den inte att göra detta linjärt men det kan vi se som en mindre avvikelse och säga att luftmotståndet till det stora tas hansyn av med vår dämpningskonstant.
+En studsmatta är konstruerad så att den släpper igenom så mycket luft som möjligt när den rör på sig. Men att man måste flytta på luft och att det skapar luftmotstånd kommer man inte ifrån. Detta är en relevant skillnad mellan det mer komplexa fallet av en riktig studsmatta och vår modell. Man kan dock mycket smidigt säga att luftmotståndet bidrar till dämpningen eftersom att det retarderar mattan. I verkligheten kommer den inte att göra detta linjärt men det kan vi se som en mindre avvikelse och säga att luftmotståndet till det stora tas hansyn av med vår dämpningskonstant.
 
 Den förmodligen mest relevanta skillnaden mellan vår modell och en riktig studsmatta är att när man hoppar på en riktig studsmatta så lämnar man mattan med sin kropp och flyger upp i luften för att sedan landa på mattan igen. Detta betyder att fjäderkraften inte drar tillbaka massan mot marken utan bara drar den uppåt medan gravitationskraften är den enda externa kraften som drar ner massan till studsmattan igen. I vår modell därimot så modellerar vi det som att en person står med fötterna fastspända på mattan, det betyder att fjäderkraften kommer att dra med en kraft neråt på massan då vi är åvanför vårt jämnviktsläge.
 
@@ -531,17 +558,7 @@ Vidare så med en riktig studsmatta hinner i princip vid höga hopp en studsmatt
 
 Detta har flertalet efterverkningar på vårt system, en av de större effekterna är att vi får en annan resonansfrekvens än vad som skulle vara fallet när man hoppar på en riktig studsmatta. Vi kan se att resonansfrekvensen vi får fram för vårt system är högre än frekvensen hos en person som hoppar på en studsmatta vilket då är rimligt pga att vi har den extra fjäderkraften som drar ner studsmattan mot marken igen och som ökar frekvensen.
 
-\subsection{Vad som har analyserats och varför}
 
-I denna rapport har vi tagit fram en rad systemegenskaper som vi anser vara relevanta för att studera vårt system. Vi har tagit fram systemfunktionen för systemet då den säger väldigt mycket om systemet. Systemfunktionen använder vi använ som bas för att få fram vår frekvensfunktionen som ger oss vår  amplitudkaraktäristik och faskaraktäristik. Dessa säger mycket om hur våra utsignaler kommer se ut för olika insignaler. Ett exempel på detta är att de bestämmer vilken variation av en sinusformad insignal vi får som utsignal som användes i 4.7.
-
-Vi tog fram impulssvaret som fungerar som en bas för att ta fram både stegsvaret och stabilitetsbeviset. Stegsvaret ger oss information om hur studsmattan skulle reagera om en person hoppade på studsmattan och hur den svänger in sig till sitt nya jämnviktsläge. En annan tolkning kan vara att en person redan står på studsmattan och fångar en massa och stegsvaret visar hur studsmattan ocillerarar in till sitt nya jämnviktsläge.
-
-\subsection{Vad som inte har analyserats och varför}
-
-En sak man ofta vill analysera för system av liknande stystem är ett rampsvar. Med det avses vad som händer vid en konstant stigande insignal. Detta skulle kunna vara relevant om man modellerar med t ex en lägesändring som insignal och en annan lägesändring som en utsignal. Och det kan i detta fal representera för vissa system t ex hur en bil kör upp för en backe. I vårt fall har vi dock en kraft som insignal och vi ansåg inte att en analys av en konstant stigande kraft som insignal skulle vara en relevant analys.
-
-I vårt system skulle ett rampsvar kunna tolkas som att en person står på en studsmatta och håller i en jättestor tom bägare och att denna bägare fylls med ett konstant flöde av vatten. Rampsvaret skulle då visa hur studsmattans lägesändring såg ut i detta fal. Vi ansåg inte att detta var en relevant analys utav en studsmattas egenskaper och kan inte direkt kopplas till syftet eller målet med vår rapport så vi valde att inte göra en sådan analys även om resultatet skulle kunna vara interesant.
 
 \newpage
 
