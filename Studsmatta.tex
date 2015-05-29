@@ -194,14 +194,14 @@ Vilket ger:
  m\frac{d^2y(t)}{dt^2} =  -k(l_0 + y(t)) -c\frac{dy(t)}{dt} + mg +  x(t)
 \end{equation}
 
-Vid $t = 0$ så kommer 
+Vid $t = 0$ så kommer gravitationskraften och fjäderkraftens utsträckning beroende på massan att ta ut varandra enligt:
 \begin{equation}
 k \cdot l_0 = mg
 \end{equation}
 
 Vilket ger vår slutgiltiga differentialekvation.
 \begin{equation}
- m\frac{d^2y(t)}{dt^2} + k \cdot y(t)) + c\frac{dy(t)}{dt} = x(t)
+ m\frac{d^2y(t)}{dt^2} + k \cdot y(t) + c\frac{dy(t)}{dt} = x(t)
 \end{equation}
 
 
@@ -250,7 +250,7 @@ y(t) = a_1 y_1(t) + a_2 y_2(t)
 
 Systemet uppfyller således kravet för linjäritet.
 
-
+\newpage
 
 
 
@@ -297,37 +297,65 @@ Vi ser att vi antingen kan få två komplexa rötter, en reell dubbelrot, eller 
 
 \item $H(s)$ har två komplexa rötter om $\sqrt{(\frac{c}{2m})^2-\frac{k}{m}}\notin \mathbb{R}$ \newline d.v.s. om $(\frac{c}{2m})^2-\frac{k}{m}<0$
 
-
-
 \end{itemize}
 
-Detta kan förenklas till
+Detta kan förenklas till (figur 7-9):
 
-\begin{itemize}
-\item Dubbelpol $S_{rot}=-\frac{c}{2m}$ om $k=\frac{c^2}{4m}$
+\begin{figure}
 \begin{center}
 \includegraphics[scale=0.3]{1reell}
+\caption{Dubbelpol $S_{rot}=-\frac{c}{2m}$ om $k=\frac{c^2}{4m}$}
 \end{center}
-\item Två reella poler om $k<\frac{c^2}{4m}$
+\end{figure}
+
+\begin{figure}
 \begin{center}
 \includegraphics[scale=0.3]{2reella}
+\caption{Två reella poler om $k<\frac{c^2}{4m}$}
 \end{center}
-\item Två komplexa poler om $k>\frac{c^2}{4m}$
+\end{figure}
+
+\begin{figure}
 \begin{center}
 \includegraphics[scale=0.3]{2komplexa}
+\caption{Två komplexa poler om $k>\frac{c^2}{4m}$}
 \end{center}
-\end{itemize}
+\end{figure}
+\newpage
 
 I vårt fall (studsmatta) vill vi gärna skapa så hög amplitud ut som möjligt. Mycket svängning och lite dämpning. Detta återfinns i det tredje fallet (två komplexa rötter) och brukar kallas för ett underdämpat system. Detta visualiseras grafiskt i form av ett amplitudkaraktäristik i figur XXX. Nedan ses ett pol/nollställe-diagram över vårt system med följande konstanter insatta $k=1000\frac{N}{m}$ , $m=70kg$ , $c=100\frac{kg}{s}$.
 
+
+\begin{figure}[h]
+\begin{center}
 \includegraphics[scale=0.5]{nolpol-diagram}
+\caption{•}
+\end{center}
+\end{figure}
+
+\newpage
 
 \subsection{Amplitud- och fas-karaktäristik}
 
+[HÄR STÅR DET TEXT LATEX]
+
+\begin{figure}[h]
+\begin{center}
 \includegraphics[scale=0.5]{FasAmpKar}
+\caption{•}
+\end{center}
+\end{figure}
 
+[HÄR STÅR DET ANNAN TEXT]
+
+\begin{figure}[h]
+\begin{center}
 \includegraphics[scale=0.5]{BodePlot(FasAmpKar)}
+\caption{•}
+\end{center}
+\end{figure}
 
+[HÄR STÅR DET SISTA I DENNA SUBSEKTION]
 
 
 \subsection{Impulssvar}
@@ -350,8 +378,17 @@ Genom att inverslaplacetransformera $H(s)$ får vi impulssvaret $h(t)$. Vi anvä
 h(t) = \frac{1}{\omega_0 \cdot m} \cdot e^{-\alpha \cdot t} \cdot sin(\omega_0 \cdot t) \cdot u(t) = \\ \frac{1}{\sqrt{\frac{4 \cdot m \cdot k - c^2}{4}} }  \cdot e^{-\frac{c}{2m} \cdot t} \cdot sin(\sqrt{\frac{4 \cdot m \cdot k - c^2}{4 \cdot m^2}} \cdot t) \cdot u(t)
 \end{multline}
 
-\includegraphics[scale=0.5]{Impulssvar}
+\begin{figure}[h]
+\begin{center}
 
+\includegraphics[scale=0.5]{Impulssvar}
+\caption{•}
+\end{center}
+\end{figure}
+
+
+
+\newpage
 
 \subsection{Stegsvar}
 
@@ -398,7 +435,12 @@ Vi kan se att $e^{-\alpha \cdot \infty} = 0$ vilket ger
 g(\infty) = \frac{1}{m \cdot (\omega_o^2 +\alpha^2)}
 \end{equation}
 
+\begin{figure}
+\begin{center}
 \includegraphics[scale=0.5]{Stegsvar}
+\caption{•}
+\end{center}
+\end{figure}
 
 \subsection{Stabilitetsbevis}
 För att vår idealisering skall vara representativ för vår studsmatta måste systemet vara stabilt. I grund och botten betyder detta att vårt system ej får tillföra mer energi än vad som läcker ut. Detta stämmer om den tillryggalagda sträckan är begränsad efter en impuls. Sträckan fås genom att absolutintegrera impulssvaret i tidsdomänen (stabilitet om $\int_{-\infty}^{\infty}|h(t)|dt\in \mathbb{R}$ ). Nedan följer en förenkling av integralen.
