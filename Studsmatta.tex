@@ -329,7 +329,11 @@ Detta kan förenklas till (figur 7-9):
 \end{figure}
 \newpage
 
+<<<<<<< HEAD
 I vårt fall med studsmattan vill vi skapa en så hög amplitud ut som möjligt, med mycket svängning och lite dämpning. Detta scenario återfinns i det tredje fallet med två komplexa rötter och brukar kallas för ett underdämpat system. Detta visualiseras grafiskt i form av ett amplitudkaraktäristik i figur 12. Nedan ses ett pol/nollställe-diagram över vårt system med följande konstanter insatta $k=1000\frac{N}{m}$ , $m=70kg$ , $c=100\frac{kg}{s}$.
+=======
+I vårt fall (studsmatta) vill vi gärna skapa så hög amplitud ut som möjligt. Mycket svängning och lite dämpning. Detta återfinns i det tredje fallet (två komplexa rötter) och brukar kallas för ett underdämpat system. Detta visualiseras grafiskt i form av ett amplitudkaraktäristik i figur XXX. Nedan ses ett pol/nollställe-diagram över vårt system med följande konstanter insatta $k=2000\frac{N}{m}$ , $m=70kg$ , $c=100\frac{kg}{s}$.
+>>>>>>> origin/master
 
 
 \begin{figure}[h]
@@ -343,8 +347,9 @@ I vårt fall med studsmattan vill vi skapa en så hög amplitud ut som möjligt,
 
 \subsection{Amplitud- och fas-karaktäristik}
 
+Amplitudkaraktäristik och faskaraktäristik beskriver hur impulssvarets amplitud och fasförskjutning påverkas av insignalens frekvens.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis mauris eget ex eleifend tempor. Cras varius blandit tellus, vel accumsan mauris laoreet ac. Donec vel tortor eget velit sodales aliquam. Etiam pharetra efficitur libero euismod condimentum. Cras id aliquet urna. Integer blandit lacus lectus, id viverra augue suscipit non. Phasellus feugiat lorem vitae varius congue. Ut placerat enim turpis, nec dictum lectus elementum sed. Integer vehicula suscipit nulla, ut tincidunt neque. Integer sagittis fermentum ex, a porttitor sem congue et. Ut arcu risus, placerat at molestie dictum, elementum suscipit tellus. Pellentesque nec justo lacus. Suspendisse sagittis, neque et placerat scelerisque, eros diam gravida nulla, sed placerat purus leo sed mi. Nulla vestibulum metus at quam scelerisque tincidunt. Nunc convallis aliquam lacus, nec ornare tortor accumsan eu. Aenean non enim felis.
+För att ta fram amplitudkaraktäristiken tar man absolutbeloppet av systemets frekvenssvar, d.v.s. $|H(\omega)|$. Faskaraktäristiken får man genom att ta argumentet av frekvesnsvaret, $arg(H(\omega))$. 
 
 \begin{figure}[h]
 \begin{center}
@@ -505,6 +510,38 @@ I_{impuls}= & \int_{0}^{\infty}\left|\frac{e^{-\alpha\cdot t}}{\omega_0 \cdot m}
 \end{equation}
 \end{itemize}
 
+\subsection{Sinussvar}
+Vi vill undersöka vilken utsignal vi får om vi skickar in relevanta sinusar som insignaler. Vi har valt att undersöka tre fall som vi anser vara intresanta. En sinus med en hög frekvens, en med en låg frekvens och en med resonansfrekvensen.
+
+\begin{equation}
+x(t) = A sin(\omega_0t) \rightarrow y(t) = A|H(\omega_0)|sin(\omega_0t + arg(H(\omega_0)))
+\end{equation}
+
+Vi säger att en person trycker kan trycka ifrån med en kraft av $500N$ och använder därför 500 som vår amplitud för alla våra sinusar. Vi skulle kunna tänka oss att man med en hög frekvens inte kan trycka med samma kraft men för att jämnföra vilka svar vi får för våra olika frekvenser så låter vi amplituden vara den samma i alla tre fallen.
+
+Det första fallet vi vill undersöka är då man hoppar i resonansferkvensen. Vi får då att $\omega_0 = 5,25$
+
+\begin{equation}
+y(t) = 0.94 sin(5,25 t - 1,44)
+\end{equation}
+
+Det intresanta för oss är amplitudskalningen. Vi kan se att den är $0,94$ med andra ord så får vi en amplitud på 0.94 meter. För att trycka ifrån med 500 newton och hoppa i resonansfrekvens ser vi detta som ett rimligt värde.
+
+Vi vill sedan testa om vi har en mycket mycket låg amplitud i vårt fall väljer vi $\omega_0 = 1,5$
+
+\begin{equation}
+y(t) = 0,27 sin(1,5 t - 0,08)
+\end{equation}
+
+Vi ser att vi får en amplitud som ligger runt 0,27 meter vilket är rimligt då vi trycker med en kraft $500N$ och har en fjäderkonstant på $2000$ Vi får i princip bara $500/2000 = 0,25$. Vi får dock ett litet tillslag för att vi har en frekvens om än låg.
+
+För vår sista sinus har vi valt en hög frekvens $\omega_0 = 30$
+
+\begin{equation}
+y(t) = 8\cdot 10^{-3} sin(30 t - 3.09)
+\end{equation}
+
+Vi ser att vi får en mycket mycket liten amplitud vilket är realistiskt för en hög frekvens
 
 \section{Diskussion}
 
