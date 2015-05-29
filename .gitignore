@@ -44,6 +44,7 @@ Temporary Items
 *.pdf
 *.aux
 *.gz
+*.synctext.gz
 *.toc
 *.PDF
 *.bak
