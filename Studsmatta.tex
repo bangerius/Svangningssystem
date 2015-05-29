@@ -330,7 +330,8 @@ Detta kan förenklas till (figur 7-9):
 \newpage
 
 
-I vårt fall (studsmatta) vill vi gärna skapa så hög amplitud ut som möjligt. Mycket svängning och lite dämpning. Detta återfinns i det tredje fallet (två komplexa rötter) och brukar kallas för ett underdämpat system. Detta visualiseras grafiskt i form av ett amplitudkaraktäristik i figur XXX. Nedan ses ett pol/nollställe-diagram över vårt system med följande konstanter insatta $k=2000\frac{N}{m}$ , $m=70kg$ , $c=100\frac{kg}{s}$.
+I vårt fall (studsmatta) vill vi gärna skapa så hög amplitud ut som möjligt. Mycket svängning och lite dämpning. Detta återfinns i det tredje fallet (två komplexa rötter) och brukar kallas för ett underdämpat system. Detta visualiseras grafiskt i form av ett amplitudkaraktäristik i figur 12. Nedan ses ett pol/nollställe-diagram över vårt system med följande konstanter insatta $k=2000\frac{N}{m}$ , $m=70kg$ , $c=100\frac{kg}{s}$.
+
 
 \begin{figure}[h]
 \begin{center}
@@ -341,32 +342,7 @@ I vårt fall (studsmatta) vill vi gärna skapa så hög amplitud ut som möjligt
 
 \newpage
 
-\subsection{Amplitud- och fas-karaktäristik}
 
-Amplitudkaraktäristik och faskaraktäristik beskriver hur impulssvarets amplitud och fasförskjutning påverkas av insignalens frekvens.
-
-För att ta fram amplitudkaraktäristiken tar man absolutbeloppet av systemets frekvenssvar, d.v.s. $|H(\omega)|$. Faskaraktäristiken får man genom att ta argumentet av frekvesnsvaret, $arg(H(\omega))$. 
-
-\begin{figure}[h]
-\begin{center}
-\includegraphics[scale=0.5]{FasAmpKar}
-\caption{•}
-\end{center}
-\end{figure}
-
-
-
-\begin{figure}[h]
-\begin{center}
-\includegraphics[scale=0.5]{BodePlot(FasAmpKar)}
-\caption{•}
-\end{center}
-\end{figure}
-
-
-
-
-\newpage
 \subsection{Impulssvar}
 
 Genom att kvadratkomplettera $H(s)$ får vi:
@@ -400,6 +376,79 @@ h(t) = \frac{1}{\omega_0 \cdot m} \cdot e^{-\alpha \cdot t} & \cdot sin(\omega_0
 \end{figure}
 
 
+
+\newpage
+\subparagraph{Stabilitetsbevis}
+För att vår idealisering skall vara representativ för vår studsmatta måste systemet vara stabilt. I grund och botten betyder detta att vårt system ej får tillföra mer energi än vad som läcker ut. Detta stämmer om den tillryggalagda sträckan är begränsad efter en impuls. Sträckan fås genom att absolutintegrera impulssvaret i tidsdomänen (stabilitet om $\int_{-\infty}^{\infty}|h(t)|dt\in \mathbb{R}$ ). Nedan följer en förenkling av integralen.
+\begin{equation}
+\begin{split}
+I_{impuls}=\int_{-\infty}^{\infty}| \frac{1}{\sqrt{\frac{4 \cdot m \cdot k - c^2}{4}} }  \cdot e^{-\frac{c}{2m} \cdot t} \cdot & sin(\sqrt{\frac{4 \cdot m \cdot k - c^2}{4 \cdot m^2}} \cdot t) \cdot u(t)|dt=\\ \frac{1}{\sqrt{\frac{4 \cdot m \cdot k - c^2}{4}} }  \cdot \int_{0}^{\infty}|e^{-\frac{c}{2m} \cdot t}| \cdot & |sin(\sqrt{\frac{4 \cdot m \cdot k - c^2}{4 \cdot m^2}} \cdot t)|dt
+\end{split}
+\end{equation}
+Förenklingar för att göra beviset mer lättläsligt:
+\begin{itemize}
+\item $\omega_0=\sqrt{\frac{4 \cdot m \cdot k - c^2}{4 \cdot m^2}}$
+\item $\alpha=\frac{c}{2\cdot m}$
+\item $\omega_1=\sqrt{\frac{c^2-4 \cdot m \cdot k}{4 \cdot m^2}}$
+\newline
+\newline 
+Notera att: $\left( \omega_0=\sqrt{\frac{4 \cdot m \cdot k-c^2}{4 \cdot m^2}}=\sqrt{(-1)\cdot\frac{c^2-4 \cdot m \cdot k}{4 \cdot m^2}}=i\cdot\sqrt{\frac{c^2-4 \cdot m \cdot k}{4 \cdot m^2}}=i\cdot \omega_1\right)$
+\end{itemize}
+
+Vi konstaterar att delfunktionerna är positiva för alla positiva t. Således är även integralen av produkten det.
+$$I_{impuls}=\frac{1}{\omega_0 \cdot m}\int_{0}^{\infty}e^{-\alpha\cdot t}\cdot | sin(\omega_0\cdot t)|dt>0$$
+
+Vi bevisar att integralen är begränsad för tre olika fall: då $0\neq\omega_0 \in \mathbb{R}$, $\omega_0=0$ respektive då $\omega_0 \notin \mathbb{R}$
+
+\begin{itemize}
+\item fallet $k>\frac{c^2}{4m}$ ($0\neq\omega_0 \in \mathbb{R}$, underdämpat system)
+\begin{equation}
+\begin{split}
+I_{impuls}=\frac{1}{\omega_0 \cdot m}\int_{0}^{\infty}e^{-\alpha\cdot t}\cdot & | sin(\omega_0\cdot t)|<\frac{1}{\omega_0 \cdot m}\int_{0}^{\infty}e^{-\alpha\cdot t}=\\\frac{1}{\omega_0 \cdot m} \left[\frac{-e^{-\alpha\cdot t}}{\alpha}\right]_0^\infty= \frac{1}{\omega_0 \cdot m} & \cdot \frac{1}{\alpha}=\frac{1}{\sqrt{\frac{4\cdot m\cdot k- c^2}{4}}\cdot\frac{c}{2m}}\in \mathbb{R}^+
+\end{split}
+\end{equation}
+\item fallet $k=\frac{c^2}{4m}$ ($\omega_0=0$, kritiskt dämpat system)
+\newline 
+Här får vi problem med att faktorn framför integralen blir odefinierad samtidigt som sinusen blir 0. Låt oss kasta lite gränsvärdesanalys på det problemet!
+\begin{equation}
+\begin{split}
+I_{impuls}= & \lim_{\omega_0\to0}\left(\frac{1}{m} \int_{0}^{\infty}e^{-\alpha\cdot t}\cdot |\frac{sin(\omega_0\cdot t)}{\omega_0}|dt\right) = \\ \frac{1}{m} &\cdot\int_{0}^{\infty}e^{-\alpha\cdot t} \cdot t  dt=...=\frac{4m}{c^2}\in \mathbb{R}^+
+\end{split}
+\end{equation}
+Vi ser att vi intressant nog inte bara kan stänga in denna integral, utan faktiskt räkna ut ett värde för den.
+\item fallet $k<\frac{c^2}{4m}$ ($\omega_0 \notin \mathbb{R}$, överdämpat system)
+\newline Här råkar vi på ett annat problem: $\omega_0$ blir komplex. Således blir det svårt att integrera uttrycket. Vi tar nu hjälp av $\omega_1$.
+
+\begin{equation}
+\begin{split}
+I_{impuls}= & \int_{0}^{\infty}\left|\frac{e^{-\alpha\cdot t}}{\omega_0 \cdot m}\cdot sin(\omega_0\cdot t)\right|dt=\\ & \int_{0}^{\infty}\left|\frac{e^{-\alpha\cdot t}}{i\cdot\omega_1 \cdot m}\cdot i\cdot sinh(\omega_1\cdot t)\right|dt=\\ & \frac{1}{\omega_1 \cdot m}\int_{0}^{\infty}\left|e^{-\alpha\cdot t}\cdot sinh(\omega_1\cdot t)\right|dt=\\ & \frac{1}{2 \cdot\omega_1 \cdot m}\int_{0}^{\infty}e^{-\alpha\cdot t}\cdot \left( e^{\omega_1\cdot t}-e^{-\omega_1\cdot t} \right) dt< \\ & \frac{1}{2\cdot\omega_1 \cdot m}\int_{0}^{\infty}e^{(\omega_1-\alpha)\cdot t} dt=\frac{1}{2\cdot\omega_1 \cdot m}\left[\frac{e^{(\omega_1-\alpha)\cdot t}}{\omega_1-\alpha} \right]_{0}^{\infty}=\\ & \frac{1}{2\cdot\omega_1 \cdot m}\left(\frac{-1}{\omega_1-\alpha} \right)=\frac{1}{2\cdot\omega_1 \cdot m}\left(\frac{1}{\alpha-\omega_1} \right)=\\ & \frac{1}{2\cdot   \sqrt{\left(\frac{c}{2\cdot m}\right)^2-\frac{k}{m}}   \cdot m}\left(\frac{1}{\sqrt{\left(\frac{c}{2\cdot m}\right)^2}-\sqrt{\left(\frac{c}{2\cdot m}\right)^2-\frac{k}{m}}} \right)\in \mathbb{R}^+
+\end{split}
+\end{equation}
+\end{itemize}
+
+\newpage
+
+\subsection{Amplitud- och fas-karaktäristik}
+
+Amplitudkaraktäristik och faskaraktäristik beskriver hur impulssvarets amplitud och fasförskjutning påverkas av insignalens frekvens.
+
+För att ta fram amplitudkaraktäristiken tar man absolutbeloppet av systemets frekvenssvar, d.v.s. $|H(\omega)|$. Faskaraktäristiken får man genom att ta argumentet av frekvesnsvaret, $arg(H(\omega))$. 
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.5]{FasAmpKar}
+\caption{•}
+\end{center}
+\end{figure}
+
+
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.5]{BodePlot(FasAmpKar)}
+\caption{•}
+\end{center}
+\end{figure}
 
 \newpage
 
@@ -458,53 +507,6 @@ g(\infty) = \frac{1}{m \cdot (\omega_o^2 +\alpha^2)}
 \end{center}
 \end{figure}
 
-\subsection{Stabilitetsbevis}
-För att vår idealisering skall vara representativ för vår studsmatta måste systemet vara stabilt. I grund och botten betyder detta att vårt system ej får tillföra mer energi än vad som läcker ut. Detta stämmer om den tillryggalagda sträckan är begränsad efter en impuls. Sträckan fås genom att absolutintegrera impulssvaret i tidsdomänen (stabilitet om $\int_{-\infty}^{\infty}|h(t)|dt\in \mathbb{R}$ ). Nedan följer en förenkling av integralen.
-\begin{equation}
-\begin{split}
-I_{impuls}=\int_{-\infty}^{\infty}| \frac{1}{\sqrt{\frac{4 \cdot m \cdot k - c^2}{4}} }  \cdot e^{-\frac{c}{2m} \cdot t} \cdot & sin(\sqrt{\frac{4 \cdot m \cdot k - c^2}{4 \cdot m^2}} \cdot t) \cdot u(t)|dt=\\ \frac{1}{\sqrt{\frac{4 \cdot m \cdot k - c^2}{4}} }  \cdot \int_{0}^{\infty}|e^{-\frac{c}{2m} \cdot t}| \cdot & |sin(\sqrt{\frac{4 \cdot m \cdot k - c^2}{4 \cdot m^2}} \cdot t)|dt
-\end{split}
-\end{equation}
-Förenklingar för att göra beviset mer lättläsligt:
-\begin{itemize}
-\item $\omega_0=\sqrt{\frac{4 \cdot m \cdot k - c^2}{4 \cdot m^2}}$
-\item $\alpha=\frac{c}{2\cdot m}$
-\item $\omega_1=\sqrt{\frac{c^2-4 \cdot m \cdot k}{4 \cdot m^2}}$
-\newline
-\newline 
-Notera att: $\left( \omega_0=\sqrt{\frac{4 \cdot m \cdot k-c^2}{4 \cdot m^2}}=\sqrt{(-1)\cdot\frac{c^2-4 \cdot m \cdot k}{4 \cdot m^2}}=i\cdot\sqrt{\frac{c^2-4 \cdot m \cdot k}{4 \cdot m^2}}=i\cdot \omega_1\right)$
-\end{itemize}
-
-Vi konstaterar att delfunktionerna är positiva för alla positiva t. Således är även integralen av produkten det.
-$$I_{impuls}=\frac{1}{\omega_0 \cdot m}\int_{0}^{\infty}e^{-\alpha\cdot t}\cdot | sin(\omega_0\cdot t)|dt>0$$
-
-Vi bevisar att integralen är begränsad för tre olika fall: då $0\neq\omega_0 \in \mathbb{R}$, $\omega_0=0$ respektive då $\omega_0 \notin \mathbb{R}$
-
-\begin{itemize}
-\item fallet $k>\frac{c^2}{4m}$ ($0\neq\omega_0 \in \mathbb{R}$, underdämpat system)
-\begin{equation}
-\begin{split}
-I_{impuls}=\frac{1}{\omega_0 \cdot m}\int_{0}^{\infty}e^{-\alpha\cdot t}\cdot & | sin(\omega_0\cdot t)|<\frac{1}{\omega_0 \cdot m}\int_{0}^{\infty}e^{-\alpha\cdot t}=\\\frac{1}{\omega_0 \cdot m} \left[\frac{-e^{-\alpha\cdot t}}{\alpha}\right]_0^\infty= \frac{1}{\omega_0 \cdot m} & \cdot \frac{1}{\alpha}=\frac{1}{\sqrt{\frac{4\cdot m\cdot k- c^2}{4}}\cdot\frac{c}{2m}}\in \mathbb{R}^+
-\end{split}
-\end{equation}
-\item fallet $k=\frac{c^2}{4m}$ ($\omega_0=0$, kritiskt dämpat system)
-\newline 
-Här får vi problem med att faktorn framför integralen blir odefinierad samtidigt som sinusen blir 0. Låt oss kasta lite gränsvärdesanalys på det problemet!
-\begin{equation}
-\begin{split}
-I_{impuls}= & \lim_{\omega_0\to0}\left(\frac{1}{m} \int_{0}^{\infty}e^{-\alpha\cdot t}\cdot |\frac{sin(\omega_0\cdot t)}{\omega_0}|dt\right) = \\ \frac{1}{m} &\cdot\int_{0}^{\infty}e^{-\alpha\cdot t} \cdot t  dt=...=\frac{4m}{c^2}\in \mathbb{R}^+
-\end{split}
-\end{equation}
-Vi ser att vi intressant nog inte bara kan stänga in denna integral, utan faktiskt räkna ut ett värde för den.
-\item fallet $k<\frac{c^2}{4m}$ ($\omega_0 \notin \mathbb{R}$, överdämpat system)
-\newline Här råkar vi på ett annat problem: $\omega_0$ blir komplex. Således blir det svårt att integrera uttrycket. Vi tar nu hjälp av $\omega_1$.
-
-\begin{equation}
-\begin{split}
-I_{impuls}= & \int_{0}^{\infty}\left|\frac{e^{-\alpha\cdot t}}{\omega_0 \cdot m}\cdot sin(\omega_0\cdot t)\right|dt=\\ & \int_{0}^{\infty}\left|\frac{e^{-\alpha\cdot t}}{i\cdot\omega_1 \cdot m}\cdot i\cdot sinh(\omega_1\cdot t)\right|dt=\\ & \frac{1}{\omega_1 \cdot m}\int_{0}^{\infty}\left|e^{-\alpha\cdot t}\cdot sinh(\omega_1\cdot t)\right|dt=\\ & \frac{1}{2 \cdot\omega_1 \cdot m}\int_{0}^{\infty}e^{-\alpha\cdot t}\cdot \left( e^{\omega_1\cdot t}-e^{-\omega_1\cdot t} \right) dt< \\ & \frac{1}{2\cdot\omega_1 \cdot m}\int_{0}^{\infty}e^{(\omega_1-\alpha)\cdot t} dt=\frac{1}{2\cdot\omega_1 \cdot m}\left[\frac{e^{(\omega_1-\alpha)\cdot t}}{\omega_1-\alpha} \right]_{0}^{\infty}=\\ & \frac{1}{2\cdot\omega_1 \cdot m}\left(\frac{-1}{\omega_1-\alpha} \right)=\frac{1}{2\cdot\omega_1 \cdot m}\left(\frac{1}{\alpha-\omega_1} \right)=\\ & \frac{1}{2\cdot   \sqrt{\left(\frac{c}{2\cdot m}\right)^2-\frac{k}{m}}   \cdot m}\left(\frac{1}{\sqrt{\left(\frac{c}{2\cdot m}\right)^2}-\sqrt{\left(\frac{c}{2\cdot m}\right)^2-\frac{k}{m}}} \right)\in \mathbb{R}^+
-\end{split}
-\end{equation}
-\end{itemize}
 
 \subsection{Sinussvar}
 Vi vill undersöka vilken utsignal vi får om vi skickar in relevanta sinusar som insignaler. Vi har valt att undersöka tre fall som vi anser vara intresanta. En sinus med en hög frekvens, en med en låg frekvens och en med resonansfrekvensen.
@@ -553,17 +555,7 @@ Den förmodligen mest relevanta skillnaden mellan vår modell och en riktig stud
 Vidare så med en riktig studsmatta hinner i princip vid höga hopp en studsmatta gå tillbaka till sitt jämnviktsläge utan någon massa på mattan medans hopparen är i luften, för att sedan påverkar av en mycket stor kraft när denna landar. Så funkar inte vår modell.
 
 Detta har flertalet efterverkningar på vårt system, en av de större effekterna är att vi får en annan resonansfrekvens än vad som skulle vara fallet när man hoppar på en riktig studsmatta. Vi kan se att resonansfrekvensen vi får fram för vårt system är högre än frekvensen hos en person som hoppar på en studsmatta vilket då är rimligt pga att vi har den extra fjäderkraften som drar ner studsmattan mot marken igen och som ökar frekvensen.
-\subsection{Vad som har analyserats och varför}
 
-I denna rapport har vi tagit fram en rad systemegenskaper som vi anser vara relevanta för att studera vårt system. Vi har tagit fram systemfunktionen för systemet då den säger väldigt mycket om systemet. Systemfunktionen använder vi använ som bas för att få fram vår frekvensfunktionen som ger oss vår  amplitudkaraktäristik och faskaraktäristik. Dessa säger mycket om hur våra utsignaler kommer se ut för olika insignaler. Ett exempel på detta är att de bestämmer vilken variation av en sinusformad insignal vi får som utsignal som användes i 4.7.
-
-Vi tog fram impulssvaret som fungerar som en bas för att ta fram både stegsvaret och stabilitetsbeviset. Stegsvaret ger oss information om hur studsmattan skulle reagera om en person hoppade på studsmattan och hur den svänger in sig till sitt nya jämnviktsläge. En annan tolkning kan vara att en person redan står på studsmattan och fångar en massa och stegsvaret visar hur studsmattan ocillerarar in till sitt nya jämnviktsläge.
-
-\subsection{Vad som inte har analyserats och varför}
-
-En sak man ofta vill analysera för system av liknande stystem är ett rampsvar. Med det avses vad som händer vid en konstant stigande insignal. Detta skulle kunna vara relevant om man modellerar med t ex en lägesändring som insignal och en annan lägesändring som en utsignal. Och det kan i detta fal representera för vissa system t ex hur en bil kör upp för en backe. I vårt fall har vi dock en kraft som insignal och vi ansåg inte att en analys av en konstant stigande kraft som insignal skulle vara en relevant analys.
-
-I vårt system skulle ett rampsvar kunna tolkas som att en person står på en studsmatta och håller i en jättestor tom bägare och att denna bägare fylls med ett konstant flöde av vatten. Rampsvaret skulle då visa hur studsmattans lägesändring såg ut i detta fal. Vi ansåg inte att detta var en relevant analys utav en studsmattas egenskaper och kan inte direkt kopplas till syftet eller målet med vår rapport så vi valde att inte göra en sådan analys även om resultatet skulle kunna vara interesant.
 
 
 \newpage
