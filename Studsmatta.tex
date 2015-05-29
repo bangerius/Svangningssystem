@@ -483,6 +483,38 @@ I_{impuls}=\int_{0}^{\infty}\left|\frac{e^{-\alpha\cdot t}}{\omega_0 \cdot m}\cd
 \end{multline}
 \end{itemize}
 
+\subsection{Sinussvar}
+Vi vill undersöka vilken utsignal vi får om vi skickar in relevanta sinusar som insignaler. Vi har valt att undersöka tre fall som vi anser vara intresanta. En sinus med en hög frekvens, en med en låg frekvens och en med resonansfrekvensen.
+
+\begin{equation}
+x(t) = A sin(\omega_0t) \rightarrow y(t) = A|H(\omega_0)|sin(\omega_0t + arg(H(\omega_0)))
+\end{equation}
+
+Vi säger att en person trycker kan trycka ifrån med en kraft av $500N$ och använder därför 500 som vår amplitud för alla våra sinusar. Vi skulle kunna tänka oss att man med en hög frekvens inte kan trycka med samma kraft men för att jämnföra vilka svar vi får för våra olika frekvenser så låter vi amplituden vara den samma i alla tre fallen.
+
+Det första fallet vi vill undersöka är då man hoppar i resonansferkvensen. Vi får då att $\omega_0 = 5,25$
+
+\begin{equation}
+y(t) = 0.94 sin(5,25 t - 1,44)
+\end{equation}
+
+Det intresanta för oss är amplitudskalningen. Vi kan se att den är $0,94$ med andra ord så får vi en amplitud på 0.94 meter. För att trycka ifrån med 500 newton och hoppa i resonansfrekvens ser vi detta som ett rimligt värde.
+
+Vi vill sedan testa om vi har en mycket mycket låg amplitud i vårt fall väljer vi $\omega_0 = 1,5$
+
+\begin{equation}
+y(t) = 0,27 sin(1,5 t - 0,08)
+\end{equation}
+
+Vi ser att vi får en amplitud som ligger runt 0,27 meter vilket är rimligt då vi trycker med en kraft $500N$ och har en fjäderkonstant på $2000$ Vi får i princip bara $500/2000 = 0,25$. Vi får dock ett litet tillslag för att vi har en frekvens om än låg.
+
+För vår sista sinus har vi valt en hög frekvens $\omega_0 = 30$
+
+\begin{equation}
+y(t) = 8\cdot 10^{-3} sin(30 t - 3.09)
+\end{equation}
+
+Vi ser att vi får en mycket mycket liten amplitud vilket är realistiskt för en hög frekvens
 
 \section{Diskussion}
 
