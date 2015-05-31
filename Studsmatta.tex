@@ -432,7 +432,7 @@ I_{impuls}= & \int_{0}^{\infty}\left|\frac{e^{-\alpha\cdot t}}{\omega_0 \cdot m}
 Eftersom vårt system är stabilt kan vi enkelt översätta systemfunktionen till systemets frekvensfunktion. Eftersom $s = \sigma + j\omega$ så kommer $\sigma = 0$ vid $j\omega$-axeln. Då följer att:
 
 \begin{equation}
-H(\omega) = H(s), s = j\omega
+H(\omega) = H(s), \  s = j\omega
 \end{equation}
 
 Då följer det att vår frekvensfunktion är:
@@ -448,11 +448,19 @@ Amplitudkaraktäristik och faskaraktäristik beskriver hur impulssvarets amplitu
 
 För att ta fram amplitudkaraktäristiken tar man absolutbeloppet av systemets frekvensfunktion, d.v.s. $|H(\omega)|$. Faskaraktäristiken får man genom att ta argumentet av frekvesnsfunktion, $arg(H(\omega))$. 
 
+\begin{equation}
+|H(\omega)| = \frac{1}{|70\cdot (j\omega)^2 + 100 \cdot j\omega + 2000|}
+\end{equation}
+
+MatLab har en inbyggd funktion för att rita amplitud- och fas-karaktäristik som kallas BodePlot. Ett Bodediagram är en graf för systemfunktioner där amplitud- och fas ritas som funktion av frekvens med logaritmisk skala.
+
+Vår amplitud- och fas-karaktäristik med instoppade värden visas i bodediagrammet nedan:
+
 
 \begin{figure}[h]
 \begin{center}
 \includegraphics[scale=0.5]{BodePlot(FasAmpKar)}
-\caption{•}
+\caption{$|H(\omega)| \ resp. \ arg(H(\omega)), k = 2000, c = 100 och m = 70$ }
 \end{center}
 \end{figure}
 
