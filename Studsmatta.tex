@@ -473,10 +473,10 @@ Vi vill ta fram stegsvaret $g(t)$ för vårt system. Vi gör detta genom att int
 \begin{equation}
 \int_{-\infty}^\tau \frac{1} {\omega_0 m} \cdot e^{-\alpha  t} \cdot sin(\omega_0  t) \cdot u(t) dt = \frac{1}{\omega_0  m} \cdot \int_{-\infty}^\tau sin(\omega_0 t)\cdot e^{-\alpha  t} \cdot u(t) dt
 \end{equation}
-Vi kan dela upp integralen i två integraler. Den ena för negativa $t$ den andra för positiva $t$.
+Vi delar upp integralen i två integraler. Den ena för negativa $t$ den andra för positiva $t$ det ger:
 $$ \int_{-\infty}^\tau sin(\omega_0  t)\cdot e^{-\alpha t} \cdot u(t) dt
 = \int_{-\infty}^0 sin(\omega_0  t)\cdot e^{-\alpha  t} \cdot u(t) dt + \int_0^\tau sin(\omega_0  t)\cdot e^{-\alpha  t} \cdot u(t) dt $$
-Eftersom $u(t)$ är 0 för negativa $t$ och 1 för positiva $t$ så kan vi skriva om integralen enligt nedan.
+Eftersom $u(t)$ är 0 för negativa $t$ och 1 för positiva $t$ vilket ger:
 \begin{equation}
 \int_{-\infty}^\tau sin(\omega_0  t)\cdot e^{-\alpha  t} \cdot u(t) dt
 = \int_0^\tau sin(\omega_0  t)\cdot e^{-\alpha t} dt
@@ -495,23 +495,23 @@ I & = [-\frac{1}{\omega_0} \cdot cos(\omega_0 t) \cdot e^{-\alpha t}]_0^\tau - \
 \end{split}
 \end{equation}
 
-Vi stoppar ni in de konstanter vi bröt ut ur integralen tidigare för att få stegsvaret
+Vi stoppar ni in de konstanter vi bröt ut ur integralen tidigare för att få stegsvaret det ger:
 
 \begin{equation}
 g(\tau)= \frac{1}{\omega_ m} \cdot I = \frac{1-cos(\omega_o \tau) \cdot e^{-\alpha  \tau} - \frac{\alpha}{\omega_0^2} \cdot sin(\omega_o \tau) \cdot e^{-\alpha \tau}}{m (\omega_0^2 + \alpha^2)}
 \end{equation}
 
-Om vi låter tau vara $\infty$ får vi
+Om vi låter $\tau \to \infty$ ger det:
 
 \begin{equation}
-g(\infty) = \frac{1 - cos(\omega_0 \infty) \cdot e^{-\alpha \infty}
-- \frac{\alpha}{\omega_0^2} \cdot sin(\omega_0  \infty) \cdot e^{-\alpha  \infty}}{m  (\omega_o^2 +\alpha^2)}
+g(\tau) = \lim_{\tau \to \infty} \frac{1 - cos(\omega_0 \tau) \cdot e^{-\alpha \tau}
+- \frac{\alpha}{\omega_0^2} \cdot sin(\omega_0  \tau) \cdot e^{-\alpha  \tau}}{m  (\omega_o^2 +\alpha^2)}, \tau \to \infty
 \end{equation}
 
-Vi kan se att $e^{-\alpha  \infty} = 0$ vilket ger
+Vi kan se att $e^{-\alpha  \tau} \to 0$ för $\tau \to 0$ vilket ger:
 
 \begin{equation}
-g(\infty) = \frac{1}{m  (\omega_o^2 +\alpha^2)}
+g(\tau) = \lim_{\tau \to \infty} \frac{1}{m  (\omega_o^2 +\alpha^2)} , \tau \to \infty
 \end{equation}
 
 \begin{figure}
