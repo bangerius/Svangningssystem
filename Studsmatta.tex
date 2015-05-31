@@ -527,7 +527,7 @@ Vår amplitud- och fas-karaktäristik med instoppade värden visas i bodediagram
 
 
 \subsection{Resonansfrekvens}
-Resonansfrekvensen är den frekvens på insignalen som leder till maximal amplitud på utsignalen. I vårt fall med studsmattan är denna frekvens eftertraktad; den gör ju så att man gungar så högt som möjligt. Vi har framställt ett uttryck för resonansfrekvensen i vårt system genom att derivera amplitudkaraatäristiken. Vi gör detta för att derivatan (lutningen) blir 0 då vi nått globalt maximum för amplitudkaraktäristiken.
+I detta avsnitt diskuterar vi hur resonansfrekvensen beter sig i vårt system. Resonansfrekvensen är den frekvens på insignalen som leder till maximal amplitud på utsignalen. I vårt fall med studsmattan är denna frekvens eftertraktad; den gör ju så att man gungar så högt som möjligt. Vi har framställt ett uttryck för resonansfrekvensen i vårt system genom att derivera amplitudkaraatäristiken. Vi gör detta för att derivatan (lutningen) blir 0 då vi nått globalt maximum för amplitudkaraktäristiken.
 \begin{equation}
 \begin{split}
 \omega=\omega_{res} \rightarrow \frac{d}{d\omega}\left|H(\omega)\right|=0\rightarrow \\ 
@@ -538,9 +538,32 @@ Resonansfrekvensen är den frekvens på insignalen som leder till maximal amplit
 \end{split}
 \end{equation}
 
-När vi tagit fram denna funktion kan vi se hur resonansfrekvensen förändras om vi t.ex. byter massa. På det sättet kan vi se hur mattans svängningsfrekvens kommer att bete sig för olika personer.
+När vi tagit fram denna funktion kan vi se hur resonansfrekvensen förändras om vi t.ex. byter massa. På det sättet kan vi se hur mattans svängningsfrekvens kommer att bete sig för olika personer. I figur 14 ser vi denna relation representerad.
 
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.4]{resonans}
+\caption{Resonansvinkelfrekvensen som en funktion av massan.}
+\end{center}
+\end{figure}
 
+Vi ser att ju mer personen på mattan väger desto lägre blir resonansfrekvensen. Svängningstiden kommer alltså bli större, vilket verkar rimligt.\newline
+
+I figur (15-16) ser vi hur resonansfrekvensen förändras med de andra konstanterna ($c$ och $k.$).
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.4]{resonansFjader}
+\caption{Resonansvinkelfrekvensen som en funktion av fjäderkonstanten.}
+\end{center}
+\end{figure}
+I figur (15) ser vi att resonansfrekvensen blir högre med fjäderkonstanten. Med andra ord kommer frekvensen att gå ned då fjädrarna blivit lite slitna och rostiga efter några år av slitage. Detta verkar också rimligt.
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.4]{resonansDamp}
+\caption{Resonansvinkelfrekvensen som en funktion av dämpningskonstanten.}
+\end{center}
+\end{figure}
+I figur (16) återfinner vi ett annat intressant fenomen. Frekvensen minskar såsom dämpningen ökar, men vid c.a. $530\frac{kg}{s}$ slår den i botten och sedan är resonansfrekvensen $0$. Detta beror på att vi där har nått kritisk dämpning (och därefter överdämpning) och således inte kan få någon självsvängning.
 
 \subsection{Sinussvar}
 Vi vill undersöka vilken utsignal vi får om vi skickar in relevanta sinusar som insignaler. Vi har valt att undersöka tre fall som vi anser vara intresanta. En sinus med en hög frekvens, en med en låg frekvens och en med resonansfrekvensen.
