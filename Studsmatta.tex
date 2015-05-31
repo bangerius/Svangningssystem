@@ -379,10 +379,10 @@ h(t) = \frac{1}{\omega_0  m} \cdot  e^{-\alpha  t} & \cdot  sin(\omega_0  t) \cd
 
 \newpage
 \subparagraph{Stabilitetsbevis}
-För att vår idealisering skall vara representativ för vår studsmatta måste systemet vara stabilt. I grund och botten betyder detta att vårt system ej får tillföra mer energi än vad som läcker ut. Detta stämmer om den tillryggalagda sträckan är begränsad efter en impuls. Sträckan fås genom att absolutintegrera impulssvaret i tidsdomänen (stabilitet om $\int_{-\infty}^{\infty}|h(t)|dt\in \mathbb{R}$ ). Nedan följer en förenkling av integralen.
+För att vår idealisering skall vara representativ för vår studsmatta måste systemet vara stabilt. I grund och botten betyder detta att vårt system ej får tillföra mer energi än vad som läcker ut. Detta stämmer om den tillryggalagda sträckan är begränsad efter en impuls. Sträckan fås genom att absolutintegrera impulssvaret i tidsdomänen (stabilitet om $\int_{-\infty}^{\infty}|h(t)|\ dt\in \mathbb{R}$ ). Nedan följer en förenkling av integralen.
 \begin{equation}
 \begin{split}
-I_{impuls}=\int_{-\infty}^{\infty}| \frac{1}{\sqrt{\frac{4  m  k - c^2}{4}} }  \cdot e^{-\frac{c}{2m}  t} \cdot & sin(\sqrt{\frac{4  m  k - c^2}{4  m^2}} \cdot t) \cdot u(t)|dt=\\ \frac{1}{\sqrt{\frac{4  m  k - c^2}{4}} }  \cdot \int_{0}^{\infty}|e^{-\frac{c}{2m}  t}| \cdot & |sin(\sqrt{\frac{4  m  k - c^2}{4  m^2}} \cdot t)|dt
+I_{impuls}=\int_{-\infty}^{\infty}| \frac{1}{\sqrt{\frac{4  m  k - c^2}{4}} }  \cdot e^{-\frac{c}{2m}  t} \cdot & sin(\sqrt{\frac{4  m  k - c^2}{4  m^2}} \cdot t) \cdot u(t)| \ dt=\\ \frac{1}{\sqrt{\frac{4  m  k - c^2}{4}} }  \cdot \int_{0}^{\infty}|e^{-\frac{c}{2m}  t}| \cdot & |sin(\sqrt{\frac{4  m  k - c^2}{4  m^2}} \cdot t)| \ dt
 \end{split}
 \end{equation}
 Förenklingar för att göra beviset mer lättläsligt:
@@ -396,7 +396,7 @@ Notera att: $\left( \omega_0=\sqrt{\frac{4  m  k-c^2}{4  m^2}}=\sqrt{(-1)\cdot\f
 \end{itemize}
 
 Vi konstaterar att delfunktionerna är positiva för alla positiva t. Således är även integralen av produkten det.
-$$I_{impuls}=\frac{1}{\omega_0  m} \cdot \int_{0}^{\infty}e^{-\alpha t}\cdot | sin(\omega_0 t)|dt>0$$
+$$I_{impuls}=\frac{1}{\omega_0  m} \cdot \int_{0}^{\infty}e^{-\alpha t}\cdot | sin(\omega_0 t)| \ dt>0$$
 
 Vi bevisar att integralen är begränsad för tre olika fall: då $0\neq\omega_0 \in \mathbb{R}$, $\omega_0=0$ respektive då $\omega_0 \notin \mathbb{R}$
 
@@ -404,7 +404,7 @@ Vi bevisar att integralen är begränsad för tre olika fall: då $0\neq\omega_0
 \item fallet $k>\frac{c^2}{4m}$ ($0\neq\omega_0 \in \mathbb{R}$, underdämpat system)
 \begin{equation}
 \begin{split}
-I_{impuls}=\frac{1}{\omega_0  m} \cdot \int_{0}^{\infty}e^{-\alpha t}\cdot & | sin(\omega_0 t| dt <\frac{1}{\omega_0  m}\int_{0}^{\infty}e^{-\alpha t} dt =\\\frac{1}{\omega_0  m} \cdot \left[\frac{-e^{-\alpha t}}{\alpha}\right]_0^\infty= \frac{1}{\omega_0  m} & \cdot \frac{1}{\alpha}=\frac{1}{\sqrt{\frac{4 m k- c^2}{4}}\cdot\frac{c}{2m}}\in \mathbb{R}^+
+I_{impuls}=\frac{1}{\omega_0  m} \cdot \int_{0}^{\infty}e^{-\alpha t}\cdot & | sin(\omega_0 t| \ dt <\frac{1}{\omega_0  m}\int_{0}^{\infty}e^{-\alpha t} \  dt =\\\frac{1}{\omega_0  m} \cdot \left[\frac{-e^{-\alpha t}}{\alpha}\right]_0^\infty= \frac{1}{\omega_0  m} & \cdot \frac{1}{\alpha}=\frac{1}{\sqrt{\frac{4 m k- c^2}{4}}\cdot\frac{c}{2m}}\in \mathbb{R}^+
 \end{split}
 \end{equation}
 \item fallet $k=\frac{c^2}{4m}$ ($\omega_0=0$, kritiskt dämpat system)
@@ -412,7 +412,7 @@ I_{impuls}=\frac{1}{\omega_0  m} \cdot \int_{0}^{\infty}e^{-\alpha t}\cdot & | s
 Här får vi problem med att faktorn framför integralen blir odefinierad samtidigt som sinusen blir 0. Låt oss kasta lite gränsvärdesanalys på det problemet!
 \begin{equation}
 \begin{split}
-I_{impuls}= & \lim_{\omega_0\to0}\left(\frac{1}{m} \cdot \int_{0}^{\infty}e^{-\alpha t}\cdot |\frac{sin(\omega_0 t)}{\omega_0}|dt\right) = \\ \frac{1}{m} &\cdot\int_{0}^{\infty}e^{-\alpha t} \cdot t  dt=...=\frac{4m}{c^2}\in \mathbb{R}^+
+I_{impuls}= & \lim_{\omega_0\to0}\left(\frac{1}{m} \cdot \int_{0}^{\infty}e^{-\alpha t}\cdot |\frac{sin(\omega_0 t)}{\omega_0}| \ dt\right) = \\ \frac{1}{m} &\cdot\int_{0}^{\infty}e^{-\alpha t} \cdot t  \  dt=...=\frac{4m}{c^2}\in \mathbb{R}^+
 \end{split}
 \end{equation}
 Vi ser att vi intressant nog inte bara kan stänga in denna integral, utan faktiskt räkna ut ett värde för den.
@@ -421,7 +421,7 @@ Vi ser att vi intressant nog inte bara kan stänga in denna integral, utan fakti
 
 \begin{equation}
 \begin{split}
-I_{impuls}= & \int_{0}^{\infty}\left|\frac{e^{-\alpha t}}{\omega_0  m}\cdot sin(\omega_0 t)\right|dt=\\ & \int_{0}^{\infty}\left|\frac{e^{-\alpha t}}{i\omega_1 m}\cdot i sinh(\omega_1 t)\right|dt=\\ & \frac{1}{\omega_1  m} \cdot \int_{0}^{\infty}\left|e^{-\alpha t}\cdot sinh(\omega_1 t)\right|dt=\\ & \frac{1}{2 \omega_1  m} \cdot \int_{0}^{\infty}e^{-\alpha t} \left( e^{\omega_1 t}-e^{-\omega_1 t} \right) dt< \\ & \frac{1}{2\omega_1  m} \cdot \int_{0}^{\infty}e^{(\omega_1-\alpha) t} dt=\frac{1}{2\omega_1  m}\left[\frac{e^{(\omega_1-\alpha) t}}{\omega_1-\alpha} \right]_{0}^{\infty}=\\ & \frac{1}{2\omega_1  m}\cdot\left(\frac{-1}{\omega_1-\alpha} \right)=\frac{1}{2\omega_1  m} \cdot \left(\frac{1}{\alpha-\omega_1} \right)=\\ & \frac{1}{2 \sqrt{\left(\frac{c}{2 m}\right)^2-\frac{k}{m}}   \cdot m} \cdot \left(\frac{1}{\sqrt{\left(\frac{c}{2 m}\right)^2}-\sqrt{\left(\frac{c}{2 m}\right)^2-\frac{k}{m}}} \right)\in \mathbb{R}^+
+I_{impuls}= & \int_{0}^{\infty}\left|\frac{e^{-\alpha t}}{\omega_0  m}\cdot sin(\omega_0 t)\right| \ dt=\\ & \int_{0}^{\infty}\left|\frac{e^{-\alpha t}}{i\omega_1 m}\cdot i sinh(\omega_1 t)\right| \ dt=\\ & \frac{1}{\omega_1  m} \cdot \int_{0}^{\infty}\left|e^{-\alpha t}\cdot sinh(\omega_1 t)\right| \ dt=\\ & \frac{1}{2 \omega_1  m} \cdot \int_{0}^{\infty}e^{-\alpha t} \left( e^{\omega_1 t}-e^{-\omega_1 t} \right) \ dt< \\ & \frac{1}{2\omega_1  m} \cdot \int_{0}^{\infty}e^{(\omega_1-\alpha) t} \  dt=\frac{1}{2\omega_1  m}\left[\frac{e^{(\omega_1-\alpha) t}}{\omega_1-\alpha} \right]_{0}^{\infty}=\\ & \frac{1}{2\omega_1  m}\cdot\left(\frac{-1}{\omega_1-\alpha} \right)=\frac{1}{2\omega_1  m} \cdot \left(\frac{1}{\alpha-\omega_1} \right)=\\ & \frac{1}{2 \sqrt{\left(\frac{c}{2 m}\right)^2-\frac{k}{m}}   \cdot m} \cdot \left(\frac{1}{\sqrt{\left(\frac{c}{2 m}\right)^2}-\sqrt{\left(\frac{c}{2 m}\right)^2-\frac{k}{m}}} \right)\in \mathbb{R}^+
 \end{split}
 \end{equation}
 \end{itemize}
@@ -471,24 +471,24 @@ Vår amplitud- och fas-karaktäristik med instoppade värden visas i bodediagram
 Vi vill ta fram stegsvaret $g(t)$ för vårt system. Vi gör detta genom att integrera vårt impulssvar upp till tiden tau $\int_{-\infty}^\tau h(t)$. Vi börjar med att bryta ut våra konstanter utanför integralen. Vi räknar sedan ut integralen och till sist stoppar vi in konstanterna igen.
 
 \begin{equation}
-\int_{-\infty}^\tau \frac{1} {\omega_0 m} \cdot e^{-\alpha  t} \cdot sin(\omega_0  t) \cdot u(t) dt = \frac{1}{\omega_0  m} \cdot \int_{-\infty}^\tau sin(\omega_0 t)\cdot e^{-\alpha  t} \cdot u(t) dt
+\int_{-\infty}^\tau \frac{1} {\omega_0 m} \cdot e^{-\alpha  t} \cdot sin(\omega_0  t) \cdot u(t) \  dt = \frac{1}{\omega_0  m} \cdot \int_{-\infty}^\tau sin(\omega_0 t)\cdot e^{-\alpha  t} \cdot u(t) \  dt
 \end{equation}
 Vi delar upp integralen i två integraler. Den ena för negativa $t$ den andra för positiva $t$ det ger:
-$$ \int_{-\infty}^\tau sin(\omega_0  t)\cdot e^{-\alpha t} \cdot u(t) dt
-= \int_{-\infty}^0 sin(\omega_0  t)\cdot e^{-\alpha  t} \cdot u(t) dt + \int_0^\tau sin(\omega_0  t)\cdot e^{-\alpha  t} \cdot u(t) dt $$
+$$ \int_{-\infty}^\tau sin(\omega_0  t)\cdot e^{-\alpha t} \cdot u(t)  \ dt
+= \int_{-\infty}^0 sin(\omega_0  t)\cdot e^{-\alpha  t} \cdot u(t) \  dt + \int_0^\tau sin(\omega_0  t)\cdot e^{-\alpha  t} \cdot u(t) \  dt $$
 Eftersom $u(t)$ är 0 för negativa $t$ och 1 för positiva $t$ vilket ger:
 \begin{equation}
-\int_{-\infty}^\tau sin(\omega_0  t)\cdot e^{-\alpha  t} \cdot u(t) dt
-= \int_0^\tau sin(\omega_0  t)\cdot e^{-\alpha t} dt
+\int_{-\infty}^\tau sin(\omega_0  t)\cdot e^{-\alpha  t} \cdot u(t) \  dt
+= \int_0^\tau sin(\omega_0  t)\cdot e^{-\alpha t} \  dt
 \end{equation}
 Vi låter integralen heta $I$ och räknar ut den.
 
 \begin{equation}
 \begin{split} 
-I & = \int_0^\tau sin(\omega_0 t)\cdot e^{-\alpha t} dt  \\
-& = [-\frac{1}{\omega_0} \cdot cos(\omega_0 t) \cdot e^{-\alpha t}]_0^\tau - \int_0^\tau \frac{\alpha}{\omega_0} \cdot cos(\omega_0 t) \cdot e^{-\alpha t} dt \\
+I & = \int_0^\tau sin(\omega_0 t)\cdot e^{-\alpha t} \  dt  \\
+& = [-\frac{1}{\omega_0} \cdot cos(\omega_0 t) \cdot e^{-\alpha t}]_0^\tau - \int_0^\tau \frac{\alpha}{\omega_0} \cdot cos(\omega_0 t) \cdot e^{-\alpha t}  \ dt \\
 & = [-\frac{1}{\omega_0} \cdot cos(\omega_0 t) \cdot e^{-\alpha t}]_0^\tau - \\
-& \frac{\alpha}{\omega_0} \cdot ([\frac{1}{\omega_0} \cdot sin(\omega_0 t) \cdot e^{-\alpha t}]_0^\tau - \int_0^\tau -\frac{\alpha}{\omega_0} \cdot sin(\omega_0  t)\cdot e^{-\alpha t} dt \\
+& \frac{\alpha}{\omega_0} \cdot ([\frac{1}{\omega_0} \cdot sin(\omega_0 t) \cdot e^{-\alpha t}]_0^\tau - \int_0^\tau -\frac{\alpha}{\omega_0} \cdot sin(\omega_0  t)\cdot e^{-\alpha t}  \ dt \\
 \leftrightarrow
 I & = [-\frac{1}{\omega_0} \cdot cos(\omega_0 t) \cdot e^{-\alpha t}]_0^\tau - \frac{\alpha}{\omega_0} \cdot ([\frac{1}{\omega_0} \cdot sin(\omega_0 t) \cdot e^{-\alpha t}]_0^\tau - (\frac{\alpha}{\omega_0})^2 I \\
 \leftrightarrow I & = \frac{1-cos(\omega_o \tau) \cdot e^{\alpha \tau} - \frac{\alpha}{\omega_0^2} \cdot sin(\omega_o \tau) \cdot e^{\alpha \tau}}{\omega_0 + \frac{\alpha^2}{\omega_0}}
