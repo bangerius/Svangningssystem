@@ -151,7 +151,7 @@ Då fjädrarna i vår studsmatta är placerade symmetriskt och personen står pl
 \subsection{Gravitationskraften $F_g$}
 
 \begin{equation}
-F_g = m \cdot g
+F_g = m  g
 \end{equation}
 Gravitationskraften $F_g$ är den kraften som påverkar en massa $m$ med en konstant gravitationsacceleration $g$.
 
@@ -165,7 +165,7 @@ F_f = -k (l_0 + y(t))
 
 \subsection{Dämpningskraften $F_d$}
 \begin{equation}
-F_d = -c \cdot v
+F_d = -c  v
 \end{equation}
 Dämpningskraften $F_d$ är den kraft som motverkar rörelsen i ett svängningssystem där $v$ är objektet i rörelses momentana hastighet och $c$ är dämpningskoefficienten för svängningsrörelsen. 
 
@@ -196,12 +196,12 @@ Vilket ger:
 
 Vid $t = 0$ så kommer gravitationskraften och fjäderkraftens utsträckning beroende på massan att ta ut varandra enligt:
 \begin{equation}
-k \cdot l_0 = mg
+k  l_0 = mg
 \end{equation}
 
 Vilket ger vår slutgiltiga differentialekvation.
 \begin{equation}
- m\frac{d^2y(t)}{dt^2} + k \cdot y(t) + c\frac{dy(t)}{dt} = x(t)
+ m\frac{d^2y(t)}{dt^2} + k  y(t) + c\frac{dy(t)}{dt} = x(t)
 \end{equation}
 
 
@@ -264,26 +264,26 @@ Från differentialekvationen kan vi genom laplacetransformering ta fram systemfu
 
 \begin{equation}
 \begin{split}
- m\frac{d^2y(t)}{dt^2} + k \cdot y(t) + c\frac{dy(t)}{dt} & = x(t) \\ \leftrightarrow m \cdot s^2 \cdot Y(s) + c \cdot s \cdot Y(s) + k \cdot Y(s) & = X(s)
+ m\frac{d^2y(t)}{dt^2} + k  y(t) + c\frac{dy(t)}{dt} & = x(t) \\ \leftrightarrow m  s^2  Y(s) + c  s  Y(s) + k  Y(s) & = X(s)
 \end{split}
 \end{equation}
 
 Bryter vi ut $Y(s)$ i vänsterledet får vi:
 
 \begin{equation}
-Y(s)(m \cdot s^2 + c \cdot s + k) = X(s)
+Y(s)(m  s^2 + c  s + k) = X(s)
 \end{equation}
 
 Eftersom $H(s) = \frac{Y(s)}{X(s)}$ så flyttar vi om och får:
 
 \begin{equation}
-H(s) = \frac{Y(s)}{X(s)} = \frac{1}{m\cdot s^2 + c \cdot s + k}
+H(s) = \frac{Y(s)}{X(s)} = \frac{1}{m s^2 + c  s + k}
 \end{equation}
 
 Om vi tar fram rötterna till nämnaren får vi:
 
 \begin{equation}
-H(s)= \frac{1}{(s + \frac{c}{2 \cdot m} + \sqrt{ (\frac{c}{2 \cdot m})^2 - \frac{k}{m}}) (s + \frac{c}{2 \cdot m} - \sqrt{ (\frac{c}{2 \cdot m})^2 - \frac{k}{m}})}
+H(s)= \frac{1}{(s + \frac{c}{2 m} + \sqrt{ (\frac{c}{2  m})^2 - \frac{k}{m}}) (s + \frac{c}{2  m} - \sqrt{ (\frac{c}{2  m})^2 - \frac{k}{m}})}
 \end{equation}
 
 Poler produceras där nämnarpolynomet har sina rötter.
