@@ -348,20 +348,20 @@ I vårt fall (studsmatta) vill vi gärna skapa så hög amplitud ut som möjligt
 Genom att kvadratkomplettera $H(s)$ får vi:
 
 \begin{equation}
-H(s) = \frac{1}{m} \cdot \frac{1}{(s+(\frac{c}{2 \cdot m}))^2-(\frac{c}{2 \cdot m})^2+\frac{k}{m}} 
+H(s) = \frac{1}{m} \cdot \frac{1}{(s+(\frac{c}{2  m}))^2-(\frac{c}{2  m})^2+\frac{k}{m}} 
 \end{equation}
 
-Om vi sätter $\alpha = \frac{c}{2m}$ och $\omega_0^2 = {-\frac{c + 4\cdot k \cdot m^2}{4 \cdot m^2}}$ och multiplicerar med $\frac{\omega_0}{\omega_0}$ får vi:
+Om vi sätter $\alpha = \frac{c}{2m}$ och $\omega_0^2 = {-\frac{c + 4 k  m^2}{4  m^2}}$ och multiplicerar med $\frac{\omega_0}{\omega_0}$ får vi:
 
 \begin{equation}
-H(s) = \frac{1}{\omega_0 \cdot m} \cdot \frac{\omega_0}{(s + \alpha)^2 +\omega_0^2}
+H(s) = \frac{1}{\omega_0  m} \cdot \frac{\omega_0}{(s + \alpha)^2 +\omega_0^2}
 \end{equation}
 
 Genom att inverslaplacetransformera $H(s)$ får vi impulssvaret $h(t)$. Vi använder tabell 19.23 i Sune Söderkvist formelsamling:
 
 \begin{equation}
 \begin{split}
-h(t) = \frac{1}{\omega_0 \cdot m} \cdot e^{-\alpha \cdot t} & \cdot sin(\omega_0 \cdot t) \cdot u(t) = \\ = \frac{1}{\sqrt{\frac{4 \cdot m \cdot k - c^2}{4}} }  \cdot e^{-\frac{c}{2m} \cdot t} \cdot & sin(\sqrt{\frac{4 \cdot m \cdot k - c^2}{4 \cdot m^2}} \cdot t) \cdot u(t)
+h(t) = \frac{1}{\omega_0  m} \cdot e^{-\alpha  t} &  sin(\omega_0  t) \cdot u(t) = \\ = \frac{1}{\sqrt{\frac{4  m  k - c^2}{4}} }   e^{-\frac{c}{2m} t}  & sin(\sqrt{\frac{4  m  k - c^2}{4  m^2}} \cdot t) \cdot u(t)
 \end{split}
 \end{equation}
 
