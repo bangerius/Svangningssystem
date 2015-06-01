@@ -36,10 +36,10 @@
 \pagenumbering{arabic}
 \setcounter{page}{3}
 
-I den här rapporten kommer vi beskriva när en person sätter en studsmatta i rörelse som ett linjärt svängningssystem av andra ordningen. Inom det här systemet är det kraften som personen trycker med när den sträcker ut eller böjer på benen som är insignalen, vilket resulterar i utsignalen som är studsmattans lägesändring ifrån sitt jämviktsläge med positiv rikning mot marken. Genom att beskriva systemet med en differentialekvation av andra graden kan vi få information om systemets egenskaper och dess beteende för olika insignaler. Med andra ord hur olika faktorer påverkar utsignalen.
+I den här rapporten kommer vi beskriva när en person sätter en studsmatta i rörelse som ett linjärt svängningssystem av andra ordningen. Inom det här systemet är insignalen kraften som personen trycker ifrån med när den sträcker ut eller böjer på benen, vilket resulterar i utsignalen som är studsmattans lägesändring ifrån sitt jämviktsläge med positiv rikning mot marken. Genom att beskriva systemet med en differentialekvation av andra graden kan vi få information om systemets egenskaper och dess beteende för olika insignaler, med andra ord hur olika faktorer påverkar utsignalen.
 
 \subsection{Syfte}
-Syftet med den här rapporten är att utöka vår förståelse för hur linjära system fungerar och att få en uppfattning om hur den teorin vi lärt oss kan tillämpas i praktiken. Det är vår förhoppning att vi kan uppnå denna förståelse genom att modellera en studsmatta som ett linjärt system och analysera systemet.
+Syftet med den här rapporten är att utöka vår förståelse för hur linjära system fungerar och att få en uppfattning om hur den teorin vi lärt oss kan tillämpas i praktiken. Det är vår förhoppning att vi kan uppnå denna förståelse genom att modellera och analysera en studsmatta som ett linjärt system.
 
 \subsection{Mål}
 Målet med vår rapport är att förstå hur ett linjärt system kan fungera och påverkas, alltså hur insignalen till systemet kan ändras för att få utsignalen att bete sig på ett visst sätt. Ett exempel är hur insignalen kan påverkas för att få största möjliga utsignal, med andra ord att kunna hoppa så högt som möjligt på en studsmatta.
@@ -71,15 +71,11 @@ I vårt system betyder detta t.ex. att en speciellt stark kraft inte kommer för
 
 \subsection{Tidsinvarians}
 
-%[Text om tidsinvarians]
-%[ekvation?]
-%[Förklaring av ekvation?]
-
 Ett system med insignal $x(t)$ och utsignal $y(t)$ sägs vara tidsinvariant om insignalen $x(t - \tau)$ ger upphov till utsignalen $y(t - \tau)$ \cite{sune2000}. Detta betyder alltså att de fysikaliska komponenterna i systemet inte varierar över tid. I vårt fall betyder det t.ex. att våra fjädrar inte slits ut och att personen som gungar inte byter plats på mattan. 
 
 \newpage
 \section{Vårt LTI system}
-
+%ändra elsastisk till elastisk
 \begin{figure}[ht]
 \begin{center}
 \includegraphics[scale=0.62]{Bild2}
@@ -87,7 +83,7 @@ Ett system med insignal $x(t)$ och utsignal $y(t)$ sägs vara tidsinvariant om i
 \end{center}
 \end{figure}
 
-Figur 1 ger en mycket enkel överblick av vårt system. Studsmattan är helt cirkulär och har fjädrar som sitter radiellt från kanten riktade in mot mitten symmetriskt runt om hela cirkeln. Vi gör antagandet att personen som hoppar står precis i mattans mitt med fötterna tätt ihop. Mattan är fäst vid personens fötter, så i själva verket hoppar personen inte utan gungar bara upp och ned genom att böja på benen.
+Figur 1 ger en mycket enkel överblick av vårt system. Studsmattan är helt cirkulär och har fjädrar som sitter radiellt från kanten riktade in mot mitten symmetriskt runt om hela cirkeln. Vi gör antagandet att personen som hoppar står precis i mattans mitt med fötterna tätt ihop. Mattan antas även vara fäst vid personens fötter, så att personen i själva verket inte hoppar utan bara gungar upp och ned genom att böja på benen.
 
 \subsection{Idealisering}
 För att inte behöva räkna på varje individuell fjäder har vi valt att modellera systemet som \textit{en} enkel fjäder riktad vinkelrät mot markytan. Varför detta kan göras redovisas nedan:
