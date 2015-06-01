@@ -477,10 +477,10 @@ g(\tau) = \lim_{\tau \to \infty} \frac{1 - cos(\omega_0 \tau) \cdot e^{-\alpha \
 - \frac{\alpha}{\omega_0^2} \cdot sin(\omega_0  \tau) \cdot e^{-\alpha  \tau}}{m  (\omega_o^2 +\alpha^2)}, \tau \to \infty
 \end{equation}
 
-Vi kan se att $e^{-\alpha  \tau} \to 0$ för $\tau \to 0$ vilket ger:
+Vi kan se att $e^{-\alpha  \tau} \to 0$ för $\tau \to \infty$ vilket ger:
 
 \begin{equation}
-g(\tau) = \lim_{\tau \to \infty} \frac{1}{m  (\omega_o^2 +\alpha^2)} , \tau \to \infty
+g(\tau) = \frac{1}{m  (\omega_o^2 +\alpha^2)} , \tau \to \infty
 \end{equation}
 
 \begin{figure}
@@ -609,7 +609,7 @@ I det här kapitlet kommer vi att visa vad som händer med vårt system om man v
 
 \subsection{Variation av massan}
 
-Om massan hos den hoppande personen ändras så påverkas amplitud och fas-karaktäristiken för systemet. Detta kommer att påverka flera saker för den som hoppar. Vi kollar på hur våra uttryck ser ut när vi stoppar in andra värden för massan. 
+Om massan hos den hoppande personen ändras så påverkas amplitud och fas-karaktäristiken för systemet. Detta kommer att påverka flera saker för den som hoppar. Vi kollar på hur vår amplitud och fas-karaktäristik ser ut när vi stoppar in andra värden för massan. 
 
 \begin{figure}[h]
 \begin{center}
@@ -618,7 +618,7 @@ Om massan hos den hoppande personen ändras så påverkas amplitud och fas-karak
 \end{center}
 \end{figure}
 
-Vi ser att en större massa ger en större amplitud. Detta innebär att en tyngre person kan i vårt system gunga högre med samma kraft än vad en lättare person skulle kunna göra. Vi ser även att den maximala amplituden sker vid en lägre frekvens för högre massor än för lägre massor. Vi kan även avläsa att lägre massor har ett lite större spektrum utav frekvenser där de får rimlig amplitud då de klarar sig bättre för högre frekvenser
+Vi ser att en större massa ger en större maxvärde för amplituden. Detta innebär att en tyngre person kan i vårt system gunga högre med samma kraft än vad en lättare person skulle kunna göra. Vi ser även att den maximala amplituden sker vid en lägre frekvens för högre massor än för lägre massor. Vi kan även avläsa att lägre massor har ett lite större spektrum utav frekvenser där de får rimlig amplitud då de klarar sig bättre för högre frekvenser
 
 \begin{figure}[h]
 \begin{center}
@@ -628,11 +628,11 @@ Vi ser att en större massa ger en större amplitud. Detta innebär att en tyngr
 \end{figure}
 
 
-Vi kan ur plotten avläsa att en högre massa ger en lägre resonansfrekvens och en lägre massa ger en högre resonansfrekvens. Detta innebär att en tyngre person hoppar med lägre frekvens men högre och en lättare person hoppar med en högre frekvens men inte lika högt. Detta är rimligt då dämpningskraften kan retardera systemet mer då massan är lägre och att kraften kan retardera mindre om massan är högre. Det är också rimligt att resonansfrekvensen blir lägre då massan blir högre. Fjädern måste sträckas ut mer för en tyngre person och den tyngre personen tillryggalägger mer sträcka per period. Dock så kommer inte skillnaden att vara jättestor då den tyngre personen färdas snabbare under den extra sträckan. 
+Vi kan ur plotten avläsa att en högre massa ger en lägre resonansfrekvens och en lägre massa ger en högre resonansfrekvens. Detta innebär att en tyngre person hoppar med lägre frekvens men högre och en lättare person hoppar med en högre frekvens men inte lika högt. Detta är rimligt då dämpningskraften kan retardera systemet mer då massan är lägre och att kraften kan retardera mindre om massan är högre. Fjädern måste sträckas ut mer för en tyngre person så den tyngre personen tillryggalägger mer sträcka per period, det betyder att varje period kommer att ta längre tid. Dock så kommer inte skillnaden att vara jättestor då den tyngre personen färdas snabbare under den extra sträckan. Detta resulterar i att en tyngre person gungar med en lägre frekvens än en lättare person.
 
 \subsection{Variation av dämpningskonstant}
 
-Man kan få system som beter sig mycket annorlunda genom att ändra på dämpningskonstanten. Vi har valt att analysera hur systemet ändrar sig för en mycket lägre dämpningskonstant, samt vad som händer då man väljer en dämpningskonstant så att systemet blir kritiskt samt överdämpat. 
+Man kan få system som beter sig mycket annorlunda genom att ändra på dämpningskonstanten. Vi har valt att analysera hur systemet ändrar sig för en mycket lägre dämpningskonstant, samt vad som händer då man väljer en mycket högre dämpningskonstant så att systemet blir överdämpat. Om vi justerar våra värden så får vi följande grafer.
 
 \begin{figure}[h]
 \begin{center}
@@ -641,16 +641,9 @@ Man kan få system som beter sig mycket annorlunda genom att ändra på dämpnin
 \end{center}
 \end{figure}
 
-
-I figur (16) återfinner vi ett annat intressant fenomen. Frekvensen minskar såsom dämpningen ökar, men vid c.a. $530\frac{kg}{s}$ slår den i botten och sedan är resonansfrekvensen $0$. Detta beror på att vi där har nått kritisk dämpning (och därefter överdämpning) och således inte kan få någon självsvängning.
-\newpage
-
 Vi kan se att systemet oscillerar mer om man har en lägre dämpningskonstant. Detta är för att dämpninngen är det som bromsar systemet och gör så att energin läcker ut. Om vi läcker ut energin snabbare så oscilerar systemet mindre och amplituden blir lägre.
 
-Om vi justerar våra värden så får vi följande grafer.
-
-
-
+Vi vill undersöka vad som händer med resonansfrekvensen för olika dämpningskonstanter. Diagrammet visar resonansfrekvensen för olika dämpningskonstanter för vårt system.
 
 \begin{figure}[h]
 \begin{center}
@@ -659,7 +652,7 @@ Om vi justerar våra värden så får vi följande grafer.
 \end{center}
 \end{figure}
 
-I figur (16) återfinner vi ett annat intressant fenomen. Frekvensen minskar såsom dämpningen ökar, men vid c.a. $530\frac{kg}{s}$ slår den i botten och sedan är resonansfrekvensen $0$. Detta beror på att vi där har nått kritisk dämpning (och därefter överdämpning) och således inte kan få någon självsvängning.
+I figur (16) återfinner vi ett annat intressant fenomen. Frekvensen minskar såsom dämpningen ökar, men vid c.a. $530\frac{kg}{s}$ slår den i botten och sedan är resonansfrekvensen $0$. Detta beror på att vi där har nått kritisk dämpning (och därefter överdämpning) och således inte kan få någon självsvängning. Detta sker när systemet dämpar kraften så pass mycket att utsignalen aldrig tar sig över jämnviktsläget. Det skulle hos en studsmatta innebära att man bara sjunker ner i mattan och inte får någon kraft tillbaka uppåt.
 \newpage
 
 \subsection{Variation av fjäderkonstanten}
