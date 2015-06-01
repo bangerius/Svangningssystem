@@ -540,7 +540,7 @@ I detta avsnitt diskuterar vi hur resonansfrekvensen beter sig i vårt system. R
 \end{split}
 \end{equation}
 
-
+\newpage
 \subsection{Sinussvar}
 Vi vill undersöka vilken utsignal vi får om vi skickar in relevanta sinusar som insignaler. Vi har valt att undersöka tre fall som vi anser vara intresanta. En sinus med en hög frekvens, en med en låg frekvens och en med resonansfrekvensen.
 
@@ -559,7 +559,7 @@ y(t) = 0.94 sin(5,25 t - 1,44)
 \begin{figure}[h]
 \begin{center}
 \includegraphics[scale=0.4]{sinussvar1}
-\caption{Blå: Insignal, Orange: Utsignal}
+\caption{Resonansfrekvens}
 \end{center}
 \end{figure}
 
@@ -571,8 +571,14 @@ Vi vill sedan testa om vi har en mycket mycket låg amplitud i vårt fall välje
 y(t) = 0,27 sin(1,5 t - 0,08)
 \end{equation}
 
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.4]{sinussvar2}
+\caption{Låg frekvens}
+\end{center}
+\end{figure}
 
-
+\newpage
 Vi ser att vi får en amplitud som ligger runt 0,27 meter vilket är rimligt då vi trycker med en kraft $500N$ och har en fjäderkonstant på $2000$ Vi får i princip bara $500/2000 = 0,25$. Vi får dock ett litet tillslag för att vi har en frekvens om än låg.
 
 För vår sista sinus har vi valt en hög frekvens $\omega_0 = 30$
@@ -583,8 +589,8 @@ y(t) = 8\cdot 10^{-3} sin(30 t - 3.09)
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.4]{sinussvar2}
-\caption{Blå: Insignal, Orange: Utsignal}
+\includegraphics[scale=0.4]{sinussvar3}
+\caption{Hög frekvens}
 \end{center}
 \end{figure}
 
@@ -598,18 +604,31 @@ Vi ser att vi får en mycket mycket liten amplitud vilket är realistiskt för e
 
 I det här kapitlet kommer vi att visa vad som händer med vårt system om man varierar olika parametrar. Vi kommer svara på frågor som hur studsmattans egenskaper blir annorlunda för en person med en annan vikt, hur olika dämpningar påverkar studsmattan och vad som händer om man har starkare eller svagare fjädrar.
 
+När vi tagit fram denna funktion kan vi se hur resonansfrekvensen förändras om vi t.ex. byter massa. På det sättet kan vi se hur mattans svängningsfrekvens kommer att bete sig för olika personer. I figur 17 ser vi denna relation representerad.
 
-\subsection{Variation av massan}
+Vi ser att ju mer personen på mattan väger desto lägre blir resonansfrekvensen. Svängningstiden kommer alltså bli större, vilket verkar rimligt.
 
+<<<<<<< HEAD
 Om massan hos den hoppande personen ändras så påverkas amplitud och fas-karaktäristiken för systemet. Detta kommer att påverka flera saker för den som hoppar. Vi kollar på hur våra uttryck ser ut när vi stoppar in andra värden för massan. 
 
 Diagram här
 
 Vi ser att en större massa ger en större amplitud. Detta innebär att en tyngre person kan i vårt system gunga högre med samma kraft än vad en lättare person skulle kunna göra. Vi undersöker hur resonansfrekvensen påverkas då massan ändras. Vi ser också att vi för en lägre massa kan ha högre frekvens innan vi börjar få markant fasföskjutning. Detta betyder att en lägre vikt kommer ge en högre resonansfrekvens samt att man med mindre vikt fortfarande kan få lite amplitud vid lite högre frekvenser.
+=======
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.4]{resonansFjader}
+\caption{Resonansvinkelfrekvensen som en funktion av fjäderkonstanten.}
+\end{center}
+\end{figure}
+>>>>>>> origin/master
 
-När vi tagit fram denna funktion kan vi se hur resonansfrekvensen förändras om vi t.ex. byter massa. På det sättet kan vi se hur mattans svängningsfrekvens kommer att bete sig för olika personer. I figur 17 ser vi denna relation representerad.
+I figur (16) återfinner vi ett annat intressant fenomen. Frekvensen minskar såsom dämpningen ökar, men vid c.a. $530\frac{kg}{s}$ slår den i botten och sedan är resonansfrekvensen $0$. Detta beror på att vi där har nått kritisk dämpning (och därefter överdämpning) och således inte kan få någon självsvängning.
+\newpage
 
-Vi ser att ju mer personen på mattan väger desto lägre blir resonansfrekvensen. Svängningstiden kommer alltså bli större, vilket verkar rimligt.
+\subsection{Variation av massan}
+
+Om massan hos den hoppande personen ändras så påverkas amplitud och fas-karaktäristiken för systemet. Detta kommer att påverka flera saker för den som hoppar. Vi kollar på hur våra uttryck ser ut när vi stoppar in andra värden för massan. Vi ser att en större massa ger en större amplitud. Detta innebär att en tyngre person kan i vårt system gunga högre med samma kraft än vad en lättare person skulle kunna göra. Vi undersöker hur resonansfrekvensen påverkas då massan ändras. 
 
 \begin{figure}[h]
 \begin{center}
@@ -639,17 +658,11 @@ STOPPA IN GRAF HÄR
 \end{center}
 \end{figure}
 
-I figur (16) återfinner vi ett annat intressant fenomen. Frekvensen minskar såsom dämpningen ökar, men vid c.a. $530\frac{kg}{s}$ slår den i botten och sedan är resonansfrekvensen $0$. Detta beror på att vi där har nått kritisk dämpning (och därefter överdämpning) och således inte kan få någon självsvängning.
-\newpage
+Insert text om kritisk dämpning här
+
+Insert text om överdämpning här
 
 \subsection{Variation av fjäderkonstanten}
-
-\begin{figure}[h]
-\begin{center}
-\includegraphics[scale=0.4]{resonansFjader}
-\caption{Resonansvinkelfrekvensen som en funktion av fjäderkonstanten.}
-\end{center}
-\end{figure}
 
 I figur (15) ser vi att resonansfrekvensen blir högre med fjäderkonstanten. Med andra ord kommer frekvensen att gå ned då fjädrarna blivit lite slitna och rostiga efter några år av slitage. Detta verkar också rimligt.
 
