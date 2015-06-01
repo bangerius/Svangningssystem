@@ -7,10 +7,9 @@
 \usepackage[swedish]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
-\usepackage{graphicx}
-
 
 \graphicspath{}
+
 \author{
   \texttt{Sebastian Bångerius}
   \and
@@ -21,15 +20,11 @@
   \texttt{Anton Silfver}
 }
 
-
 \begin{document}
 \pagenumbering{gobble}
 
 \title{Studsmatta}
 \maketitle
-
-\includegraphics[scale=0.35]{Framsida}
-
 
 \cleardoublepage
 
@@ -345,7 +340,7 @@ I vårt fall (studsmatta) vill vi gärna skapa så hög amplitud ut som möjligt
 \begin{figure}[h]
 \begin{center}
 \includegraphics[scale=0.4]{nolpol-diagram}
-\caption{$s_1 = ... och s_2 = ...$}
+\caption{•}
 \end{center}
 \end{figure}
 \begin{figure}[h]
@@ -386,7 +381,7 @@ h(t) = \frac{1}{\omega_0  m} \cdot  e^{-\alpha  t} & \cdot  sin(\omega_0  t) \cd
 \begin{center}
 
 \includegraphics[scale=0.5]{Impulssvar}
-\caption{Systemets impulssvar med givna värden}
+\caption{•}
 \end{center}
 \end{figure}
 
@@ -494,7 +489,7 @@ g(\tau) = \lim_{\tau \to \infty} \frac{1}{m  (\omega_o^2 +\alpha^2)} , \tau \to 
 \begin{figure}
 \begin{center}
 \includegraphics[scale=0.5]{Stegsvar}
-\caption{Systemets stegsvar med givna värden}
+\caption{•}
 \end{center}
 \end{figure}
 
@@ -609,6 +604,28 @@ y(t) = 8\cdot 10^{-3} sin(30 t - 3.09)
 
 Vi ser att vi får en mycket mycket liten amplitud vilket är realistiskt för en hög frekvens
 
+\section{Variationer av systemet}
+
+I det här kapitlet kommer vi att visa vad som händer med vårt system om man varierar olika parametrar. Vi kommer svara på frågor som hur studsmattans egenskaper blir annorlunda för en person med en annan vikt, hur olika dämpningar påverkar studsmattan och vad som händer om man har starkare eller svagare fjädrar.
+
+\subsection{Variation på massan}
+
+Om massan hos den hoppande personen ändras så påverkas amplitud och fas-karaktäristiken för systemet. Detta kommer att påverka flera saker för den som hoppar. Vi kollar på hur våra uttryck ser ut när vi stoppar in andra värden för massan
+
+
+Vi ser att en större massa ger en större amplitud. Detta innebär att en tyngre person kan i vårt system gunga högre med samma kraft än vad en lättare person skulle kunna göra.
+
+
+Vi undersöker hur resonansfrekvensen påverkas då massan ändras.
+
+
+Vi kan ur plotten avläsa att en högre massa ger en lägre resonansfrekvens och en lägre massa ger en högre resonansfrekvens.
+
+Detta innebär att en tyngre person hoppar med lägre frekvens men högre och en lättare person hoppar med en högre frekvens men inte lika högt.
+
+
+Detta är rimligt då dämpningenkraften kan retardera systemet mer då massan är lägre och att kraften kan retardera mindre om massan är högre. Det är också rimligt att resonansfrekvensen blir lägre då massan blir högre. Fjädern måste sträckas ut mer för en tyngre person och den tyngre personen tillryggalägger mer sträcka per period. Dock så kommer inte skillnaden att vara jättestor då den tyngre personen färdas snabbare under den extra sträckan. 
+
 \section{Diskussion}
 
 \subsection{Idealisering}
@@ -624,11 +641,17 @@ Vidare hinner en värklig studsmatta i princip gå tillbaka till sitt jämnvikts
 
 Detta har flertalet efterverkningar på vårt system, en av de större effekterna är att vi får en annan resonansfrekvens än vad som skulle vara fallet när man hoppar på en riktig studsmatta. Vi kan se att resonansfrekvensen vi får fram för vårt system är högre än frekvensen hos en person som hoppar på en studsmatta vilket då är rimligt p.g.a att vi har den extra fjäderkraften som drar ner studsmattan mot marken igen och som ökar frekvensen.
 
+\subsection{Vad som har analyserats och varför}
+
+I denna rapport har vi tagit fram en rad systemegenskaper som vi anser vara relevanta för att studera vårt system. Vi har tagit fram systemfunktionen då den säger väldigt mycket om systemet. Systemfunktionen använder vi använ som bas för att få fram vår frekvensfunktionen som ger oss vår  amplitudkaraktäristik och faskaraktäristik. Dessa säger mycket om hur våra utsignaler kommer se ut för olika insignaler. Ett exempel på detta är att de bestämmer vilken variation av en sinusformad insignal vi får som utsignal
+
+Vi tog fram impulssvaret som fungerar som en bas för att ta fram både stegsvaret och stabilitetsbeviset. Stegsvaret ger oss information om hur studsmattan skulle reagera om en person hoppade på studsmattan och hur den svänger in sig till sitt nya jämnviktsläge. En annan tolkning kan vara att en person redan står på studsmattan och fångar en massa och stegsvaret visar hur studsmattan ocillerarar in till sitt nya jämnviktsläge.
+
 \subsection{Vad som inte har analyserats och varför}
 
-En sak man ofta vill analysera för system av liknande stystem är ett rampsvar. Med det avses vad som händer vid en konstant stigande insignal. Detta skulle kunna vara relevant om man modellerar med t ex en lägesändring som insignal och en annan lägesändring som en utsignal. Och det kan i detta fal representera för vissa system t ex hur en bil kör upp för en backe. I vårt fall har vi dock en kraft som insignal och vi ansåg inte att en analys av en konstant stigande kraft som insignal skulle vara en relevant analys.
+En sak man ofta vill analysera för system av liknande stystem är ett rampsvar. Med det avses vad som händer vid en konstant stigande insignal. Detta skulle kunna vara relevant om man modellerar med t ex en lägesändring som insignal och en annan lägesändring som en utsignal. I detta fall kan ett rampsvar representera t.ex. hur en bils fjädring beter sig då bilen kör upp för en backe. I vårt fall har vi dock en kraft som insignal och vi ansåg inte att en analys av en konstant stigande kraft som insignal skulle vara en relevant analys.
 
-I vårt system skulle ett rampsvar kunna tolkas som att en person står på en studsmatta och håller i en jättestor tom bägare och att denna bägare fylls med ett konstant flöde av vatten. Rampsvaret skulle då visa hur studsmattans lägesändring såg ut i detta fal. Vi ansåg inte att detta var en relevant analys utav en studsmattas egenskaper och kan inte direkt kopplas till syftet eller målet med vår rapport så vi valde att inte göra en sådan analys även om resultatet skulle kunna vara interesant.
+I vårt system skulle ett rampsvar kunna tolkas som att en person står på en studsmatta och håller i en jättestor tom bägare som fylls med ett konstant flöde av vatten. Rampsvaret skulle då visa hur studsmattans lägesändring såg ut i detta fal. Vi ansåg inte att detta var en relevant analys utav en studsmattas egenskaper och kan inte direkt kopplas till syftet eller målet med vår rapport så vi valde att inte göra en sådan analys även om resultatet skulle kunna vara interesant. Värt att notera är att man skulle kunna tolka det som att en personen som hoppar trycker ifrån mer och mer under en mycket kort tidsperiod. Vi väljer att tolka problemet som att en person trycker ifrån med en konstant kraft.
 
 
 
