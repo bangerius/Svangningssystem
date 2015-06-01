@@ -36,7 +36,7 @@
 \pagenumbering{arabic}
 \setcounter{page}{3}
 
-I den här rapporten kommer vi beskriva när en person sätter en studsmatta i rörelse som ett linjärt svängningssystem av andra ordningen. Inom det här systemet är insignalen kraften som personen trycker ifrån med när den sträcker ut eller böjer på benen, vilket resulterar i utsignalen som är studsmattans lägesändring ifrån sitt jämviktsläge med positiv rikning mot marken. Genom att beskriva systemet med en differentialekvation av andra graden kan vi få information om systemets egenskaper och dess beteende för olika insignaler, med andra ord hur olika faktorer påverkar utsignalen.
+I den här rapporten kommer vi beskriva när en person sätter en studsmatta i rörelse som ett linjärt svängningssystem av andra ordningen. Inom det här systemet är insignalen kraften som personen trycker ifrån med när den sträcker ut eller böjer på benen, vilket resulterar i utsignalen som är studsmattans lägesändring ifrån sitt jämviktsläge, med positiv rikning mot marken. Genom att beskriva systemet med en differentialekvation av andra orningen kan vi få information om systemets egenskaper och dess beteende för olika insignaler, med andra ord hur olika faktorer påverkar utsignalen\cite[s.~57]{sune2000}.
 
 \subsection{Syfte}
 Syftet med den här rapporten är att utöka vår förståelse för hur linjära system fungerar och att få en uppfattning om hur den teorin vi lärt oss kan tillämpas i praktiken. Det är vår förhoppning att vi kan uppnå denna förståelse genom att modellera och analysera en studsmatta som ett linjärt system.
@@ -46,32 +46,32 @@ Målet med vår rapport är att förstå hur ett linjärt system kan fungera och
 
 \section{Bakgrund}
 
-Vi har i denna rapport valt att modellera en person som hoppar på en studsmatta som en LTI (linjärt tidsinvariant) system för att undersöka dess egenskaper. Vi valde studsmattan som ett linjärt system för att analysera dess egenskaper, men även för att få en mycket verklighetsanknuten modell som inte kräver så mycket idealisering för att kunna representeras som ett linjärt svängningssystem.
+Vi har i denna rapport valt att modellera en person som hoppar på en studsmatta som ett LTI (linjärt tidsinvariant) system för att undersöka dess egenskaper. Vi valde studsmattan för att få en verklighetsanknuten modell som inte kräver så mycket idealisering för att kunna representeras som ett linjärt svängningssystem.
 \newpage
 
 \subsection{Linjärt system}
 
-Om vi antar att vårt system har en insignal $x(t)$ och en utsignal $y(t)$ så är vanlig notation att beteckna systemet med $x(t) \rightarrow y(t)$. Detta system kan ha flera egenskaper, men en vanlig egenskap som kännetecknar vårt svängande system är linjäritet. För att ett system ska vara linjärt måste det uppfylla två krav. Systemet måste dels vara homogent, d.v.s. uppfylla ekvationen
+Om vi antar att vårt system har en insignal $x(t)$ och en utsignal $y(t)$ så är vanlig notation att beteckna systemet med $x(t) \rightarrow y(t)$ \cite[s.~43]{sune2000}. Detta system kan ha flera egenskaper, men en vanlig egenskap som kännetecknar vårt svängande system är linjäritet. För att ett system ska vara linjärt måste det uppfylla två krav. Systemet måste dels vara homogent, d.v.s. uppfylla ekvationen:
 \begin{equation}
 a \cdot x(t) \rightarrow a \cdot y(t) 
 \end{equation}
-Systemet måste också vara additivt, d.v.s. uppfylla ekvationen
+Systemet måste också vara additivt, d.v.s. uppfylla ekvationen:
 \begin{equation}
 x(t) = x_1(t) + x_2(t) \rightarrow y(t) = y_1(t) + y_2(t)
 \end{equation}
-Om man slår ihop ekvation 1 och 2 så kan man förkorta kravet till en ekvation
+Om man slår ihop ekvation 1 och 2 så kan man förkorta kravet till en ekvation:
 \begin{equation}
 x(t) = a \cdot x_1(t) + b \cdot x_2(t)\rightarrow y(t) = a \cdot y_1(t) + b \cdot y_2(t)
 \end{equation}
 \linebreak
-Således måste alla linjära system uppfylla ekvation 3 \cite{sune2000}.
+Således måste alla linjära system uppfylla ekvation 3 \cite[s.~42]{sune2000}.
 I vårt system betyder detta t.ex. att en speciellt stark kraft inte kommer förstöra fjädrarna.
 
 %[Varför är vårt system linjärt? varför är det relevant och vilka konkreta egenskaper hos linjära system använder vi oss av]
 
 \subsection{Tidsinvarians}
 
-Ett system med insignal $x(t)$ och utsignal $y(t)$ sägs vara tidsinvariant om insignalen $x(t - \tau)$ ger upphov till utsignalen $y(t - \tau)$ \cite{sune2000}. Detta betyder alltså att de fysikaliska komponenterna i systemet inte varierar över tid. I vårt fall betyder det t.ex. att våra fjädrar inte slits ut och att personen som gungar inte byter plats på mattan. 
+Ett system med insignal $x(t)$ och utsignal $y(t)$ sägs vara tidsinvariant om insignalen $x(t - \tau)$ ger upphov till utsignalen $y(t - \tau)$ \cite[s.~41]{sune2000}. Detta betyder alltså att de fysikaliska komponenterna i systemet inte varierar över tid. I vårt fall betyder det t.ex. att våra fjädrar inte slits ut och att personen som gungar inte byter plats på mattan. 
 
 \newpage
 \section{Vårt LTI system}
@@ -83,7 +83,7 @@ Ett system med insignal $x(t)$ och utsignal $y(t)$ sägs vara tidsinvariant om i
 \end{center}
 \end{figure}
 
-Figur 1 ger en mycket enkel överblick av vårt system. Studsmattan är helt cirkulär och har fjädrar som sitter radiellt från kanten riktade in mot mitten symmetriskt runt om hela cirkeln. Vi gör antagandet att personen som hoppar står precis i mattans mitt med fötterna tätt ihop. Mattan antas även vara fäst vid personens fötter, så att personen i själva verket inte hoppar utan bara gungar upp och ned genom att böja på benen.
+Figur 1 ger en mycket enkel överblick av vårt system. Studsmattan är helt cirkulär och har fjädrar som sitter radiellt från kanten riktade in mot mitten, symmetriskt runt om hela cirkeln. Vi gör antagandet att personen som hoppar står precis i mattans mitt med fötterna tätt ihop (se figur 2). Mattan antas även vara fäst vid personens fötter, så att personen i själva verket inte hoppar utan bara gungar upp och ned genom att böja på benen. Med det menar vi att fötterna inte lämnar mattan
 
 \subsection{Idealisering}
 För att inte behöva räkna på varje individuell fjäder har vi valt att modellera systemet som \textit{en} enkel fjäder riktad vinkelrät mot markytan. Varför detta kan göras redovisas nedan:
@@ -94,7 +94,7 @@ För att inte behöva räkna på varje individuell fjäder har vi valt att model
 \caption{En genomskärning från sidan}
 \end{center}
 \end{figure}
-I figuren ses höjden $h$ samt vinkeln $v$. $h$ representerar höjdskilnaden från jämviktsläget då mattan är helt platt. $v$ är vinkeln på fjädern med avseende på nyss nämnda läge.
+I figur 3 ses höjden $h$ samt vinkeln $v$. $h$ representerar höjdskilnaden från jämviktsläget då mattan är helt platt. $v$ är vinkeln på fjädern med avseende på nyss nämnda läge.
 I och med att det för varje fjäder sitter en annan fjäder på motsatt sida studsmattan (enligt figur 3) kan vi modellera fjäderkrafterna som i figur 4.
 \begin{figure}[ht]
 \begin{center}
@@ -136,54 +136,59 @@ $$\Delta h = \Delta l \sin(v) \rightarrow F_{tot}=2k\Delta l \sin(v)=2k\Delta h\
 \end{center}
 \end{figure}
 
-Vi kan alltså modellera vår studsmatta som en enkel fjäder som står på marken under den \emph{gungande} personens fötter.
-Insignalen i vårt system blir alltså kraften som den gungande personen utför på systemet då denne böjer eller sträcker på benen. Utsignalen i systemet definieras som mattans ändring i höjdled med referenspunkt i jämviktsläget på studsmattan. 
+Vi kan alltså modellera vår studsmatta som en enkel fjäder som står på marken under den gungande personens fötter.
+Insignalen i vårt system blir alltså kraften som den gungande personen utför på systemet då denne böjer eller sträcker på benen. Utsignalen i systemet definieras som mattans ändring i höjdled med referenspunkt i jämviktsläget på studsmattan, med positiv riktning mot marken. 
 %Jämviktsläget varierar i höjd beroende på massan som står på mattan.
 %Uppdatera till att matcha den slutliga referensbilden
-Krafterna uttryckta med pilar i figur 1 är gravitationskraften från massan $F_g$, fjäderns motkraft på massan $F_f$ och kraften från personen som trycker emot $F_a$.
+Krafterna uttryckta med pilar i figur 6 är gravitationskraften från massan $F_g$, fjäderns motkraft på massan $F_f$ och kraften från personen som trycker emot $F_a$.
 
 Då fjädrarna i vår studsmatta är placerade symmetriskt och personen står placerad i mitten av mattan kan vi idealisera systemet som en enda fjäder verkande i y-led, eftersom de radiella krafterna tar ut varandra i symmetrin.
 
 \subsection{Gravitationskraften $F_g$}
 
+Gravitationskraften $F_g$ är den kraften som påverkar en massa $m$ med en konstant gravitationsacceleration $g$.
+
 \begin{equation}
 F_g = m  g
 \end{equation}
-Gravitationskraften $F_g$ är den kraften som påverkar en massa $m$ med en konstant gravitationsacceleration $g$.
 
 \subsection{Fjäderkraften $F_f$}
 
 Fjäderkraften $F_f$ är den kraft som motverkar en fjäders avskiljning ifrån sitt jämviktsläge. Sambandet har namnet Hookes lag 
-\cite{randall2008}. Om fjäderns grundjämviktsläge är $L$ och dess jämviktsläge efter att massan läggs på är $l_1$ så kan vi uttrycka avvikelsen från jämviktsläget vid $t=0$ som $l_0 = L - l_1$. Eftersom vi har avvikelsen från jämviktsläget $l_1$ så lägger vi på $y(t)$. Fjäderkonstanten sätts till $k$. Denna kraft är motriktad den av gravitationen och uttrycks på följande vis:
+\cite[s.~278]{randall2008}. Om fjäderns grund-\newline jämviktsläge är $L$ och dess jämviktsläge efter att massan läggs på är $l_1$ så kan vi uttrycka avvikelsen från jämviktsläget vid $t=0$ som $l_0 = L - l_1$. Eftersom vi har avvikelsen från jämviktsläget $l_1$ så lägger vi på $y(t)$. Fjäderkonstanten sätts till $k$. Denna kraft är motriktad den av gravitationen och uttrycks på följande vis:
 
 \begin{equation}
 F_f = -k (l_0 + y(t))
 \end{equation}
 
 \subsection{Dämpningskraften $F_d$}
+
+Dämpningskraften $F_d$ är den kraft som motverkar rörelsen i ett svängningssystem där $v$ är objektet i rörelses momentana hastighet och $c$ är dämpningskoefficienten för svängningsrörelsen. Dämpningskraften är motriktad rörelsen.
+
 \begin{equation}
 F_d = -c  v
 \end{equation}
-Dämpningskraften $F_d$ är den kraft som motverkar rörelsen i ett svängningssystem där $v$ är objektet i rörelses momentana hastighet och $c$ är dämpningskoefficienten för svängningsrörelsen. 
 
 \subsection{Slutgiltig differentialekvation}
 
-Systemet består av de åvanstående tre krafterna samt insignalen som alla är krafter i y-led. Summan av dessa krafter skapar den totala kraften $F_{tot}$. Vi kan då beskriva vårt system med följande ekvation.
+Systemet består av de åvanstående tre krafterna samt insignalen som alla är krafter i y-led. Summan av dessa krafter skapar den totala kraften $F_{tot}$. Vi kan då beskriva vårt system med följande ekvation:
 
 \begin{equation}
 F_{tot} = F_a + F_g + F_f + F_d
 \end{equation}
 
-Vi sätter $F_a$ som insignalen $x(t)$ vilket tillsammans med våra tidigare definitioner och Newtons lag ger:
+Vi sätter $F_a$ som insignalen $x(t)$ vilket tillsammans med våra tidigare definitioner och Newtons andra lag \cite[s.~138]{randall2008} ger:
 
 \begin{equation}
 F_{tot} = x(t) + mg - k(l_0+y(t)) - cv = ma
 \end{equation}
 
-Vi uttrycker hastighet och acceleration som funktioner av $t$.
+Vi uttrycker hastighet och acceleration som funktioner av $t$:
 \begin{equation}
 a = \frac{d^2y(t)}{dt^2} , v = \frac{y(t)}{dt}
 \end{equation}
+
+\newpage
 
 Vilket ger:
 
@@ -191,12 +196,12 @@ Vilket ger:
  m\frac{d^2y(t)}{dt^2} =  -k(l_0 + y(t)) -c\frac{dy(t)}{dt} + mg +  x(t)
 \end{equation}
 
-Vid $t = 0$ så kommer gravitationskraften och fjäderkraftens utsträckning beroende på massan att ta ut varandra enligt:
+Vid $t = 0$ så kommer gravitationskraften och kraften från fjäderns utsträckning beroende på massan att ta ut varandra enligt:
 \begin{equation}
 k  l_0 = mg
 \end{equation}
 
-Vilket ger vår slutgiltiga differentialekvation.
+Vilket ger vår slutgiltiga differentialekvation:
 \begin{equation}
  m\frac{d^2y(t)}{dt^2} + k  y(t) + c\frac{dy(t)}{dt} = x(t)
 \end{equation}
@@ -204,11 +209,11 @@ Vilket ger vår slutgiltiga differentialekvation.
 
 \section{Systemegenskaper}
 
-Vårt system kommer ha en lång rad egenskaper som definerar systemet. I följande kapitel så kommer vi analysera några egenskaper som vi anser vara relevanta att studera för att förstå hur vårt system beter sig. Egenskaperna kommer att bevisas och motiveras.
+Vårt system kommer ha en lång rad egenskaper som definerar systemet. I följande kapitel så kommer vi analysera några egenskaper som vi anser vara relevanta att studera och för att förstå hur vårt system beter sig. Egenskaperna kommer att bevisas och motiveras.
 
 \subsection{Linjäritetsbevis}
 
-För att visa att vårt system är linjärt måste vi visa att det är både homogent och additivt, som nämnt tidigare. Om vi antar att insignalen $x_1(t) \rightarrow y_1(t)$ och $x_2(t) \rightarrow y_2(t)$ så gäller att:
+För att visa att vårt system är linjärt måste vi visa att det är både homogent och additivt \cite[s.~42]{sune2000}, som nämnt tidigare. Om vi antar att insignalen $x_1(t) \rightarrow y_1(t)$ och $x_2(t) \rightarrow y_2(t)$ så gäller att:
 
 \begin{equation}
 m\frac{d^2y_1(t)}{dt^2} + c\frac{dy_1(t)}{dt} + ky_1(t) = x_1(t)
@@ -259,7 +264,7 @@ Systemet uppfyller således kravet för linjäritet.
 
 \subsection{Systemfunktionen}
 
-Systemfunktionen är mycket relevant hos ett system och ger information om en rad olika följdegenskaper som t.ex. stabilitet och kausalitet, om systemet filtrerar ut låga eller höga frekvenser och mycket annat. Vi vill ta fram systemfunktionen för att i olika stor utsträckning kunna ta fram egenskaperna hos vårt system.
+Systemfunktionen är mycket relevant hos ett system och ger information om en rad olika följdegenskaper som t.ex. stabilitet och kausalitet, om systemet filtrerar ut låga eller höga frekvenser och mycket annat \cite[s.~170]{sune2000}. Vi vill ta fram systemfunktionen för att andra ta fram egenskaperna hos vårt system.
 
 Med differentialekvationen kan vi genom laplacetransformering ta fram systemfunktionen $H(s)$.
 
@@ -287,7 +292,7 @@ Om vi tar fram rötterna till nämnaren får vi:
 H(s)= \frac{1}{(s + \frac{c}{2 m} + \sqrt{ (\frac{c}{2  m})^2 - \frac{k}{m}}) (s + \frac{c}{2  m} - \sqrt{ (\frac{c}{2  m})^2 - \frac{k}{m}})}
 \end{equation}
 
-Poler produceras där nämnarpolynomet har sina rötter.
+Poler produceras där nämnarpolynomet har sina rötter:
 
 \begin{equation}
 S_{rot}=-\frac{c}{2m} \pm \sqrt{(\frac{c}{2m})^2-\frac{k}{m}}
@@ -311,7 +316,7 @@ Detta kan illustreras och förenklas till (figur 7-9):
 \begin{figure}
 \begin{center}
 \includegraphics[scale=0.3]{1reell}
-\caption{Dubbelpol $S_{rot}=-\frac{c}{2m}$ om $k=\frac{c^2}{4m}$}
+\caption{Dubbelpol $s_{rot}=-\frac{c}{2m}$ om $k=\frac{c^2}{4m}$}
 \end{center}
 \end{figure}
 
@@ -331,13 +336,13 @@ Detta kan illustreras och förenklas till (figur 7-9):
 \newpage
 
 
-I vårt fall med studsmattan vill vi gärna skapa så hög amplitud ut som möjligt, med mycket svängning och lite dämpning. Detta återfinns i det tredje fallet med två komplexa rötter och brukar kallas för ett underdämpat system \cite{polesAndZeros}. Det kan visualiseras grafiskt i form av amplitudkaraktäristik, som visas i figur 14. Nedan ses ett pol/nollställe-diagram över vårt system med följande konstanter insatta $k=2000\frac{N}{m}$ , $m=70kg$ , $c=100\frac{kg}{s}$.
+I vårt fall med studsmattan vill vi gärna skapa så hög amplitud ut som möjligt, med mycket svängning och lite dämpning. Detta återfinns i det tredje fallet med två komplexa rötter och brukar kallas för ett underdämpat system \cite{polesAndZeros}. Det kan visualiseras grafiskt i form av amplitudkaraktäristik, som visas i figur 14 senare i rapporten. Nedan i figur 10 visas ett pol/nollställe-diagram över vårt system med följande konstanter insatta $k=2000\frac{N}{m}$ , $m=70kg$ , $c=100\frac{kg}{s}$. Figur 11 visar en 3D-plot utav vår systemfunktionen.
 
 
 \begin{figure}[h]
 \begin{center}
 \includegraphics[scale=0.4]{nolpol-diagram}
-\caption{((LÄGG TILL S VÄRDEN))}
+\caption{$s = -0,714 \pm 3,712j$}
 \end{center}
 \end{figure}
 \begin{figure}[h]
@@ -364,7 +369,7 @@ Om vi sätter $\alpha = \frac{c}{2m}$ och $\omega_0^2 = {-\frac{c + 4 k  m^2}{4 
 H(s) = \frac{1}{\omega_0  m} \cdot \frac{\omega_0}{(s + \alpha)^2 +\omega_0^2}
 \end{equation}
 
-Genom att inverslaplacetransformera $H(s)$ får vi impulssvaret $h(t)$. Vi använder tabell 19.23 i Sune Söderkvist formelsamling:
+Genom att inverslaplacetransformera $H(s)$ får vi impulssvaret $h(t)$ \cite[s.~207]{sune2000}. Vi använder tabell 19.23 i Sune Söderkvist formelsamling:
 
 \begin{equation}
 \begin{split}
@@ -385,8 +390,8 @@ h(t) = \frac{1}{\omega_0  m} \cdot  e^{-\alpha  t} & \cdot  sin(\omega_0  t) \cd
 
 
 \newpage
-\subparagraph{Stabilitetsbevis}
-För att vår idealisering skall vara representativ för vår studsmatta måste systemet vara stabilt. I grund och botten betyder detta att vårt system ej får tillföra mer energi än vad som läcker ut. Detta stämmer om den tillryggalagda sträckan är begränsad efter en impuls. Sträckan fås genom att absolutintegrera impulssvaret i tidsdomänen (stabilitet om $\int_{-\infty}^{\infty}|h(t)|\ dt\in \mathbb{R}$ ). Nedan följer en förenkling av integralen.
+\subsection{Stabilitetsbevis}
+För att vår idealisering skall vara representativ för vår studsmatta måste systemet vara stabilt. Vi får stabilitet om $\int_{-\infty}^{\infty}|h(t)|\ dt\in \mathbb{R}$ \cite[s.~48]{sune2000}. I grund och botten betyder detta att vårt system ej får tillföra mer energi än vad som läcker ut. Nedan följer en förenkling av integralen:
 \begin{equation}
 \begin{split}
 I_{impuls}=\int_{-\infty}^{\infty}| \frac{1}{\sqrt{\frac{4  m  k - c^2}{4}} }  \cdot e^{-\frac{c}{2m}  t} \cdot & sin(\sqrt{\frac{4  m  k - c^2}{4  m^2}} \cdot t) \cdot u(t)| \ dt=\\ \frac{1}{\sqrt{\frac{4  m  k - c^2}{4}} }  \cdot \int_{0}^{\infty}|e^{-\frac{c}{2m}  t}| \cdot & |sin(\sqrt{\frac{4  m  k - c^2}{4  m^2}} \cdot t)| \ dt
@@ -402,7 +407,7 @@ Förenklingar för att göra beviset mer lättläsligt:
 Notera att: $\left( \omega_0=\sqrt{\frac{4  m  k-c^2}{4  m^2}}=\sqrt{(-1)\cdot\frac{c^2-4  m  k}{4  m^2}}=i\cdot\sqrt{\frac{c^2-4  m  k}{4  m^2}}=i \omega_1\right)$
 \end{itemize}
 
-Vi konstaterar att delfunktionerna är positiva för alla positiva $t$. Således är även integralen av produkten det.
+Vi konstaterar att delfunktionerna är positiva för alla positiva $t$. Således är även integralen av produkten det:
 $$I_{impuls}=\frac{1}{\omega_0  m} \cdot \int_{0}^{\infty}e^{-\alpha t}\cdot | sin(\omega_0 t)| \ dt>0$$
 
 Vi bevisar att integralen är begränsad för tre olika fall: då $0\neq\omega_0 \in \mathbb{R}$, $\omega_0=0$ respektive då $\omega_0 \notin \mathbb{R}$
@@ -416,7 +421,7 @@ I_{impuls}=\frac{1}{\omega_0  m} \cdot \int_{0}^{\infty}e^{-\alpha t}\cdot & | s
 \end{equation}
 \item fallet $k=\frac{c^2}{4m}$ ($\omega_0=0$, kritiskt dämpat system)
 \newline 
-Här får vi problem med att faktorn framför integralen blir odefinierad samtidigt som sinusen blir 0. Låt oss kasta lite gränsvärdesanalys på det problemet!
+Här får vi problem med att faktorn framför integralen blir odefinierad samtidigt som sinusen blir 0. Vi använder oss av gränsvärdesanalys för att lösa det problemet.
 \begin{equation}
 \begin{split}
 I_{impuls}= & \lim_{\omega_0\to0}\left(\frac{1}{m} \cdot \int_{0}^{\infty}e^{-\alpha t}\cdot |\frac{sin(\omega_0 t)}{\omega_0}| \ dt\right) = \\ \frac{1}{m} &\cdot\int_{0}^{\infty}e^{-\alpha t} \cdot t  \  dt=...=\frac{4m}{c^2}\in \mathbb{R}^+
@@ -436,6 +441,7 @@ I_{impuls}= & \int_{0}^{\infty}\left|\frac{e^{-\alpha t}}{\omega_0  m}\cdot sin(
 \newpage
 
 \subsection{Stegsvar}
+Ett stegsvar är en omedelbar upptrappning av insignalen till ett konstant värde. Detta kan approximativt motsvaras att personen som står på mattan får en omedelbar ökning av massan. T.ex. om personen fångar ett tungt objekt.
 
 Vi vill ta fram stegsvaret $g(t)$ för vårt system. Vi gör detta genom att integrera vårt impulssvar upp till tiden tau $\int_{-\infty}^\tau h(t)$. Vi börjar med att bryta ut våra konstanter utanför integralen. Vi räknar sedan ut integralen och till sist stoppar vi in konstanterna igen.
 
@@ -450,7 +456,7 @@ Eftersom $u(t)$ är 0 för negativa $t$ och 1 för positiva $t$ vilket ger:
 \int_{-\infty}^\tau sin(\omega_0  t)\cdot e^{-\alpha  t} \cdot u(t) \  dt
 = \int_0^\tau sin(\omega_0  t)\cdot e^{-\alpha t} \  dt
 \end{equation}
-Vi låter integralen heta $I$ och räknar ut den.
+Vi låter integralen heta $I$ och räknar ut den:
 
 \begin{equation}
 \begin{split} 
@@ -469,6 +475,10 @@ Vi stoppar ni in de konstanter vi bröt ut ur integralen tidigare för att få s
 \begin{equation}
 g(\tau)= \frac{1}{\omega_ m} \cdot I = \frac{1-cos(\omega_o \tau) \cdot e^{-\alpha  \tau} - \frac{\alpha}{\omega_0^2} \cdot sin(\omega_o \tau) \cdot e^{-\alpha \tau}}{m (\omega_0^2 + \alpha^2)}
 \end{equation}
+I figur 13 så plottar vi stegsvaret
+\newpage
+
+
 
 Om vi låter $\tau \to \infty$ ger det:
 
@@ -491,7 +501,7 @@ g(\tau) = \frac{1}{m  (\omega_o^2 +\alpha^2)} , \tau \to \infty
 \end{figure}
 
 \subsection{Frekvensfunktion}
-Eftersom vårt system är stabilt kan vi enkelt översätta systemfunktionen till systemets frekvensfunktion. Eftersom $s = \sigma + j\omega$ så kommer $\sigma = 0$ vid $j\omega$-axeln. Då följer att:
+Eftersom vårt system är stabilt kan vi enkelt översätta systemfunktionen till systemets frekvensfunktion \cite[s.~130]{sune2000}. Eftersom $s = \sigma + j\omega$ så kommer $\sigma = 0$ vid $j\omega$-axeln. Då följer att:
 
 \begin{equation}
 H(\omega) = H(s), \  s = j\omega
@@ -508,7 +518,7 @@ H(\omega) =  \frac{1}{m (j\omega)^2 + c  j\omega + k}
 
 Amplitudkaraktäristik och faskaraktäristik beskriver hur impulssvarets amplitud och fasförskjutning påverkas av insignalens frekvens.
 
-För att ta fram amplitudkaraktäristiken tar man absolutbeloppet av systemets frekvensfunktion, d.v.s. $|H(\omega)|$. Faskaraktäristiken får man genom att ta argumentet av frekvesnsfunktion, $arg(H(\omega))$. 
+För att ta fram amplitudkaraktäristiken tar man absolutbeloppet av systemets frekvensfunktion, d.v.s. $|H(\omega)|$. Faskaraktäristiken får man genom att ta argumentet av frekvesnsfunktion, $arg(H(\omega))$\cite[s.~130]{sune2000}. 
 
 \begin{equation}
 |H(\omega)| = \frac{1}{|70 (j\omega)^2 + 100  j\omega + 2000|}
@@ -530,7 +540,7 @@ Vår amplitud- och fas-karaktäristik med instoppade värden visas i bodediagram
 
 
 \subsection{Resonansfrekvens}
-I detta avsnitt diskuterar vi hur resonansfrekvensen beter sig i vårt system. Resonansfrekvensen är den frekvens på insignalen som leder till maximal amplitud på utsignalen. I vårt fall med studsmattan är denna frekvens eftertraktad; den gör ju så att man gungar så högt som möjligt. Vi har framställt ett uttryck för resonansfrekvensen i vårt system genom att derivera amplitudkaratäristiken. Vi gör detta för att derivatan (lutningen) blir 0 då vi nått globalt maximum för amplitudkaraktäristiken.
+I detta avsnitt diskuterar vi hur resonansfrekvensen beter sig i vårt system. Resonansfrekvensen är den frekvens på insignalen som leder till maximal amplitud på utsignalen\cite[s.~206]{sune2000}. I vårt fall med studsmattan är denna frekvens eftertraktad; den gör ju så att man gungar så högt som möjligt. Vi har framställt ett uttryck för resonansfrekvensen i vårt system genom att derivera amplitudkaratäristiken. Vi gör detta för att derivatan (lutningen) blir 0 då vi nått globalt maximum för amplitudkaraktäristiken.
 \begin{equation}
 \begin{split}
 \omega=\omega_{res} \rightarrow \frac{d}{d\omega}\left|H(\omega)\right|=0\rightarrow \\ 
@@ -543,15 +553,15 @@ I detta avsnitt diskuterar vi hur resonansfrekvensen beter sig i vårt system. R
 
 \newpage
 \subsection{Sinussvar}
-Vi vill undersöka vilken utsignal vi får om vi skickar in relevanta sinusar som insignaler. Vi har valt att undersöka tre fall som vi anser vara intresanta. En sinus med en hög frekvens, en med en låg frekvens och en med resonansfrekvensen.
+Vi vill undersöka vilken utsignal vi får om vi skickar in relevanta sinusar som insignaler. Vi har valt att undersöka tre fall som vi anser vara intresanta. En sinus med en hög frekvens, en med en låg frekvens och en med resonansfrekvensen. Vi använder oss av att en sinus signal in i ett LTI-system resulterar i en sinussignal ut med samma frekvens, men justerad amplitud och fas \cite[s.~144]{sune2000}.
 
 \begin{equation}
 x(t) = A sin(\omega_0t) \rightarrow y(t) = A|H(\omega_0)|sin(\omega_0t + arg(H(\omega_0)))
 \end{equation}
 
-Vi säger att en person trycker kan trycka ifrån med en kraft av $500N$ och använder därför 500 som vår amplitud för alla våra sinusar. Vi skulle kunna tänka oss att man med en hög frekvens inte kan trycka med samma kraft men för att jämföra vilka svar vi får för våra olika frekvenser så låter vi amplituden vara den samma i alla tre fallen.
+Vi säger att en person trycker ifrån med en kraft av $500N$ och använder därför 500 som vår amplitud för alla våra sinusar. Vi skulle kunna tänka oss att man med en hög frekvens inte kan trycka med samma kraft men för att jämföra vilka svar vi får för våra olika frekvenser så låter vi amplituden vara den samma i alla tre fallen.
 
-Det första fallet vi vill undersöka är då man hoppar i resonansferkvensen. Vi får då att $\omega_0 = 5,25$
+Det första fallet vi vill undersöka är då man hoppar i resonansferkvensen. Vi får då att $\omega_0 = 5,25$ ger:
 
 \begin{equation}
 y(t) = 0.94 sin(5,25 t - 1,44)
@@ -566,7 +576,7 @@ y(t) = 0.94 sin(5,25 t - 1,44)
 
 Det intresanta för oss är amplitudskalningen. Vi kan se att den är $0,94$ med andra ord så får vi en amplitud på 0.94 meter. För att trycka ifrån med 500 newton och hoppa i resonansfrekvens ser vi detta som ett rimligt värde.
 
-Vi vill sedan testa om vi har en mycket mycket låg amplitud i vårt fall väljer vi $\omega_0 = 1,5$
+Vi vill sedan testa om vi har en mycket mycket låg amplitud i vårt fall väljer vi $\omega_0 = 1,5$ som ger:
 
 \begin{equation}
 y(t) = 0,27 sin(1,5 t - 0,08)
@@ -582,7 +592,7 @@ y(t) = 0,27 sin(1,5 t - 0,08)
 \newpage
 Vi ser att vi får en amplitud som ligger runt 0,27 meter vilket är rimligt då vi trycker med en kraft $500N$ och har en fjäderkonstant på $2000$ Vi får i princip bara $500/2000 = 0,25$. Vi får dock ett litet tillslag för att vi har en frekvens om än låg.
 
-För vår sista sinus har vi valt en hög frekvens $\omega_0 = 30$
+För vår sista sinus har vi valt en hög frekvens $\omega_0 = 30$ som ger:
 
 \begin{equation}
 y(t) = 8\cdot 10^{-3} sin(30 t - 3.09)
@@ -609,16 +619,18 @@ I det här kapitlet kommer vi att visa vad som händer med vårt system om man v
 
 \subsection{Variation av massan}
 
-Om massan hos den hoppande personen ändras så påverkas amplitud och fas-karaktäristiken för systemet. Detta kommer att påverka flera saker för den som hoppar. Vi kollar på hur vår amplitud och fas-karaktäristik ser ut när vi stoppar in andra värden för massan. 
+Om massan hos den hoppande personen ändras så påverkas amplitud och fas-karaktäristiken för systemet. Detta kommer att påverka flera saker för den som hoppar. Figur 18 visar hur vår amplitud och fas-karaktäristik ser ut när vi stoppar in andra värden för massan. 
 
 \begin{figure}[h]
 \begin{center}
 \includegraphics[scale=0.5]{Bode(massa)}
-\caption{•}
+\caption{Bodediagram med 3 olika massor}
 \end{center}
 \end{figure}
 
-Vi ser att en större massa ger en större maxvärde för amplituden. Detta innebär att en tyngre person kan i vårt system gunga högre med samma kraft än vad en lättare person skulle kunna göra. Vi ser även att den maximala amplituden sker vid en lägre frekvens för högre massor än för lägre massor. Vi kan även avläsa att lägre massor har ett lite större spektrum utav frekvenser där de får rimlig amplitud då de klarar sig bättre för högre frekvenser
+Vi ser att en större massa ger ett större maxvärde för amplituden. Detta innebär att en tyngre person kan i vårt system gunga högre med samma kraft än vad en lättare person skulle kunna göra. Vi ser även att den maximala amplituden sker vid en lägre frekvens för högre massor än för lägre massor. Vi kan även avläsa att lägre massor har ett lite större spektrum utav frekvenser där de får rimlig amplitud då de klarar sig bättre för högre frekvenser
+
+\newpage
 
 \begin{figure}[h]
 \begin{center}
@@ -628,22 +640,22 @@ Vi ser att en större massa ger en större maxvärde för amplituden. Detta inne
 \end{figure}
 
 
-Vi kan ur plotten avläsa att en högre massa ger en lägre resonansfrekvens och en lägre massa ger en högre resonansfrekvens. Detta innebär att en tyngre person hoppar med lägre frekvens men högre och en lättare person hoppar med en högre frekvens men inte lika högt. Detta är rimligt då dämpningskraften kan retardera systemet mer då massan är lägre och att kraften kan retardera mindre om massan är högre. Fjädern måste sträckas ut mer för en tyngre person så den tyngre personen tillryggalägger mer sträcka per period, det betyder att varje period kommer att ta längre tid. Dock så kommer inte skillnaden att vara jättestor då den tyngre personen färdas snabbare under den extra sträckan. Detta resulterar i att en tyngre person gungar med en lägre frekvens än en lättare person.
+Vi kan ur figur 19 avläsa att en högre massa ger en lägre resonansfrekvens och en lägre massa ger en högre resonansfrekvens. Detta innebär att en tyngre person hoppar med lägre frekvens men högre och en lättare person hoppar med en högre frekvens men inte lika högt. Detta är rimligt då dämpningskraften kan retardera systemet mer då massan är lägre och att kraften kan retardera mindre om massan är högre. Fjädern måste sträckas ut mer för en tyngre person så den tyngre personen tillryggalägger mer sträcka per period, det betyder att varje period kommer att ta längre tid. Dock så kommer inte skillnaden att vara jättestor då den tyngre personen färdas snabbare under den extra sträckan. Detta resulterar i att en tyngre person gungar med en lägre frekvens än en lättare person.
 
 \subsection{Variation av dämpningskonstant}
 
-Man kan få system som beter sig mycket annorlunda genom att ändra på dämpningskonstanten. Vi har valt att analysera hur systemet ändrar sig för en mycket lägre dämpningskonstant, samt vad som händer då man väljer en mycket högre dämpningskonstant så att systemet blir överdämpat. Om vi justerar våra värden så får vi följande grafer.
+Man kan få studsmattan att bete sig mycket annorlunda genom att ändra på dämpningskonstanten. Vi har valt att analysera hur systemet ändrar sig för en mycket lägre dämpningskonstant, samt vad som händer då man väljer en mycket högre dämpningskonstant så att systemet blir överdämpat. Om vi justerar våra värden så får vi graferna i figur 20.
+
+\newpage
 
 \begin{figure}[h]
 \begin{center}
 \includegraphics[scale=0.5]{Bode(dampning)}
-\caption{•}
+\caption{Bodediagram för tre olika dämpningar}
 \end{center}
 \end{figure}
 
-Vi kan se att systemet oscillerar mer om man har en lägre dämpningskonstant. Detta är för att dämpninngen är det som bromsar systemet och gör så att energin läcker ut. Om vi läcker ut energin snabbare så oscilerar systemet mindre och amplituden blir lägre.
-
-Vi vill undersöka vad som händer med resonansfrekvensen för olika dämpningskonstanter. Diagrammet visar resonansfrekvensen för olika dämpningskonstanter för vårt system.
+Vi kan se att systemet oscillerar mer om man har en lägre dämpningskonstant. Detta är för att dämpninngen är det som bromsar systemet och gör så att energin läcker ut. Vi vill undersöka vad som händer med resonansfrekvensen för olika dämpningskonstanter. Figur 21 visar resonansfrekvensen för olika dämpningskonstanter för vårt system.
 
 \begin{figure}[h]
 \begin{center}
@@ -652,8 +664,7 @@ Vi vill undersöka vad som händer med resonansfrekvensen för olika dämpningsk
 \end{center}
 \end{figure}
 
-I figur (16) återfinner vi ett annat intressant fenomen. Frekvensen minskar såsom dämpningen ökar, men vid c.a. $530\frac{kg}{s}$ slår den i botten och sedan är resonansfrekvensen $0$. Detta beror på att vi där har nått kritisk dämpning (och därefter överdämpning) och således inte kan få någon självsvängning. Detta sker när systemet dämpar kraften så pass mycket att utsignalen aldrig tar sig över jämnviktsläget. Det skulle hos en studsmatta innebära att man bara sjunker ner i mattan och inte får någon kraft tillbaka uppåt.
-\newpage
+I figur 21 återfinner vi ett annat intressant fenomen. Frekvensen minskar såsom dämpningen ökar, men vid c.a. $530\frac{kg}{s}$ slår den i botten och sedan är resonansfrekvensen $0$. Detta beror på att vi där har nått kritisk dämpning (och därefter överdämpning) och således inte kan få någon självsvängning. Detta sker när systemet dämpar kraften så pass mycket att utsignalen aldrig tar sig över jämnviktsläget. Det skulle hos en studsmatta innebära att man bara sjunker ner i mattan och inte får någon kraft tillbaka uppåt.
 
 \subsection{Variation av fjäderkonstanten}
 
@@ -661,11 +672,11 @@ I figur (16) återfinner vi ett annat intressant fenomen. Frekvensen minskar så
 \begin{figure}[h]
 \begin{center}
 \includegraphics[scale=0.5]{Bode(fjader)}
-\caption{•}
+\caption{Bodediagram för tre olika fjäderkonstanter}
 \end{center}
 \end{figure}
 
-I figur (15) ser vi att resonansfrekvensen blir högre med fjäderkonstanten. Med andra ord kommer frekvensen att gå ned då fjädrarna blivit lite slitna och rostiga efter några år av slitage. Detta verkar också rimligt.
+I figur 23 ser vi att resonansfrekvensen blir högre med fjäderkonstanten. Med andra ord kommer frekvensen att gå ned då fjädrarna blivit lite slitna och rostiga efter några år av slitage. Detta verkar också rimligt.
 
 \begin{figure}[h]
 \begin{center}
