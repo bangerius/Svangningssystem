@@ -1,5 +1,5 @@
 function surfaceTest()
-[x,y] = meshgrid(-8:0.1: 0,-8 : 0.1: 8);
+[x,y] = meshgrid(-16:0.1: 0,-25 : 0.1: 25);
 
 c=100;
 k=2000;
