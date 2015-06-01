@@ -341,7 +341,7 @@ I vårt fall med studsmattan vill vi gärna skapa så hög amplitud ut som möjl
 \end{figure}
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.25]{3Dpoler5}
+\includegraphics[scale=0.25]{3Dpoler4}
 \caption{3D-representation av laplacetransformen för vårt system}
 \end{center}
 \end{figure}
@@ -604,23 +604,15 @@ Vi ser att vi får en mycket mycket liten amplitud vilket är realistiskt för e
 
 I det här kapitlet kommer vi att visa vad som händer med vårt system om man varierar olika parametrar. Vi kommer svara på frågor som hur studsmattans egenskaper blir annorlunda för en person med en annan vikt, hur olika dämpningar påverkar studsmattan och vad som händer om man har starkare eller svagare fjädrar.
 
-När vi tagit fram denna funktion kan vi se hur resonansfrekvensen förändras om vi t.ex. byter massa. På det sättet kan vi se hur mattans svängningsfrekvens kommer att bete sig för olika personer. I figur 17 ser vi denna relation representerad.
 
-Vi ser att ju mer personen på mattan väger desto lägre blir resonansfrekvensen. Svängningstiden kommer alltså bli större, vilket verkar rimligt.
-
-\begin{figure}[h]
-\begin{center}
-\includegraphics[scale=0.4]{resonansFjader}
-\caption{Resonansvinkelfrekvensen som en funktion av fjäderkonstanten.}
-\end{center}
-\end{figure}
-
-I figur (16) återfinner vi ett annat intressant fenomen. Frekvensen minskar såsom dämpningen ökar, men vid c.a. $530\frac{kg}{s}$ slår den i botten och sedan är resonansfrekvensen $0$. Detta beror på att vi där har nått kritisk dämpning (och därefter överdämpning) och således inte kan få någon självsvängning.
-\newpage
 
 \subsection{Variation av massan}
 
-Om massan hos den hoppande personen ändras så påverkas amplitud och fas-karaktäristiken för systemet. Detta kommer att påverka flera saker för den som hoppar. Vi kollar på hur våra uttryck ser ut när vi stoppar in andra värden för massan. Vi ser att en större massa ger en större amplitud. Detta innebär att en tyngre person kan i vårt system gunga högre med samma kraft än vad en lättare person skulle kunna göra. Vi undersöker hur resonansfrekvensen påverkas då massan ändras. 
+Om massan hos den hoppande personen ändras så påverkas amplitud och fas-karaktäristiken för systemet. Detta kommer att påverka flera saker för den som hoppar. Vi kollar på hur våra uttryck ser ut när vi stoppar in andra värden för massan. 
+
+BODE HÄR
+
+Vi ser att en större massa ger en större amplitud. Detta innebär att en tyngre person kan i vårt system gunga högre med samma kraft än vad en lättare person skulle kunna göra. Vi ser även att den maximala amplituden sker vid en lägre frekvens för högre massor än för lägre massor. Vi kan även avläsa att lägre massor har ett lite större spektrum utav frekvenser där de får rimlig amplitud då de klarar sig bättre för högre frekvenser
 
 \begin{figure}[h]
 \begin{center}
@@ -636,11 +628,17 @@ Vi kan ur plotten avläsa att en högre massa ger en lägre resonansfrekvens och
 
 Man kan få system som beter sig mycket annorlunda genom att ändra på dämpningskonstanten. Vi har valt att analysera hur systemet ändrar sig för en mycket lägre dämpningskonstant, samt vad som händer då man väljer en dämpningskonstant så att systemet blir kritiskt samt överdämpat. 
 
+STOPPA IN BODE HÄR
+
+
+I figur (16) återfinner vi ett annat intressant fenomen. Frekvensen minskar såsom dämpningen ökar, men vid c.a. $530\frac{kg}{s}$ slår den i botten och sedan är resonansfrekvensen $0$. Detta beror på att vi där har nått kritisk dämpning (och därefter överdämpning) och således inte kan få någon självsvängning.
+\newpage
+
 Vi kan se att systemet oscillerar mer om man har en lägre dämpningskonstant. Detta är för att dämpninngen är det som bromsar systemet och gör så att energin läcker ut. Om vi läcker ut energin snabbare så oscilerar systemet mindre och amplituden blir lägre.
 
 Om vi justerar våra värden så får vi följande grafer.
 
-STOPPA IN GRAF HÄR
+
 
 
 \begin{figure}[h]
@@ -650,13 +648,21 @@ STOPPA IN GRAF HÄR
 \end{center}
 \end{figure}
 
-Insert text om kritisk dämpning här
-
-Insert text om överdämpning här
+I figur (16) återfinner vi ett annat intressant fenomen. Frekvensen minskar såsom dämpningen ökar, men vid c.a. $530\frac{kg}{s}$ slår den i botten och sedan är resonansfrekvensen $0$. Detta beror på att vi där har nått kritisk dämpning (och därefter överdämpning) och således inte kan få någon självsvängning.
+\newpage
 
 \subsection{Variation av fjäderkonstanten}
 
+BODE HÄR
+
 I figur (15) ser vi att resonansfrekvensen blir högre med fjäderkonstanten. Med andra ord kommer frekvensen att gå ned då fjädrarna blivit lite slitna och rostiga efter några år av slitage. Detta verkar också rimligt.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.4]{resonansFjader}
+\caption{Resonansvinkelfrekvensen som en funktion av fjäderkonstanten.}
+\end{center}
+\end{figure}
 
 
 
