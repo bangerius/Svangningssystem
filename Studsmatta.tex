@@ -140,7 +140,7 @@ Vi kan alltså modellera vår studsmatta som en enkel fjäder som står på mark
 Insignalen i vårt system blir alltså kraften som den gungande personen utför på systemet då denne böjer eller sträcker på benen. Utsignalen i systemet definieras som mattans ändring i höjdled med referenspunkt i jämviktsläget på studsmattan, med positiv riktning mot marken. 
 %Jämviktsläget varierar i höjd beroende på massan som står på mattan.
 %Uppdatera till att matcha den slutliga referensbilden
-Krafterna uttryckta med pilar i figur 6 är gravitationskraften från massan $F_g$, fjäderns motkraft på massan $F_f$ och kraften från personen som trycker emot $F_a$.
+Krafterna uttryckta med pilar i figur 6 är gravitationskraften från massan $F_g$, fjäderns motkraft på massan $F_f$, fjäderns dämpningskraft $F_d$ och kraften från personen som trycker emot $F_a$.
 
 Då fjädrarna i vår studsmatta är placerade symmetriskt och personen står placerad i mitten av mattan kan vi idealisera systemet som en enda fjäder verkande i y-led, eftersom de radiella krafterna tar ut varandra i symmetrin.
 
@@ -266,7 +266,7 @@ Systemet uppfyller således kravet för linjäritet.
 
 Systemfunktionen är mycket relevant hos ett system och ger information om en rad olika följdegenskaper som t.ex. stabilitet och kausalitet, om systemet filtrerar ut låga eller höga frekvenser och mycket annat \cite[s.~170]{sune2000}. Vi vill ta fram systemfunktionen för att andra ta fram egenskaperna hos vårt system.
 
-Med differentialekvationen kan vi genom laplacetransformering ta fram systemfunktionen $H(s)$. %Här ska det vara mer om laplacetransform!!!
+Med differentialekvationen kan vi genom laplacetransformering ta fram systemfunktionen $H(s)$. Laplacetransform är en matematisk transform som tar en funktion av tiden till frekvensdomänen. %Här ska det vara mer om laplacetransform!!!
 
 \begin{equation}
 \begin{split}
@@ -336,7 +336,7 @@ Detta kan illustreras och förenklas till (figur 7-9):
 \newpage
 
 
-I vårt fall med studsmattan vill vi gärna skapa så hög amplitud ut som möjligt, med mycket svängning och lite dämpning. Detta återfinns i det tredje fallet med två komplexa rötter och brukar kallas för ett underdämpat system \cite{polesAndZeros}. Det kan visualiseras grafiskt i form av amplitudkaraktäristik, som visas i figur 14 senare i rapporten. Nedan i figur 10 visas ett pol/nollställe-diagram över vårt system med följande konstanter insatta $k=2000\frac{N}{m}$ , $m=70kg$ , $c=100\frac{kg}{s}$. Figur 11 visar en 3D-plot utav vår systemfunktionen.
+I vårt fall med studsmattan vill vi gärna skapa så hög amplitud ut som möjligt, med mycket svängning och lite dämpning. Detta återfinns i det tredje fallet med två komplexa rötter och brukar kallas för ett underdämpat system \cite{polesAndZeros}. Det kan visualiseras grafiskt i form av amplitudkaraktäristik, som visas i figur 14 senare i rapporten. Nedan i figur 10 visas ett pol/nollställe-diagram över vårt system med följande konstanter insatta $k=2000\frac{N}{m}$ , $m=70kg$ , $c=100\frac{kg}{s}$. Dessa konstanter valdes inte helt slumpmässigt. Vi valde $k = 2000$ för att då krävs det en kraft av 1000 N för att dra ned fjädern en halvmeter, det vill säga en person som väger 100 kg skulle sjunka ned ungefär en halvmeter om denne stod på studsmattan. Detta anser vi relativt rimligt. Personen som hoppar väger 70 kg vilket är en ganska vanlig vikt hos en normalstor person. Dämpningskonstanten är den som var svårast att välja, och beroende på vad vi valde den som så fick systemet väldigt olika egenskaper. Konstanten c är mer eller mindre omöjlig för oss att resonera oss fram till en vettig siffra, så vi valde 100 för att det gav oss värden som ser helt okej ut för en studsmatta. Figur 11 visar en 3D-plot utav vår systemfunktionen.
 
 
 \begin{figure}[h]
