@@ -137,7 +137,7 @@ $$\Delta h = \Delta l \sin(v) \rightarrow F_{tot}=2k\Delta l \sin(v)=2k\Delta h\
 \end{figure}
 
 Vi kan alltså modellera vår studsmatta som en enkel fjäder som står på marken under den gungande personens fötter.
-Insignalen i vårt system blir alltså kraften som den gungande personen utför på systemet då denne böjer eller sträcker på benen. Utsignalen i systemet definieras som mattans ändring i höjdled med referenspunkt i jämviktsläget på studsmattan, med positiv riktning mot marken. 
+Insignalen i vårt system blir alltså kraften som den gungande personen utför på systemet då denne böjer eller sträcker på benen. Utsignalen i systemet definieras som mattans ändring i höjdled med referenspunkt i jämviktsläget på studsmattan, med positiv riktning mot marken. I bild X illustreras jämviktslägets ändring av massan.
 %Jämviktsläget varierar i höjd beroende på massan som står på mattan.
 %Uppdatera till att matcha den slutliga referensbilden
 Krafterna uttryckta med pilar i figur 6 är gravitationskraften från massan $F_g$, fjäderns motkraft på massan $F_f$, fjäderns dämpningskraft $F_d$ och kraften från personen som trycker emot $F_a$.
@@ -155,10 +155,10 @@ F_g = m  g
 \subsection{Fjäderkraften $F_f$}
 
 Fjäderkraften $F_f$ är den kraft som motverkar en fjäders avskiljning ifrån sitt jämviktsläge. Sambandet har namnet Hookes lag 
-\cite[s.~278]{randall2008}. Om fjäderns grund-\newline jämviktsläge är $L$ och dess jämviktsläge efter att massan läggs på är $l_1$ så kan vi uttrycka avvikelsen från jämviktsläget vid $t=0$ som $l_0 = L - l_1$. Eftersom vi har avvikelsen från jämviktsläget $l_1$ så lägger vi på $y(t)$. Fjäderkonstanten sätts till $k$. Denna kraft är motriktad den av gravitationen och uttrycks på följande vis:
+\cite[s.~278]{randall2008}. Om fjäderns grund-\newline jämviktsläge är $L$ och dess jämviktsläge efter att massan läggs på är $l_1$ så kan vi uttrycka avvikelsen från jämviktsläget vid $t=0$ som $\Delta l = L - l_1$. Eftersom vi har avvikelsen från jämviktsläget $\Delta l$ så lägger vi på $y(t)$. Fjäderkonstanten sätts till $k$. Denna kraft är motriktad den av gravitationen och uttrycks på följande vis:
 
 \begin{equation}
-F_f = -k (l_0 + y(t))
+F_f = -k (\Delta l + y(t))
 \end{equation}
 
 \subsection{Dämpningskraften $F_d$}
@@ -180,7 +180,7 @@ F_{tot} = F_a + F_g + F_f + F_d
 Vi sätter $F_a$ som insignalen $x(t)$ vilket tillsammans med våra tidigare definitioner och Newtons andra lag \cite[s.~138]{randall2008} ger:
 
 \begin{equation}
-F_{tot} = x(t) + mg - k(l_0+y(t)) - cv = ma
+F_{tot} = x(t) + mg - k(\Delta l+y(t)) - cv = ma
 \end{equation}
 
 Vi uttrycker hastighet och acceleration som funktioner av $t$:
@@ -188,24 +188,22 @@ Vi uttrycker hastighet och acceleration som funktioner av $t$:
 a = \frac{d^2y(t)}{dt^2} , v = \frac{y(t)}{dt}
 \end{equation}
 
-\newpage
-
 Vilket ger:
 
 \begin{equation}
- m\frac{d^2y(t)}{dt^2} =  -k(l_0 + y(t)) -c\frac{dy(t)}{dt} + mg +  x(t)
+ m\frac{d^2y(t)}{dt^2} =  -k(\Delta l + y(t)) -c\frac{dy(t)}{dt} + mg +  x(t)
 \end{equation}
 
-Vid $t = 0$ så står systemet still i jämviktsläget. Det vill säga gravitationskraften och kraften från fjäderns utsträckning beroende på massan tar ut varandra. Alltså:
+Gravitationen $mg$ är alltid i positiv riktning (mot marken) och fjäderkraften $F_f$ kommer vara i antingen positiv eller negativ riktning beroende på insignalen. Vid $t = 0$ så står systemet still i jämviktsläget. Personen gungar inte. Det vill säga ingen insignal och ingen utsignal. Detta kan bara ske om gravitationskraften och kraften från fjäderns utsträckning tar ut varandra. Alltså:
 \begin{equation}
-k  l_0 = mg
+k \Delta l = mg
 \end{equation}
 
 Vilket ger vår slutgiltiga differentialekvation:
 \begin{equation}
  m\frac{d^2y(t)}{dt^2} + k  y(t) + c\frac{dy(t)}{dt} = x(t)
 \end{equation}
-
+\newpage
 
 \section{Systemegenskaper}
 
