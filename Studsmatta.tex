@@ -441,7 +441,7 @@ I_{impuls}= & \int_{0}^{\infty}\left|\frac{e^{-\alpha t}}{\omega_0  m}\cdot sin(
 \subsection{Stegsvar}
 Ett stegsvar är en omedelbar upptrappning av insignalen till ett konstant värde. Detta kan approximativt motsvaras att personen som står på mattan får en omedelbar ökning av massan. T.ex. om personen fångar ett tungt objekt.
 
-Vi vill ta fram stegsvaret $g(t)$ för vårt system. Vi gör detta genom att integrera vårt impulssvar upp till tiden tau $\int_{-\infty}^\tau h(t)$. Vi börjar med att bryta ut våra konstanter utanför integralen. Vi räknar sedan ut integralen och till sist stoppar vi in konstanterna igen.
+Vi vill ta fram stegsvaret $g(t)$ för vårt system. Vi gör detta genom att integrera vårt impulssvar upp till tiden $\tau$ $\int_{-\infty}^\tau h(t)$, vi börjar med att bryta ut våra konstanter utanför integralen. Vi räknar sedan ut integralen och till sist stoppar vi in konstanterna igen.
 
 \begin{equation}
 \int_{-\infty}^\tau \frac{1} {\omega_0 m} \cdot e^{-\alpha  t} \cdot sin(\omega_0  t) \cdot u(t) \  dt = \frac{1}{\omega_0  m} \cdot \int_{-\infty}^\tau sin(\omega_0 t)\cdot e^{-\alpha  t} \cdot u(t) \  dt
@@ -512,9 +512,9 @@ H(\omega) =  \frac{1}{m (j\omega)^2 + c  j\omega + k}
 \end{equation}
 
 \newpage
-\subsection{Amplitud- och fas-karaktäristik}
+\subsection{Amplitud- och faskaraktäristik}
 
-Amplitudkaraktäristik och faskaraktäristik beskriver hur impulssvarets amplitud och fasförskjutning påverkas av insignalens frekvens.
+Amplitud och faskaraktäristik beskriver hur ett system påverkar en signals amplitud och fas beroende på frekvensen. Utsignalen har en amplitud som är insignalens amplitud multiplicerat med systemets amplitudkaraktäristik och utsignalens fasförskjutning bestäms utav systemets faskaraktäristik.
 
 För att ta fram amplitudkaraktäristiken tar man absolutbeloppet av systemets frekvensfunktion, d.v.s. $|H(\omega)|$. Faskaraktäristiken får man genom att ta argumentet av frekvesnsfunktion, $arg(H(\omega))$\cite[s.~130]{sune2000}. 
 
