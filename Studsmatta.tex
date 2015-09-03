@@ -764,9 +764,17 @@ Med de påverkade krafterna i systemet $F_a = x(t), F_g = mg, F_f = -k(\Delta l 
 \begin{equation}
 F_tot = x(t) + mg - k(\Delta l + y(t)) - cv = ma
 \end{equation} 
-Där $x(t)$ är insignalen, $y(t)$ är utsignalen, $k$ är fjäderkonstanten, $c$ är dämpningskonstanten, $m$ är personen på mattans massa, $v$ är hastigheten, $a$ är accelerationen och $g$ är gravitationen. 
+Där $x(t)$ är insignalen, $y(t)$ är utsignalen, $k$ är fjäderkonstanten, $c$ är dämpningskonstanten, $m$ är personen på mattans massa, $v$ är hastigheten, $a$ är accelerationen och $g$ är gravitationen. Om vi då uttrycker acceleration och hastighet som funktioner av tiden så kan vi uttrycka en differentialekvation.
+\begin{equation}
+a = \frac{d^2y(t)}{dt^2} , v = \frac{y(t)}{dt}
+\end{equation}
+Vilket ger:
+\begin{equation}
+ m\frac{d^2y(t)}{dt^2} =  -k(\Delta l + y(t)) -c\frac{dy(t)}{dt} + mg +  x(t)
+\end{equation}
 
-I det sista steget för det slut
+I det sista steget för den slutgiltiga differentialekvationen så fick vi kommentaren att vi skulle visa ett steg mer matematiskt. Vi skrev kort och gott att vid tid $t = 0$ så kommer gravitationen och fjäderkraften som verkar på massan ta ut varandra, och därav befinna sig i jämvikt.
+
 
 \subsection{Val av konstanter}
 
