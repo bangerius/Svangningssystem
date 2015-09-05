@@ -752,17 +752,18 @@ Addison-Wesley, 2a upplagan, 2008.
 
 \subsection{Jämviktsläget}
 
-I vår rapport så tar vi upp jämviktsläget ganska kort när vi förklarar de krafter som påverkar systemet och hur vi räknar på utsignalen. Vi fick kommentaren att jämviktsläget är otydligt från figuren. I orginalbilden utgick alla kraftpilar från studsmattans kant ("grundläge") även fast en person stod på mattan. Dessutom var varken studsmattans grundjämviktsläge eller nya jämviktsläget med massan på markerade. Vi gjorde en ny bild som förklarar jämvikten så är krafterna och jämvikten förklarade separat.
+I vår rapport så tar vi upp jämviktsläget ganska kort när vi förklarar de krafter som påverkar systemet och hur vi räknar på utsignalen. Vi fick kommentaren att jämviktsläget är otydligt från figuren. I orginalbilden utgick alla kraftpilar från studsmattans kant, grundläget, även fast en person stod på mattan. Dessutom var varken studsmattans grundjämviktsläge eller nya jämviktsläget med massan på markerade. Vi gjorde en ny bild som förklarar jämvikten så är krafterna och jämvikten förklarade separat.
 
 \begin{figure}[h]
 \begin{center}
 \includegraphics[scale=0.6]{jamvikt}
+\caption{Förtydligande av jämnvikt}
 \end{center}
 \end{figure}
 
 \subsection{Differentialekvationen}
 
-Med de påverkade krafterna i systemet $F_a = x(t), F_g = mg, F_f = -k(\Delta l + y(t),F_d = -cv$ och med Newtons andra lag fick vi fram ekvationen:
+Med de verkande krafterna i systemet $F_a = x(t), F_g = mg, F_f = -k(\Delta l + y(t),F_d = -cv$ och med Newtons andra lag fick vi fram ekvationen:
 \begin{equation}
 F_tot = x(t) + mg - k(\Delta l + y(t)) - cv = ma
 \end{equation} 
@@ -806,16 +807,22 @@ Massan är den vi utgick från. Vi valde $m = 70$ eftersom det är en vanlig vik
 Givet detta med de konstanter vi redan hade så valde vi $c = 100$.
 
 \subsection{Laplacetransform}
+En laplacetransformerad funktion är ett användbart verktyg för att undersöka ett systems egenskaper. Transformationen avbildar en funktion i tidsdomänen, på en annan funktion i frekvensdomänen. Laplacetransformen är särskilt användbar då man undersöker system som inte är energifria, vilket andra metoder för systemanalys, så som fouriertransformering och faltning, inte kan hantera. I vårt fall med studsmattan är systemet emellertid energifritt, men laplacetransformationen kan i detta fall ändå tillämpas och ger dessutom lättare algebraiska manipulationer än alternativa metoder.
+Efter laplacetransformering av systemets signalförhållande kan systemets så kallade systemfunktion utvinnas, vilket kan användas för analysera systemet ytterligare.
 
 \newpage
 \subsection{Stabilitetsbevis}
 
 Vi gjorde ett väldigt långt stabilitetsbevis och försökte vara väldigt noggranna, men vi borde ha tagit med det enkla stabilitetsbeviset också. Vi fick nämligen kommentaren att det var väldigt omständigt och skulle lösas på annat sätt. Dessutom fick vi frågan "Vad är stabilitet?"
 
-Stabilitet med avseende på ett fysikaliskt system är att varje begränsad insignal ger en begränsad utsignal. Ett sätt att bevisa stabilitet är att visa att frekvensfunktionen $H(\omega)$ existerar. Vi har systemfunktionen $H(S)$ och kan därav bara kolla på noll-pol diagrammet om den reella axeln ($j\omega$-axeln) är med i konvergensområdet. Systemet är ett kausalt LTI system och därav kommer konvergensområdet ligga till höger om polerna enligt bild ((X)).
+Stabilitet med avseende på ett fysikaliskt system innebär att varje begränsad insignal ger en begränsad utsignal. Ett sätt att bevisa stabilitet hos ett system är att visa att frekvensfunktionen $H(\omega)$ existerar. Vi har systemfunktionen $H(S)$ och kan därav dels kolla på noll-pol diagrammet om den imaginära axeln ($j\omega$-axeln) är med i konvergensområdet, och dels se efter om antalet poler är lika med eller fler än antalet nollställen. Om både dessa krav är uppfyllda hade det visat att systemet är stabilt. 
+
+Systemet är kausalt då dess utsignal enbart beror på nu- och dåtida insignaler. Vi har även visat att systemet är linjärt och tidsinvariant i rapporten. Därav följer att eftersom systemet är ett kausalt LTI system så kommer konvergensområdet ligga till höger om polerna enligt bild ((X)). Vi ser även att antalet poler är fler än antalet nollställen, dvs. inga. Därmed är de två kraven uppfyllda, vilket visar att systemet är stabilt.
+
 \begin{figure}[h]
 \begin{center}
 \includegraphics[scale=0.6]{nolpol-diagram_konvergens}
+\caption{Pol-nollställediagram med konvergensområde}
 \end{center}
 \end{figure}
 
