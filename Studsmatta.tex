@@ -795,11 +795,28 @@ m\frac{d^2y(t)}{dt^2} = x(t) + mg  - k \Delta l -  k y(t)) -c\frac{dy(t)}{dt} \\
 
 \subsection{Val av konstanter}
 
-Vårt val av konstanter blev lite hastigt och förklarades inte. Vi fick därav kommentaren att vi borde motivera dem. 
+I rapporten så använde vi oss av ett par konstanter för att vi skulle kunna räkna och testa vår modell av systemet. Vi fick dock kommentaren att vi borde motivera dem. Vi hade inte valt dem helt slumpmässigt, men vår motivation var uppenbarligen inte med.
+
+Massan är den vi utgick från. Vi valde $m = 70$ eftersom det är en vanlig vikt på en normalstor person. För att ta fram fjädringskonstanten funderade vi över hur djupt i mattan personen skulle sjunka (dvs, hur mycket fjädern skulle tryckas ihop). Vi valde $k = 2000$, för då skulle det krävas 1000 N för att sjunka ned/trycka ihop 0.5 m, varpå vår person skulle sjunka 0.35 m. Detta är ganska rimligt. Dämpningskonstanten är dock mer eller mindre omöjlig för oss att kontrollera. Vi ville dock med studsmattan skapa en så hög amplitud som möjligt, med mycket svängning och lite dämpning. Detta återfinns i det fallet då systemfunktionen har två komplexa rötter. Då fick vi ett krav på dämpningskonstanten för att det skulle vara ett sådant system. Kravet var
+\begin{equation}
+(\frac{c}{2m})^2 - \frac{k}{m} < 0
+\end{equation}
+Givet detta med de konstanter vi redan hade så valde vi $c = 100$.
 
 \subsection{Laplacetransform}
 
+\newpage
 \subsection{Stabilitetsbevis}
+
+Vi gjorde ett väldigt långt stabilitetsbevis och försökte vara väldigt noggranna, men vi borde ha tagit med det enkla stabilitetsbeviset också. Vi fick nämligen kommentaren att det var väldigt omständigt och skulle lösas på annat sätt. Dessutom fick vi frågan "Vad är stabilitet?"
+
+Stabilitet med avseende på ett fysikaliskt system är att varje begränsad insignal ger en begränsad utsignal. Ett sätt att bevisa stabilitet är att visa att frekvensfunktionen $H(\omega)$ existerar. Vi har systemfunktionen $H(S)$ och kan därav bara kolla på noll-pol diagrammet om den reella axeln ($j\omega$-axeln) är med i konvergensområdet. Systemet är ett kausalt LTI system och därav kommer konvergensområdet ligga till höger om polerna enligt bild ((X)).
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.6]{nolpol-diagram_konvergens}
+\end{center}
+\end{figure}
+
 
 \subsection{Frekvensfunktion}
 
