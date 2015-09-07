@@ -831,44 +831,66 @@ Systemet är kausalt då dess utsignal enbart beror på nu- och dåtida insignal
 
 \subsection{Frekvensfunktion}
 
+\subsection{Amplitud- och faskaraktäristik}
+
+Vi gav en lite klumpig beskrivning av vad amplitud- och faskaraktäristik är för något och fick kommentaren att vi måste förtydliga detta. Dessutom satte vi in våra konstanter lite hastigt i absolutbeloppet av frekvensfunktionen.
+
+Amplitud- och faskaraktäristik beskriver hur ett system påverkar en signals amplitud och fas beroende på frekvensen. Amplitudkaraktäristiken beskriver hur utsignalens amplitud varierar beroende på insignalens frekvens. Faskaraktäristiken beskriver i sin tur hur utsignalens fas varierar vid insignalens frekvens i förhållande till dess fas.
+
 \subsection{Impuls- och stegsvar för olika system}
 
-Om man varierar de olika konstanterna så får man olika system med olika egenskaper. Vi gjorde några sådana tester med fas- och amplitudkaraktäristik, men inte med impuls- eller stegsvaret. Så här följer några olika variationer.
+Om man varierar de olika konstanterna så får man olika system med olika egenskaper. Vi gjorde några sådana tester med fas- och amplitudkaraktäristik, men inte med impuls- eller stegsvaret. Impulssvaret och stegsvaret är centrala i ett systems beteende och vi borde ha diskuterat dessa. Här följer både impulssvar och stegsvar med variation av konstanterna.
 
-\begin{figure}[]
+\begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.3]{impulssvar(massa)}
+\includegraphics[scale=0.4]{impulssvar(massa)}
 \caption{Impulssvar med varierande massa}
 \end{center}
 \end{figure}
-\begin{figure}[]
+
+Man kan se att massan ger lite skillnad både amplitud och frekvens. Eftersom kraften är densamma (här ignoreras faktumet att en tung person förmodligen kan ge en större kraft än en väldigt lätt person) så kommer den lätta massan få högre amplitud eftersom gravitationen påverkar mindre. Man kan också se att den tunga personen svänger under en längre period på grund av rörelsemängden.
+
+\newpage
+\begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.3]{impulssvar(fjader)}
+\includegraphics[scale=0.4]{impulssvar(fjader)}
 \caption{Impulssvar med varierande fjäderkonstant}
 \end{center}
 \end{figure}
-\begin{figure}[]
+
+Med en väldigt hög fjäderkonstant så får systemet en väldigt liten amplitud och hög frekvens. Detta för att fjädern är så stark att den trycker tillbaka med stor kraft väldigt snabbt. Med den låga fjäderkonstanten har man istället en mycket hög amplitud och låg frekvens. Det första man kan konstatera är att den förmodligen slår i backen för att studsmattan inte är så hög. Detta beteende kommer ifrån att fjädern inte är så stark så det krävs en lång amplitud för att den ska ta ut gravitationen och insignalen. 
+
+\begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.3]{impulssvar(dampning)}
+\includegraphics[scale=0.4]{impulssvar(dampning)}
 \caption{Impulssvar med varierande dämpningskonstant}
 \end{center}
 \end{figure}
 
-\begin{figure}[]
+Med låg dämpning så kommer systemet svänga väldigt länge. Då finns det knappt någon kraft som ständigt jobbar emot svängningen, vilket ger en väldigt långvarig svängning. Motsatsen blir ju då självklart att den inte svänger alls på grund av den starka kraften som ständigt jobbar emot svängningen.
+\newpage
+
+\begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.3]{stegsvar(massa)}
+\includegraphics[scale=0.4]{stegsvar(massa)}
 \caption{Stegsvar med varierande massa}
 \end{center}
 \end{figure}
-\begin{figure}[]
+
+När man ändrar massan så är det ganska självklart att det nya jämviktsläget ändras. Om någon står på en studsmatta och får ett bowlingklot kastat till sig kommer denne sjunka ned djupare. Här ser vi bara några olika exempel av hur tung personen är innan detta händer. Man kan då se att det beter sig mycket likt impulssvaret med avseende på utseendet, men att de svänger in på olika nya värden.
+
+\begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.3]{stegsvar(fjader)}
+\includegraphics[scale=0.4]{stegsvar(fjader)}
 \caption{Stegsvar med varierande fjäderkonstant}
 \end{center}
 \end{figure}
-\begin{figure}[]
+
+Fjäderkonstanten påverkar det nya jämviktsläget väldigt mycket. Med en hög fjäderkonstant så 
+
+\begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.3]{stegsvar(dampning)}
+\includegraphics[scale=0.4]{stegsvar(dampning)}
 \caption{Stegsvar med varierande dämpningskonstant}
 \end{center}
 \end{figure}
