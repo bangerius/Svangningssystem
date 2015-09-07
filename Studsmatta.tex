@@ -842,6 +842,37 @@ Detta visar dessutom hur vi går från vår systemfunktion till frekvensfunktion
 
 Men med detta stabilitetsbevis så är det väldigt nära att då visa att $j\omega$ är med i konvergensområdet och vi kan då säga att $s = \sigma + j\omega$. Då $\sigma = 0$ så har vi frekvensfunktionen $H(s) = H(\omega), s = j\omega$
 
+\subsection{Stegsvar}
+
+I vår rapport så tog vi fram stegsvaret, $g(t)$, genom att integrera impulssvaret, $h(t)$. Vi fick kommentaren att det går att lösa på ett enklare sätt. 
+
+En enklare metod för att ta fram g(t) är att utnyttja sambandet $Y(s) = X(s)H(s)$ så att $G(s) = U(s)H(s)$. Därefter får vi stegsvaret $g(t)$ genom att inverslaplacetransformera $G(s)$.
+
+Vi laplacetransformerar först enhetssteget $\mathcal{L}(u(t)) = \frac{1}{s} = U(s)$ och multiplicerar detta med systemfunktionen $H(s)$
+\begin{equation}
+U(s)H(s) = \frac{1}{s} \frac{1}{ms^2 + cs + k}
+\end{equation}
+Genom att uttrycka systemfunktionen $H(s)$ med dess rötter istället blir det enklare att räkna med. Rötterna i vårt fall med studsmattan har redan beräknats konkret i rapporten. Vi betecknar därmed rötterna som $r_1, r_2$ och får då 
+\begin{equation}
+\frac{1}{m} \frac{1}{(s - r_1) (s - r_2)}
+\end{equation}
+För att enkelt kunna inverslaplacetransformera uttrycket partialbråksupdelar vi uttrycket och får då:
+
+\begin{equation}
+\frac{1}{m} \left(\frac{A}{s} + \frac{B}{s - r_1} + \frac{C}{s - r_2}\right)
+\end{equation}
+
+Vi beräknar A, B, C och inverslaplacetransformerar uttrycket så får vi:
+\begin{equation}
+\mathcal{L}^-1\left\lbrace \frac{1}{m} \left( \frac{1}{s(r_1 r_2)} - \frac{1}{r_1(s-r_1)(r_2-r_1)} + \frac{1}{r_2(s-r_2)(r_2 - r_1}   \right) \right\rbrace
+\end{equation}
+Och detta ger oss stegsvaret $g(t)$
+
+\begin{equation}
+g(t) = \frac{1}{m} \left( \frac{1}{r_1 r_2} - \frac{1}{\frac{r_1}{r_2} - r_1} e^{r_1t} + \frac{1}{r_2(r_2 - r_1} e^{r_2 t}   \right) u(t)
+\end{equation}
+
+
 \subsection{Amplitud- och faskaraktäristik}
 
 Vi gav en lite klumpig beskrivning av vad amplitud- och faskaraktäristik är för något och fick kommentaren att vi måste förtydliga detta.
