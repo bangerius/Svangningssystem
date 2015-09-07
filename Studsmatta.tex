@@ -763,6 +763,17 @@ I vår rapport så tar vi upp jämviktsläget ganska kort när vi förklarar de 
 
 Fjädern utan en massa har jämviktsläget vid längd $L$. När man lägger på massan får den ett nytt jämviktsläge som vi kallar för $l_1$. Skillnaden mellan $L$ och $l_1$ är $\Delta l$. Sedan definierar vi en kraft $x(t)$ som verkar utöver gravitationen och skillnaden mellan det nya läget och $l_1$ som $y(t)$. Då blir den totala skillnaden $y(t) + \Delta l$
 
+\subsection{Dämpningskraft}
+
+Vi glömde i den ursprungliga rapporten att både visualisera dämpningskraften och nämna den i text. I den uppdaterade figuren nedan visas hur dämpningskraften ser ut i vårt fall med studsmattan, samt andra krafter som medverkar i systemet. Således betecknar vi dämpningskraften $F_d$, och är alltså den kraft som motverkar rörelsen i ett svängningssystem motriktat rörelsen.
+
+\begin{figure}[ht]
+\begin{center}
+\includegraphics[scale=0.7]{KrafterIllustrationFinal}
+\caption{Utsträckning för en fjäder}
+\end{center}
+\end{figure}
+\newpage
 \subsection{Differentialekvationen}
 
 Med de verkande krafterna i systemet $F_a = x(t), F_g = mg, F_f = -k(\Delta l + y(t),F_d = -cv$ och med Newtons andra lag fick vi fram ekvationen:
@@ -809,10 +820,9 @@ Massan är den vi utgick från. Vi valde $m = 70$ eftersom det är en vanlig vik
 Givet detta med de konstanter vi redan hade så valde vi $c = 100$.
 
 \subsection{Laplacetransform}
-En laplacetransformerad funktion är ett användbart verktyg för att undersöka ett systems egenskaper. Transformationen avbildar en funktion i tidsdomänen, på en annan funktion i frekvensdomänen. Laplacetransformen är särskilt användbar då man undersöker system som inte är energifria, vilket andra metoder för systemanalys, så som fouriertransformering och faltning, inte kan hantera. I vårt fall med studsmattan är systemet emellertid energifritt, men laplacetransformationen kan i detta fall ändå tillämpas och ger dessutom lättare algebraiska manipulationer än alternativa metoder.
+Vi fick i vår ursprungliga rapport knappt med någon förklaring om varför vi tillämpar laplacemetoden i vår systemundersökning. En laplacetransformerad funktion är ett användbart verktyg för att undersöka ett systems egenskaper. Transformationen avbildar en funktion i tidsdomänen, på en annan funktion i frekvensdomänen. Laplacetransformen är särskilt användbar då man undersöker system som inte är energifria, vilket andra metoder för systemanalys, så som fouriertransformering och faltning, inte kan hantera. I vårt fall med studsmattan är systemet emellertid energifritt, men laplacetransformationen kan i detta fall ändå tillämpas och ger dessutom lättare algebraiska manipulationer än alternativa metoder.
 Efter laplacetransformering av systemets signalförhållande kan systemets så kallade systemfunktion utvinnas, vilket kan användas för analysera systemet ytterligare.
 
-\newpage
 \subsection{Stabilitetsbevis}
 
 Vi gjorde ett väldigt långt stabilitetsbevis och försökte vara väldigt noggranna, men vi borde ha tagit med det enkla stabilitetsbeviset också. Vi fick nämligen kommentaren att det var väldigt omständigt och skulle lösas på annat sätt. Dessutom fick vi frågan "Vad är stabilitet?"
