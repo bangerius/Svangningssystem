@@ -1,7 +1,7 @@
 function stegsvar()
 c=100;
 k=2000;
-m=30;
+m=70;
 
 w = sqrt(-(c/(2*m))^2 + (k/m));
 a = c/(2*m);
