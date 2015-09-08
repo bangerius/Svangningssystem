@@ -23,18 +23,17 @@
 \begin{document}
 \pagenumbering{gobble}
 
-\title{Studsmatta}
+\title{Studsmatta - Komplettering}
 \maketitle
 
+\cleardoublepage
 
 
-\section{Komplettering}
 
 
+\section{Jämviktsläget}
 
-\subsection{Jämviktsläget}
-
-I vår rapport så tar vi upp jämviktsläget ganska kort när vi förklarar de krafter som påverkar systemet och hur vi räknar på utsignalen. Vi fick kommentaren att jämviktsläget är otydligt från figuren. Vi gjorde en ny bild som förklarar jämvikten så är krafterna och jämvikten förklarade separat.
+I vår rapport så tar vi upp jämviktsläget ganska kort när vi förklarar de krafter som påverkar systemet och hur vi räknar på utsignalen. Vi fick kommentaren att jämviktsläget är otydligt från figuren. Vi gjorde en ny bild som förklarar jämvikten. Då är krafterna och jämvikten förklarade separat.
 
 \begin{figure}[h]
 \begin{center}
@@ -45,7 +44,7 @@ I vår rapport så tar vi upp jämviktsläget ganska kort när vi förklarar de 
 
 Fjädern utan en massa har jämviktsläget vid längd $L$. När man lägger på massan får den ett nytt jämviktsläge som vi kallar för $l_1$. Skillnaden mellan $L$ och $l_1$ är $\Delta l$. Sedan definierar vi en kraft $x(t)$ som verkar utöver gravitationen och skillnaden mellan det nya läget och $l_1$ som $y(t)$. Då blir den totala skillnaden $y(t) + \Delta l$
 
-\subsection{Dämpningskraft}
+\section{Dämpningskraft}
 
 Vi glömde i den ursprungliga rapporten att både visualisera dämpningskraften och nämna den i text. I den uppdaterade figuren nedan visas hur dämpningskraften ser ut i vårt fall med studsmattan, samt andra krafter som medverkar i systemet. Således betecknar vi dämpningskraften $F_d$, som är den kraft som motverkar rörelsen i ett svängningssystem motriktat rörelsen.
 
@@ -56,7 +55,7 @@ Vi glömde i den ursprungliga rapporten att både visualisera dämpningskraften 
 \end{center}
 \end{figure}
 \newpage
-\subsection{Differentialekvationen}
+\section{Differentialekvationen}
 
 Med de verkande krafterna i systemet $F_a = x(t), F_g = mg, F_f = -k(\Delta l + y(t),F_d = -cv$ och med Newtons andra lag fick vi fram ekvationen:
 \begin{equation}
@@ -73,7 +72,7 @@ Vilket ger:
 
 I det sista steget för den slutgiltiga differentialekvationen så fick vi kommentaren att vi skulle visa ett steg mer matematiskt. Vi skrev kort och gott att vid tid $t = 0$ så kommer gravitationen och fjäderkraften som verkar på massan ta ut varandra, och därav befinna sig i jämvikt.
 
-För att detta ska vara tillräckligt bör vi visa hur detta kommer sig. Vi kan visa detta genom att utgå från ekvation ((X)).
+För att detta ska vara tillräckligt bör vi visa hur detta kommer sig. Vi kan visa detta genom att utgå från ekvation 3.
 \begin{equation}
 \begin{split}
  m\frac{d^2y(t)}{dt^2} =  -k(\Delta l + y(t)) -c\frac{dy(t)}{dt} + mg +  x(t) \\ \leftrightarrow m\frac{d^2y(t)}{dt^2} = x(t) + mg  - k \Delta l -  k y(t)) -c\frac{dy(t)}{dt}  
@@ -91,7 +90,7 @@ m\frac{d^2y(t)}{dt^2} = x(t) + mg  - k \Delta l -  k y(t)) -c\frac{dy(t)}{dt} \\
  \end{split}
 \end{equation}
 
-\subsection{Val av konstanter}
+\section{Val av konstanter}
 
 I rapporten så använde vi oss av ett par konstanter för att vi skulle kunna räkna och testa vår modell av systemet. Vi fick dock kommentaren att vi borde motivera dem. Vi hade inte valt dem helt slumpmässigt, men vår motivation var uppenbarligen inte med.
 
@@ -101,19 +100,19 @@ Massan är den vi utgick från. Vi valde $m = 70$ eftersom det är en vanlig vik
 \end{equation}
 Givet detta med de konstanter vi redan hade så valde vi $c = 100$.
 
-\subsection{Laplacetransform}
+\section{Laplacetransform}
 Vi fick i vår ursprungliga rapport knappt med någon förklaring om varför vi tillämpar laplacemetoden i vår systemundersökning. En laplacetransformerad funktion är ett användbart verktyg för att undersöka ett systems egenskaper. Transformationen avbildar en funktion i tidsdomänen, på en annan funktion i frekvensdomänen. Laplacetransformen är särskilt användbar då man undersöker system som inte är energifria, vilket andra metoder för systemanalys, så som fouriertransformering och faltning, inte kan hantera. I vårt fall med studsmattan är systemet emellertid energifritt, men laplacetransformationen kan i detta fall ändå tillämpas och ger dessutom lättare algebraiska manipulationer än alternativa metoder.
 Efter laplacetransformering av systemets signalförhållande kan systemets så kallade systemfunktion utvinnas, vilket kan användas för analysera systemet ytterligare.
 
 När man laplacetransformerar så finns det färdiga standardtransformer man kan utgå ifrån för att slippa långa och invecklade integralberäkningar. Dessa finns i t.ex. formelsamlingen "Formler och tabeller" av Sune Söderkvist. Vi fick frågan vaför vi använde en specifik tabell när vi tog fram impulssvaret, och det var ju då just för att vi hade en systemfunktion som var på samma form som laplacetransformen i tabell 19.23 i den formelsamlingen.
 
-\subsection{Stabilitetsbevis}
+\section{Stabilitetsbevis}
 
 Vi gjorde ett väldigt långt stabilitetsbevis och försökte vara väldigt noggranna, men vi borde ha tagit med det enkla stabilitetsbeviset också. Vi fick nämligen kommentaren att det var väldigt omständigt och skulle lösas på annat sätt. Dessutom fick vi frågan "Vad är stabilitet?"
 
 Stabilitet med avseende på ett fysikaliskt system innebär att varje begränsad insignal ger en begränsad utsignal. Ett sätt att bevisa stabilitet hos ett system är att visa att frekvensfunktionen $H(\omega)$ existerar. Vi har systemfunktionen $H(S)$ och kan därav dels kolla på noll-pol diagrammet om den imaginära axeln ($j\omega$-axeln) är med i konvergensområdet, och dels se efter om antalet poler är lika med eller fler än antalet nollställen. Om både dessa krav är uppfyllda hade det visat att systemet är stabilt. 
 
-Systemet är kausalt då dess utsignal enbart beror på nu- och dåtida insignaler. Vi har även visat att systemet är linjärt och tidsinvariant i rapporten. Därav följer att eftersom systemet är ett kausalt LTI system så kommer konvergensområdet ligga till höger om polerna enligt bild ((X)). Vi ser även att antalet poler är fler än antalet nollställen, dvs. inga. Därmed är de två kraven uppfyllda, vilket visar att systemet är stabilt.
+Systemet är kausalt då dess utsignal enbart beror på nu- och dåtida insignaler. Vi har även visat att systemet är linjärt och tidsinvariant i rapporten. Därav följer att eftersom systemet är ett kausalt LTI system så kommer konvergensområdet ligga till höger om polerna enligt bild 3. Vi ser även att antalet poler är fler än antalet nollställen, dvs. inga. Därmed är de två kraven uppfyllda, vilket visar att systemet är stabilt.
 
 \begin{figure}[h]
 \begin{center}
@@ -125,8 +124,8 @@ Systemet är kausalt då dess utsignal enbart beror på nu- och dåtida insignal
 Detta visar dessutom hur vi går från vår systemfunktion till frekvensfunktionen i rapporten som också behövde motiveras. Detta behövde motiveras eftersom vi inte använde detta stabilitetsbevis i rapporten och därav blev förklaringen kring detta väldigt kortfattad. 
 
 Men med detta stabilitetsbevis så är det väldigt nära att då visa att $j\omega$ är med i konvergensområdet och vi kan då säga att $s = \sigma + j\omega$. Då $\sigma = 0$ så har vi frekvensfunktionen $H(s) = H(\omega), s = j\omega$
-
-\subsection{Stegsvar}
+\newpage
+\section{Stegsvar}
 
 I vår rapport så tog vi fram stegsvaret, $g(t)$, genom att integrera impulssvaret, $h(t)$. Vi fick kommentaren att det går att lösa på ett enklare sätt. 
 
@@ -157,13 +156,13 @@ g(t) = \frac{1}{m} \left( \frac{1}{r_1 r_2} - \frac{1}{\frac{r_1}{r_2} - r_1} e^
 \end{equation}
 
 
-\subsection{Amplitud- och faskaraktäristik}
+\section{Amplitud- och faskaraktäristik}
 
 Vi gav en lite klumpig beskrivning av vad amplitud- och faskaraktäristik är för något och fick kommentaren att vi måste förtydliga detta.
 
 Vi skrev att amplitud- och faskaraktäristiken beskriver hur impulssvarets amplitud och fasförskjutning påverkas av insignalens frekvens. Det är inte riktigt korrekt. Det är sant att den påverkas, men det är inte bara impulssvaret som påverkas eftersom den endast uppkommer om insignalen är en dirac. Alla utsignaler kommer se olika ut beroende på vilken frekvens insignalen har.
 
-\subsection{Impuls- och stegsvar för olika system}
+\section{Impuls- och stegsvar för olika system}
 
 Om man varierar de olika konstanterna så får man olika system med olika egenskaper. Vi gjorde några sådana tester med fas- och amplitudkaraktäristik, men inte med impuls- eller stegsvaret. Impulssvaret och stegsvaret är centrala i ett systems beteende och vi borde ha diskuterat dessa. Här följer både impulssvar och stegsvar med variation av konstanterna.
 
