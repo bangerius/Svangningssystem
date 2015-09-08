@@ -46,7 +46,7 @@ Fjädern utan en massa har jämviktsläget vid längd $L$. När man lägger på 
 
 \section{Dämpningskraft}
 
-Vi glömde i den ursprungliga rapporten att både visualisera dämpningskraften och nämna den i text. I den uppdaterade figuren nedan visas hur dämpningskraften ser ut i vårt fall med studsmattan, samt andra krafter som medverkar i systemet. Således betecknar vi dämpningskraften $F_d$, som är den kraft som motverkar rörelsen i ett svängningssystem motriktat rörelsen.
+Vi glömde i den ursprungliga rapporten att både visualisera dämpningskraften och nämna den i text. I den uppdaterade figuren nedan visas hur dämpningskraften ser ut i vårt fall med studsmattan, samt andra krafter som medverkar i systemet. Således betecknar vi dämpningskraften $F_d$, vilket är den kraft som motverkar rörelsen i ett svängningssystem motriktat rörelsen.
 
 \begin{figure}[ht]
 \begin{center}
@@ -101,10 +101,10 @@ Massan är den vi utgick från. Vi valde $m = 70$ eftersom det är en vanlig vik
 Givet detta med de konstanter vi redan hade så valde vi $c = 100$.
 
 \section{Laplacetransform}
-Vi fick i vår ursprungliga rapport knappt med någon förklaring om varför vi tillämpar laplacemetoden i vår systemundersökning. En laplacetransformerad funktion är ett användbart verktyg för att undersöka ett systems egenskaper. Transformationen avbildar en funktion i tidsdomänen, på en annan funktion i frekvensdomänen. Laplacetransformen är särskilt användbar då man undersöker system som inte är energifria, vilket andra metoder för systemanalys, så som fouriertransformering och faltning, inte kan hantera. I vårt fall med studsmattan är systemet emellertid energifritt, men laplacetransformationen kan i detta fall ändå tillämpas och ger dessutom lättare algebraiska manipulationer än alternativa metoder.
+Vi fick i vår ursprungliga rapport knappt med någon förklaring om varför vi tillämpar laplacemetoden i vår systemundersökning. En laplacetransformerad funktion är ett användbart verktyg för att undersöka ett systems egenskaper. Transformationen avbildar en funktion i tidsdomänen på en annan funktion i frekvensdomänen. Laplacetransformen är särskilt användbar då man undersöker system som inte är energifria vilket andra metoder för systemanalys, så som fouriertransformering och faltning, inte kan hantera. I vårt fall med studsmattan är systemet emellertid energifritt, men laplacetransformationen kan i detta fall ändå tillämpas och ger dessutom lättare algebraiska manipulationer än alternativa metoder.
 Efter laplacetransformering av systemets signalförhållande kan systemets så kallade systemfunktion utvinnas, vilket kan användas för analysera systemet ytterligare.
 
-När man laplacetransformerar så finns det färdiga standardtransformer man kan utgå ifrån för att slippa långa och invecklade integralberäkningar. Dessa finns i t.ex. formelsamlingen "Formler och tabeller" av Sune Söderkvist. Vi fick frågan vaför vi använde en specifik tabell när vi tog fram impulssvaret, och det var ju då just för att vi hade en systemfunktion som var på samma form som laplacetransformen i tabell 19.23 i den formelsamlingen.
+När man laplacetransformerar så finns det färdiga standardtransformer man kan utgå ifrån för att slippa långa och invecklade integralberäkningar. Dessa finns att hämta i t.ex. formelsamlingen "Formler och tabeller" av Sune Söderkvist. Vi fick frågan vaför vi använde en specifik tabell när vi tog fram impulssvaret, och det var ju då just för att vi hade en systemfunktion som var på samma form som laplacetransformen i tabell 19.23 i den formelsamlingen.
 
 \section{Stabilitetsbevis}
 
@@ -121,9 +121,9 @@ Systemet är kausalt då dess utsignal enbart beror på nu- och dåtida insignal
 \end{center}
 \end{figure}
 
-Detta visar dessutom hur vi går från vår systemfunktion till frekvensfunktionen i rapporten som också behövde motiveras. Detta behövde motiveras eftersom vi inte använde detta stabilitetsbevis i rapporten och därav blev förklaringen kring detta väldigt kortfattad. 
+Detta visar dessutom hur vi går från vår systemfunktion till frekvensfunktionen i rapporten som också behövde motiveras. Detta behövdes motiveras eftersom vi inte använde detta stabilitetsbevis i rapporten och därav blev förklaringen kring detta väldigt kortfattad. 
 
-Men med detta stabilitetsbevis så är det väldigt nära att då visa att $j\omega$ är med i konvergensområdet och vi kan då säga att $s = \sigma + j\omega$. Då $\sigma = 0$ så har vi frekvensfunktionen $H(s) = H(\omega), s = j\omega$
+Men med detta stabilitetsbevis är det väldigt nära att då visa att $j\omega$ är med i konvergensområdet och vi kan då säga att $s = \sigma + j\omega$. Då $\sigma = 0$ så har vi frekvensfunktionen $H(s) = H(\omega), s = j\omega$
 \newpage
 \section{Stegsvar}
 
